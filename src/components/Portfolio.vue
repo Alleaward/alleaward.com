@@ -69,7 +69,9 @@
           </div>
       </transition-group>
   </div>  
-
+  <div class="buttonWrap">
+    <button id="resumeButton"><span class="button" @click="$router.push({path: '/resume'})">Resume</span></button>
+  </div>
 </div> 
 </template>
 
@@ -288,17 +290,20 @@ export default {
 
 <style lang="scss">
 #portfolio {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin: auto;
-  // text-align: left;
-  justify-items: center;
-  span{
+    max-width: 1280px;
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    margin: auto;
+    padding-bottom: 200px;
+
+    // text-align: left;
+    justify-items: center;
+    span{
     font-weight: bold;
-  }
+    }
 }
 
 h1, h2 {
@@ -439,7 +444,9 @@ a {
 }
 
 #portfolio-items{
-    width: 48%;
+    // width: 48%;
+    max-width: 400px;
+    // min-width: 400px;
     padding-top: 30px;
     span{
         display: flex;
@@ -527,5 +534,54 @@ a {
         }
     }
 }
+.buttonWrap{
+  background: rgba(43, 43, 43, 0.8);
+}
+#resumeButton{
+  position: fixed;
+  width: 100vw;
+  // margin-left: -50vw;
+  height: 200px;
+  bottom: 0;
+  left: 0;
+  border: 0;
+  box-sizing: border;
+  background: url('../assets/img/resume.jpg') center center no-repeat;
+  background-size: cover;
+  transition:all 0.8s ease-in-out;
+  -moz-transition:all 0.8s ease-in-out;
+  -webkit-transition:all 0.8s ease-in-out;
 
+  .button {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    height: 2.5rem;
+    padding-top: 1.3rem;
+    width: 15rem;
+    text-align: center;
+    border: #999 solid 0.2rem;
+    background-color: rgba(155, 155, 155, 0.7);
+    border-color: rgba(0, 0, 0, 1);
+    color: rgba(0, 0, 0, 0.9);  
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    transform: translateX(-50%);
+    transition:all 0.4s ease-in-out;
+    -moz-transition:all 0.4s ease-in-out;
+    -webkit-transition:all 0.4s ease-in-out;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.9);
+      border-color: rgba(255, 255, 255, 0.9);
+      color: rgba(255, 255, 255, 0.9);  
+      }
+  }
+
+  &:hover{
+    height: calc(90vh);
+  }
+}
 </style>
