@@ -25,8 +25,8 @@ export default {
 <style lang="scss">
 :root {
   --container-bg-color: #333;
-  --left-bg-color: rgba(223, 39, 39, 0.7);
-  --left-button-hover-color: rgba(161, 11, 11, 0.3);
+  --left-bg-color: rgba(43, 43, 43, 0.8);
+  --left-button-hover-color: rgba(92, 92, 92, 0.3);
   --right-bg-color: rgba(43, 43, 43, 0.8);
   --right-button-hover-color: rgba(92, 92, 92, 0.3);
   --hover-width: 75%;
@@ -97,7 +97,8 @@ h1 {
 
 .split.left {
   left:0;
-  background: url('https://image.ibb.co/m56Czw/designer.jpg') center center no-repeat;
+  // background: url('https://image.ibb.co/m56Czw/designer.jpg') center center no-repeat;
+  background: url('../assets/img/resume.jpg') center center no-repeat;
   background-size: cover;
 }
 
@@ -111,7 +112,8 @@ h1 {
 
 .split.right {
   right:0;
-  background: url('https://image.ibb.co/m3ZbRb/programmer.png') center center no-repeat;
+  // background: url('https://image.ibb.co/m3ZbRb/programmer.png') center center no-repeat;
+  background: url('../assets/img/portfolio.png') center center no-repeat;
   background-size: cover;
 }
 

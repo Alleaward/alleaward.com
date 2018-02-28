@@ -4,7 +4,7 @@
     <div id="portfolio-header">
         <h2>Here are some examples of my work.</h2>
         <ul class="portfolio-nav">
-            <li class="outer-button" v-bind:key="FrontEnd.name" v-for="skill in FrontEnd" v-bind:id="skill.skill">
+            <li class="outer-button" v-bind:key="skill.name" v-for="skill in FrontEnd" v-bind:id="skill.skill">
                 {{ skill.name }}
                 
                 <ul>
@@ -21,7 +21,7 @@
         </li>
     </ul>
     <ul class="portfolio-nav">
-      <li class="outer-button" v-bind:key="BackEnd.name" v-for="skill in BackEnd" v-bind:id="skill.skill" >
+      <li class="outer-button" v-bind:key="skill.name" v-for="skill in BackEnd" v-bind:id="skill.skill" >
           {{ skill.name }}
           <ul>
             <li class="middle-button" v-bind:key="middleSkill.skill" v-for="middleSkill in skill.skill" v-bind:id="middleSkill.skill"
@@ -43,7 +43,7 @@
           </ul>
         </li>
       </ul>
-      <button class="sorting-button"@click="keyword=''">Clear Filter</button>
+      <button class="sorting-button" @click="keyword=''">Clear Filter</button>
   </div>
 
   <div id="portfolio-items">
@@ -60,7 +60,7 @@
               <div class="portfolio-information">
                   <a :href="portfolio.link"><h3>{{ portfolio.name }}</h3></a>                           
                   <ul>
-                      <li class="portfolioTech" v-for="tech in portfolio.tech">{{ tech }}</li>
+                      <li class="portfolioTech" v-bind:key="tech.name" v-for="tech in portfolio.tech">{{ tech }}</li>
                   </ul>
                   <p>{{ portfolio.desc }}</p>
               </div>
