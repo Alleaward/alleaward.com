@@ -1,14 +1,14 @@
 <template>
-<div id="home">
-    <div class="split left">
-      <h1>Resume</h1>
-      <a href="/resume" class="button">Take a look at all my skills!</a>
+  <div id="home">
+      <div class="split left">
+        <h1>Resume</h1>
+        <a href="/resume" class="button">Skills and Experience</a>
+      </div>
+      <div class="split right">
+        <h1>Portfolio</h1>
+        <a href="/portfolio" class="button">Demonstrations</a>
+      </div>  
     </div>
-    <div class="split right">
-      <h1>Portfolio</h1>
-      <a href="/portfolio" class="button">See my past work!</a>
-    </div>  
-  </div>
 </template>
 
 <script>
@@ -26,11 +26,9 @@ export default {
 :root {
   --container-bg-color: #333;
   --left-bg-color: rgba(43, 43, 43, 0.8);
-  --left-button-hover-color: rgba(92, 92, 92, 0.9);
-  --left-button-hover-bg-color: #f1f1f1;
+  --left-button-hover-color: rgba(92, 92, 92, 0.3);
   --right-bg-color: rgba(43, 43, 43, 0.8);
-  --right-button-hover-color: rgba(92, 92, 92, 0.9);
-  --right-button-hover-bg-color: #f1f1f1;
+  --right-button-hover-color: rgba(92, 92, 92, 0.3);
   --hover-width: 75%;
   --other-width: 25%;
   --speed: 1000ms;
@@ -74,17 +72,13 @@ h1 {
 }
 
 .split.left .button:hover {
-  background-color: var(--left-button-hover-bg-color);
+  background-color: var(--left-button-hover-color);
   border-color: var(--left-button-hover-color);
-  color:var(--left-button-hover-color);
-  transition: all ease-in-out 0.3s;
 }
 
 .split.right .button:hover {
-  background-color: var(--right-button-hover-bg-color);
+  background-color: var(--right-button-hover-color);
   border-color: var(--right-button-hover-color);
-  color: var(--right-button-hover-color);
-  transition: all ease-in-out 0.3s;
 }
 
 .container {
