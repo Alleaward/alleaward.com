@@ -323,7 +323,6 @@ a {
     margin: auto;
 
     .portfolio-nav{
-      width: 80%;
       display: flex;
       flex-flow: row wrap;
       justify-content: center;
@@ -331,17 +330,17 @@ a {
       margin-top: 35px;
       border-radius: 12px;
       border: 0;
-      box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
-      &:hover{
+      // box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
+      .outer-button{
+        font-size: 1.2rem;
+        &:hover{
           box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.5);
           // background-color: #4484CE;
           // color: white;
           transition:all 0.3s ease-in-out;
           -moz-transition:all 0.3s ease-in-out;
           -webkit-transition:all 0.3s ease-in-out;
-      }
-      .outer-button{
-        font-size: 1.2rem;
+        }
         ul{
             display: flex;
             flex-flow: row wrap;

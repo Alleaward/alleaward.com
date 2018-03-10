@@ -17,7 +17,7 @@
   </p>
   <p>For a more details and examples of my skills and knowledge click here to go to my portfolio below.</p>
       
-  <button @click="$router.push({path: '/portfolio'})">Too see some examples of my work, click here.</button>
+  <button id="portfolioButton" @click="$router.push({path: '/portfolio'})">Portfolio</button>
       
   <p><span>Social Media:</span></p>
 
@@ -106,5 +106,20 @@ li {
 
 a {
   color: #42b983;
+}
+#portfolioButton{
+  width: 100%;
+  margin-left: -50%;
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  border: 0;
+  box-sizing: border;
+  &:hover{
+    height: calc(100vh - 50px);
+    transition:all 0.8s ease-in-out;
+    -moz-transition:all 0.8s ease-in-out;
+    -webkit-transition:all 0.8s ease-in-out;
+  }
 }
 </style>
