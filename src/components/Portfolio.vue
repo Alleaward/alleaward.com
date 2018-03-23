@@ -290,6 +290,7 @@ export default {
 
 <style lang="scss">
 #portfolio {
+<<<<<<< HEAD
   max-width: 1280px;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -300,8 +301,22 @@ export default {
   // text-align: left;
   justify-items: center;
   span{
+=======
+    max-width: 1280px;
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    margin: auto;
+    padding-bottom: 200px;
+
+    // text-align: left;
+    justify-items: center;
+    span{
+>>>>>>> 1afc2c8323b95fa27b87e6496e272a6f3b1e0257
     font-weight: bold;
-  }
+    }
 }
 
 h1, h2 {
