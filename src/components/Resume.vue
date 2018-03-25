@@ -1,39 +1,9 @@
 <template>
 <div id="resume">
-<<<<<<< HEAD
-  <p><span>Name:</span> Allea Ward </p>
-  <p><span>Email:</span> Allea_ward@hotmail.com </p>
-  <p><span>Phone:</span> +61490324716 </p>
-  <p>
-    <span>Location:</span> Gold Coast, Queensland, Australia.
-    <!-- I am also willing to relocate to Europe, preferably the UK or Moscow. -->
-  </p>
-  <p><span>Current Driver's license:</span> Yes. </p>
-  <p><span>Remote Work:</span> I am happy to work remotely. </p>
-  <!-- <p>Blog: <a href="blog.alleaward.com">My Blog</a> </p> -->
-  <p><span>About me:</span></p>
-  <p>I pride myself on my ability to learn new skills and technologies, I have a solid understanding of the fundamentals behind
-      programming and so I am able to seperate programming from syntax and easily transfer my skills to new languages. I have reinforced
-      the fundamental principles of programming by using several languages from low level languages like C, through to high level
-      languages like Python and JavaScript.
-  </p>
-  <p>For a more details and examples of my skills and knowledge click here to go to my portfolio below.</p>      
-  <p><span>Social Media:</span></p>
-
-  <ul>
-    <li>LinkedIn</li>
-    <li>GitHub</li>
-    <li>Stack Overflow</li>
-  </ul>
-
-  <div class="dev skills">
-    <p><span>Dev Tools:</span></p>
-=======
   <section id="details">
     <p><span>Name:</span> Allea Ward </p>
     <p><span>Email:</span> Allea_ward@hotmail.com </p>
     <p><span>Phone:</span> +61490324716 </p>
->>>>>>> 1afc2c8323b95fa27b87e6496e272a6f3b1e0257
     <p>
       <span>Location:</span> Gold Coast, Queensland, Australia.
       <!-- I am also willing to relocate to Europe, preferably the UK or Moscow. -->
@@ -89,43 +59,123 @@
     </h2>
   </section>  
 
-  <p>Front-End</p>
+  <p class="heading1">Front-End</p>
 
-<<<<<<< HEAD
-=======
   <section id="html" class="skillSection">
-    <img src="../assets/img/html.png" alt="">
-    <p>HTML</p>
+    <div class="skillInner">
+      <div class="skillInfo">
+      <p class="heading1">HTML</p>
+
+      </div>
+      <img class="skillImg" src="../assets/img/html.png" alt="">
+
+    </div>
   </section>
     
   <section id="css" class="skillSection">
-    <img src="../assets/img/css.png" alt="">
-    <p>CSS</p>
+    <div class="skillInner">
+      <div class="skillInfo">
+      <p class="heading1">CSS</p>
+        <p class="heading2">CSS3</p>
+          <p class="heading3">Animations</p>
+          <p class="heading3">Transitions</p>
+        <p class="heading2">SASS</p>
+        <p class="heading2">CSS Frameworks:</p>
+          <p class="heading3">Bootstrap</p>
+          <p class="heading3">MaterialiseCSS</p>
+      </div>
+      <img class="skillImg" src="../assets/img/css.png" alt="">
+    </div>
   </section>
 
   <section id="javascript" class="skillSection">
-    <img src="../assets/img/javascript.png" alt="">
-    <p>JavaScript</p>
+    <div class="skillInner">
+      <div class="skillInfo">
+        <p class="heading1">JavaScript</p>
+          <p class="heading2">Vanilla JS:</p>
+            <p class="heading3">TypeScript</p>
+            <p class="heading3">ES6</p>
+          <p class="heading2">Frameworks and Libraries:</p>
+            <p class="heading3">Vue</p>
+            <p class="heading3">React</p>
+            <p class="heading3">Angular</p>
+            <p class="heading3">jQuery</p>
+          <p class="heading2">Module Loader / Bundler:</p>
+            <p class="heading3">Webpack</p>
+          <p class="heading2">Package Manager:</p>
+            <p class="heading3">NPM</p>
+          <p class="heading2">Task Runners:</p>
+            <p class="heading3">Gulp</p>
+            <p class="heading3">NPM Scripts</p>
+          <p class="heading2">Regex</p>
+          <p class="heading2">Testing:</p>
+            <p class="heading3">Gulp</p>
+          <p class="heading2">Design Patterns:</p>
+            <p class="heading3">Pattern One</p>
+          <p class="heading2">AJAX</p>
+          <p class="heading2">JSON</p>
+
+      </div>
+      <img class="skillImg" src="../assets/img/javascript.png" alt="">
+    </div>
   </section>
     
-  <p>Back-End</p>
+  <p class="heading1">Back-End</p>
 
   <section id="php" class="skillSection">
-    <img src="../assets/img/php.png" alt="">
-    <p>PHP</p>
+    <div class="skillInner">
+      <div class="skillInfo">
+        <p class="heading1">PHP</p>
+          <p class="heading2">Laravel</p>
+
+      </div>
+      <img class="skillImg" src="../assets/img/php.png" alt="">
+    </div>
   </section>
-    
+
+  <section id="mysql" class="skillSection">
+    <div class="skillInner">
+      <div class="skillInfo">
+        <p class="heading1">MySQL</p>
+          <p class="heading2">PostgreSQL</p>
+          <p class="heading2">MSSQL</p>
+      </div>
+      <img class="skillImg" src="../assets/img/mysql.png" alt="">
+    </div>
+  </section>
+
+  <section id="nodejs" class="skillSection">
+    <div class="skillInner">
+      <div class="skillInfo">
+        <p class="heading1">NodeJS</p>
+          <p class="heading2">Express</p>
+          <p class="heading2">Vue SPA</p>
+            <p class="heading3">Using Vue router</p>
+      </div>
+      <img class="skillImg" src="../assets/img/nodejs.png" alt="">
+    </div>
+  </section>
+
   <section id="linux" class="skillSection">
-      <img src="../assets/img/windows.png" alt="">
-    <p>Linux</p>
+    <div class="skillInner">
+      <div class="skillInfo">
+        <p class="heading1">Linux</p>
+
+      </div>
+      <img class="skillImg" src="../assets/img/linux.png" alt="">
+    </div>
   </section>
   
   <section id="windows" class="skillSection">
-      <img src="../assets/img/linux.png" alt="">
-    <p>Windows</p>
-  </section>
+    <div class="skillInner">
+      <div class="skillInfo">
+        <p class="heading1">Windows</p>
 
->>>>>>> 1afc2c8323b95fa27b87e6496e272a6f3b1e0257
+      </div>
+      <img class="skillImg" src="../assets/img/windows.png" alt="">
+    </div>
+  </section>
+  
   <div class="buttonWrap">
     <button id="portfolioButton"><span class="button" @click="$router.push({path: '/portfolio'})">Portfolio</span></button>
   </div>
@@ -145,12 +195,11 @@ export default {
 </script>
 
 <style lang="scss">
+body{
+  margin: 0;
+}
 #resume {
-<<<<<<< HEAD
-  max-width: 760px;
-=======
   // max-width: 760px;
->>>>>>> 1afc2c8323b95fa27b87e6496e272a6f3b1e0257
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -160,6 +209,7 @@ export default {
   padding-bottom: 200px;
   // text-align: left;
   justify-items: center;
+
   span{
     font-weight: bold;
   }
@@ -169,23 +219,59 @@ export default {
   width: 760px;
   margin: auto;
 }
-
+.heading1{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+.heading2{
+  padding-left: 20px;
+  text-align: left;
+  font-size: 1.2rem;
+}
+.heading3{
+  padding-left: 40px;
+  text-align: left;
+  font-size: 1rem;
+}
 .skillSection{
   width: 100%;
   text-align: center;
+  color: black;
   p{
     margin: 0;
   }
   img{
     width: 50px;
   }
+  .skillInner{
+    display: flex;
+    flex-flow: row nowrap;
+    border: 2px red solid;
+    padding: 20px;
+    .skillInfo{
+      margin: 20px 0px 20px 80px;
+      border: 2px yellow solid;
+      width: 70%;
+    }
+    .skillImg{
+      text-align: center;
+      margin: auto;
+      // width: 20%;
+      width: auto;
+      // height: auto;
+      height: 200px;
+    }
+  }
 }
 
 #html{
   background-color: #f16527;
+  // width: 30%;
 }
 #css{
   background-color: #29a8dd;
+  // width: 70%;
 }
 #javascript{
   background-color: #F0DB4F;
@@ -193,11 +279,17 @@ export default {
 #php{
   background-color: #8993BE;
 }
+#mysql{
+  background-color: #E38D1A;
+}
+#nodejs{
+  background-color: #7EB341;
+}
 #linux{
-
+  background-color: #404040;
 }
 #windows{
-
+  background-color: #0077DB;
 }
 
 h1, h2 {

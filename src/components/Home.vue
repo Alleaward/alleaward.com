@@ -1,12 +1,14 @@
 <template>
   <div id="home">
       <div class="split left">
-        <h1>Resume</h1>
-        <a href="/resume" class="button">Skills and Experience</a>
+        <!-- <h1>Resume</h1> -->
+        <!-- <a href="/resume" class="button">Skills and Experience</a> -->
+        <a href="/resume" class="button">Resume</a>
       </div>
       <div class="split right">
-        <h1>Portfolio</h1>
-        <a href="/portfolio" class="button">Demonstrations</a>
+        <!-- <h1>Portfolio</h1> -->
+        <!-- <a href="/portfolio" class="button">Demonstrations</a> -->
+        <a href="/portfolio" class="button">Portfolio</a>
       </div>  
     </div>
 </template>
@@ -29,8 +31,8 @@ export default {
   --left-button-hover-color: rgba(92, 92, 92, 0.3);
   --right-bg-color: rgba(43, 43, 43, 0.8);
   --right-button-hover-color: rgba(92, 92, 92, 0.3);
-  --hover-width: 75%;
-  --other-width: 25%;
+  --hover-width: 85%;
+  --other-width: 15%;
   --speed: 1000ms;
 }
 
@@ -74,11 +76,13 @@ h1 {
 .split.left .button:hover {
   background-color: var(--left-button-hover-color);
   border-color: var(--left-button-hover-color);
+  transition: 0.2s all ease-in-out;
 }
 
 .split.right .button:hover {
   background-color: var(--right-button-hover-color);
   border-color: var(--right-button-hover-color);
+  transition: 0.2s all ease-in-out;
 }
 
 .container {
@@ -90,13 +94,14 @@ h1 {
 
 .split {
   position: absolute;
-  width: 50%;
-  height: 100%;
+  width: 100%;
+  height: 50%;
   overflow: hidden;
 }
 
 .split.left {
-  left:0;
+  // left:0;
+  top:0;
   // background: url('https://image.ibb.co/m56Czw/designer.jpg') center center no-repeat;
   background: url('../assets/img/resume.jpg') center center no-repeat;
   background-size: cover;
@@ -111,7 +116,8 @@ h1 {
 }
 
 .split.right {
-  right:0;
+  // right:0;
+  bottom:0;
   // background: url('https://image.ibb.co/m3ZbRb/programmer.png') center center no-repeat;
   background: url('../assets/img/portfolio.png') center center no-repeat;
   background-size: cover;
@@ -130,11 +136,11 @@ h1 {
 }
 
 .hover-left .left {
-  width: var(--hover-width);
+  height: var(--hover-width);
 }
 
 .hover-left .right {
-  width: var(--other-width);
+  height: var(--other-width);
 }
 
 .hover-left .right:before {
@@ -143,11 +149,11 @@ h1 {
 
 
 .hover-right .right {
-  width: var(--hover-width);
+  height: var(--hover-width);
 }
 
 .hover-right .left {
-  width: var(--other-width);
+  height: var(--other-width);
 }
 
 .hover-right .left:before {
