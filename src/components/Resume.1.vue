@@ -60,123 +60,121 @@
   </section>  
 
   <p class="heading1">Front-End make it into an accordian?</p>
-  <section class="skillAccordian" id="frontend">
-    <section id="html" class="skillSection">
-      <div class="skillInner">
-        <div class="skillInfo">
-        <!-- <p class="heading1">HTML</p> -->
 
-        </div>
-        <!-- <img class="skillImg" src="../assets/img/html.png" alt=""> -->
+  <section id="html" class="skillSection">
+    <div class="skillInner">
+      <div class="skillInfo">
+      <p class="heading1">HTML</p>
 
       </div>
-    </section>
-      
-    <section id="css" class="skillSection">
-      <div class="skillInner">
-        <div class="skillInfo">
-        <!-- <p class="heading1">CSS</p>
-          <p class="heading2">CSS3</p>
-            <p class="heading3">Animations</p>
-            <p class="heading3">Transitions</p>
-          <p class="heading2">SASS</p>
-          <p class="heading2">CSS Frameworks:</p>
-            <p class="heading3">Bootstrap</p>
-            <p class="heading3">MaterialiseCSS</p> -->
-        </div>
-        <!-- <img class="skillImg" src="../assets/img/css.png" alt=""> -->
-      </div>
-    </section>
+      <!-- <img class="skillImg" src="../assets/img/html.png" alt=""> -->
 
-    <section id="javascript" class="skillSection">
-      <div class="skillInner">
-        <div class="skillInfo">
-          <!-- <p class="heading1">JavaScript</p>
-            <p class="heading2">Vanilla JS:</p>
-              <p class="heading3">TypeScript</p>
-              <p class="heading3">ES6</p>
-            <p class="heading2">Frameworks and Libraries:</p>
-              <p class="heading3">Vue</p>
-              <p class="heading3">React</p>
-              <p class="heading3">Angular</p>
-              <p class="heading3">jQuery</p>
-            <p class="heading2">Module Loader / Bundler:</p>
-              <p class="heading3">Webpack</p>
-            <p class="heading2">Package Manager:</p>
-              <p class="heading3">NPM</p>
-            <p class="heading2">Task Runners:</p>
-              <p class="heading3">Gulp</p>
-              <p class="heading3">NPM Scripts</p>
-            <p class="heading2">Regex</p>
-            <p class="heading2">Testing:</p>
-              <p class="heading3">Gulp</p>
-            <p class="heading2">Design Patterns:</p>
-              <p class="heading3">Pattern One</p>
-            <p class="heading2">AJAX</p>
-            <p class="heading2">JSON</p> -->
-
-        </div>
-        <!-- <img class="skillImg" src="../assets/img/javascript.png" alt=""> -->
+    </div>
+  </section>
+    
+  <section id="css" class="skillSection">
+    <div class="skillInner">
+      <div class="skillInfo">
+      <p class="heading1">CSS</p>
+        <p class="heading2">CSS3</p>
+          <p class="heading3">Animations</p>
+          <p class="heading3">Transitions</p>
+        <p class="heading2">SASS</p>
+        <p class="heading2">CSS Frameworks:</p>
+          <p class="heading3">Bootstrap</p>
+          <p class="heading3">MaterialiseCSS</p>
       </div>
-    </section>
+      <!-- <img class="skillImg" src="../assets/img/css.png" alt=""> -->
+    </div>
   </section>
 
+  <section id="javascript" class="skillSection">
+    <div class="skillInner">
+      <div class="skillInfo">
+        <p class="heading1">JavaScript</p>
+          <p class="heading2">Vanilla JS:</p>
+            <p class="heading3">TypeScript</p>
+            <p class="heading3">ES6</p>
+          <p class="heading2">Frameworks and Libraries:</p>
+            <p class="heading3">Vue</p>
+            <p class="heading3">React</p>
+            <p class="heading3">Angular</p>
+            <p class="heading3">jQuery</p>
+          <p class="heading2">Module Loader / Bundler:</p>
+            <p class="heading3">Webpack</p>
+          <p class="heading2">Package Manager:</p>
+            <p class="heading3">NPM</p>
+          <p class="heading2">Task Runners:</p>
+            <p class="heading3">Gulp</p>
+            <p class="heading3">NPM Scripts</p>
+          <p class="heading2">Regex</p>
+          <p class="heading2">Testing:</p>
+            <p class="heading3">Gulp</p>
+          <p class="heading2">Design Patterns:</p>
+            <p class="heading3">Pattern One</p>
+          <p class="heading2">AJAX</p>
+          <p class="heading2">JSON</p>
+
+      </div>
+      <!-- <img class="skillImg" src="../assets/img/javascript.png" alt=""> -->
+    </div>
+  </section>
+    
   <p class="heading1">Back-End</p>
 
-  <section class="skillAccordian" id="backend"> 
-    <section id="php" class="skillSection">
-      <div class="skillInner">
-        <div class="skillInfo">
-          <!-- <p class="heading1">PHP</p> -->
-            <!-- <p class="heading2">I have used PHP to build several projects ranging from simple calculators to shopping carts and user accounts.</p> -->
+  <section id="php" class="skillSection">
+    <div class="skillInner">
+      <div class="skillInfo">
+        <p class="heading1">PHP</p>
+          <p class="heading2">I have used PHP to build several projects ranging from simple calculators to shopping carts and user accounts.</p>
 
-        </div>
-        <!-- <img class="skillImg" src="../assets/img/php.png" alt=""> -->
       </div>
-    </section>
-
-    <section id="mysql" class="skillSection">
-      <div class="skillInner">
-        <div class="skillInfo">
-          <!-- <p class="heading1">MySQL</p> -->
-            <!-- <p class="heading2">I have used MySQL to store user accounts,</p> -->
-        </div>
-        <!-- <img class="skillImg" src="../assets/img/mysql.png" alt=""> -->
-      </div>
-    </section>
-
-    <section id="nodejs" class="skillSection">
-      <div class="skillInner">
-        <div class="skillInfo">
-          <!-- <p class="heading1">NodeJS</p> -->
-            <!-- <p class="heading2">Express</p> -->
-            <!-- <p class="heading2">Vue SPA</p> -->
-              <!-- <p class="heading3">Using Vue router</p> -->
-        </div>
-        <!-- <img class="skillImg" src="../assets/img/nodejs.png" alt=""> -->
-      </div>
-    </section>
-
-    <section id="linux" class="skillSection">
-      <div class="skillInner">
-        <div class="skillInfo">
-          <!-- <p class="heading1">Linux</p> -->
-
-        </div>
-        <!-- <img class="skillImg" src="../assets/img/linux.png" alt=""> -->
-      </div>
-    </section>
-    
-    <section id="windows" class="skillSection">
-      <div class="skillInner">
-        <div class="skillInfo">
-          <!-- <p class="heading1">Windows</p> -->
-
-        </div>
-        <!-- <img class="skillImg" src="../assets/img/windows.png" alt=""> -->
-      </div>
-    </section>
+      <!-- <img class="skillImg" src="../assets/img/php.png" alt=""> -->
+    </div>
   </section>
+
+  <section id="mysql" class="skillSection">
+    <div class="skillInner">
+      <div class="skillInfo">
+        <p class="heading1">MySQL</p>
+          <p class="heading2">I have used MySQL to store user accounts,</p>
+      </div>
+      <!-- <img class="skillImg" src="../assets/img/mysql.png" alt=""> -->
+    </div>
+  </section>
+
+  <section id="nodejs" class="skillSection">
+    <div class="skillInner">
+      <div class="skillInfo">
+        <p class="heading1">NodeJS</p>
+          <p class="heading2">Express</p>
+          <p class="heading2">Vue SPA</p>
+            <p class="heading3">Using Vue router</p>
+      </div>
+      <!-- <img class="skillImg" src="../assets/img/nodejs.png" alt=""> -->
+    </div>
+  </section>
+
+  <section id="linux" class="skillSection">
+    <div class="skillInner">
+      <div class="skillInfo">
+        <p class="heading1">Linux</p>
+
+      </div>
+      <!-- <img class="skillImg" src="../assets/img/linux.png" alt=""> -->
+    </div>
+  </section>
+  
+  <section id="windows" class="skillSection">
+    <div class="skillInner">
+      <div class="skillInfo">
+        <p class="heading1">Windows</p>
+
+      </div>
+      <!-- <img class="skillImg" src="../assets/img/windows.png" alt=""> -->
+    </div>
+  </section>
+  
   <div class="buttonWrap">
     <button id="portfolioButton"><span class="button" @click="$router.push({path: '/portfolio'})">Portfolio</span></button>
   </div>
@@ -237,27 +235,10 @@ body{
   text-align: left;
   font-size: 1rem;
 }
-.skillAccordian{
-  display: flex;
-  flex-flow: row wrap;
-  width: 100%;
-}
-
 .skillSection{
-  // flex-grow: 1;
-  // flex-basis: 12.5%;
   width: 100%;
-  height: 100px;
   text-align: center;
   color: black;
-  transition:all 0.4s ease-in-out;
-  -moz-transition:all 0.4s ease-in-out;
-  -webkit-transition:all 0.4s ease-in-out;  
-  &:hover, &:active, &:focus{
-    // flex-basis: 100%;
-    // width: 50%;
-    height: 300px;
-  }
   p{
     margin: 0;
   }
@@ -272,9 +253,7 @@ body{
     // width: 760px;
     margin: auto;
     background-size: cover;
-    &:hover{
-      background-color: rgba(155, 155, 155, 0.9);
-    }
+    // background-color: rgba(0, 0, 0, 0.5);
     height: 100%;
     .skillInfo{
       margin: 20px 0px 20px 80px;
@@ -296,13 +275,13 @@ body{
   background: url('../assets/img/html.png') no-repeat center center;
   background-size: contain;
   background-color: #f5672a;
-  // width: 30%;
+  width: 30%;
 }
 #css{
   background: url('../assets/img/css.png') no-repeat center center;
   background-size: contain;
   background-color: #29a8dd;
-  // width: 70%;
+  width: 70%;
 
 }
 #javascript{
