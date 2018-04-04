@@ -28,11 +28,11 @@ export default {
 :root {
   --container-bg-color: #333;
   --left-bg-color: rgba(43, 43, 43, 0.8);
-  --left-button-hover-color: rgba(92, 92, 92, 0.3);
+  --left-button-hover-color: rgba(255, 255, 255, 0.9);
   --right-bg-color: rgba(43, 43, 43, 0.8);
-  --right-button-hover-color: rgba(92, 92, 92, 0.3);
-  --hover-width: 85%;
-  --other-width: 15%;
+  --right-button-hover-color: rgba(255, 255, 255, 0.9);
+  --hover-width: 70%;
+  --other-width:30%;
   --speed: 1000ms;
 }
 
@@ -76,12 +76,14 @@ h1 {
 .split.left .button:hover {
   background-color: var(--left-button-hover-color);
   border-color: var(--left-button-hover-color);
+  color: rgba(55, 55, 55, 0.9);
   transition: 0.2s all ease-in-out;
 }
 
 .split.right .button:hover {
   background-color: var(--right-button-hover-color);
   border-color: var(--right-button-hover-color);
+  color: rgba(55, 55, 55, 0.9);
   transition: 0.2s all ease-in-out;
 }
 

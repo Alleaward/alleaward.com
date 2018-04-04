@@ -16,6 +16,7 @@
         programming and so I am able to separate programming from syntax and easily transfer my skills to new languages. I have reinforced
         the fundamental principles of programming by using several languages from low level languages like C, through to high level
         languages like Python and JavaScript.
+        Most mornings i wake up with the intent to try something new.
     </p>
     <p>For a more details and examples of my skills and knowledge click here to go to my portfolio below.</p>      
     <p><span>Social Media:</span></p>
@@ -65,7 +66,8 @@
       <div class="skillInner">
         <div class="skillInfo">
         <!-- <p class="heading1">HTML</p> -->
-
+        <p class="heading1">HTML</p>
+        <p class="heading2">I have an advanced grasp of HTML with most of its functionality committed to memory. I know how to make a properly formed and validated HTML page.</p>
         </div>
         <!-- <img class="skillImg" src="../assets/img/html.png" alt=""> -->
 
@@ -75,14 +77,21 @@
     <section id="css" class="skillSection">
       <div class="skillInner">
         <div class="skillInfo">
-        <!-- <p class="heading1">CSS</p>
-          <p class="heading2">CSS3</p>
+        <p class="heading1">CSS</p>
+        <p>I am very familiar with CSS selectors and properties. I can make just about anything from a mockup using CSS and HTML, 
+          including most interactivity with new features brought by CSS3. I have used frameworks such as Bootstrap, Bulma and MaterialiseCSS, 
+          but I now usually just make my websites responsive/interactive with vanilla CSS using a combination of Flexbox, Grid, Transitions, 
+          Transforms and Psuedo-Selectors. I mainly use the SASS preprocessor. </p>
+        <P class="heading2">TL:DR --- Skill Level: High --- Frameworks: Bootstrap, MaterialiseCSS, Bulma --- Preprocessor: SASS</P>
+
+          <!-- <p class="heading2">CSS3</p>
             <p class="heading3">Animations</p>
             <p class="heading3">Transitions</p>
           <p class="heading2">SASS</p>
           <p class="heading2">CSS Frameworks:</p>
             <p class="heading3">Bootstrap</p>
             <p class="heading3">MaterialiseCSS</p> -->
+
         </div>
         <!-- <img class="skillImg" src="../assets/img/css.png" alt=""> -->
       </div>
@@ -91,7 +100,7 @@
     <section id="javascript" class="skillSection">
       <div class="skillInner">
         <div class="skillInfo">
-          <!-- <p class="heading1">JavaScript</p>
+          <p class="heading1">JavaScript</p>
             <p class="heading2">Vanilla JS:</p>
               <p class="heading3">TypeScript</p>
               <p class="heading3">ES6</p>
@@ -113,7 +122,7 @@
             <p class="heading2">Design Patterns:</p>
               <p class="heading3">Pattern One</p>
             <p class="heading2">AJAX</p>
-            <p class="heading2">JSON</p> -->
+            <p class="heading2">JSON</p>
 
         </div>
         <!-- <img class="skillImg" src="../assets/img/javascript.png" alt=""> -->
@@ -170,8 +179,7 @@
     <section id="windows" class="skillSection">
       <div class="skillInner">
         <div class="skillInfo">
-          <!-- <p class="heading1">Windows</p> -->
-
+          <p class="heading1">Windows</p>
         </div>
         <!-- <img class="skillImg" src="../assets/img/windows.png" alt=""> -->
       </div>
@@ -229,12 +237,12 @@ body{
 }
 .heading2{
   padding-left: 20px;
-  text-align: left;
+  text-align: justify;
   font-size: 1.2rem;
 }
 .heading3{
   padding-left: 40px;
-  text-align: left;
+  text-align: justify;
   font-size: 1rem;
 }
 .skillAccordian{
@@ -242,21 +250,100 @@ body{
   flex-flow: row wrap;
   width: 100%;
 }
+#html{
+  background: url('../assets/img/html.png') no-repeat center center;
+  background-size: contain;
+  background-color: #f5672a;
+  // width: 30%;
+  &:hover{
+    background-position: 90% 50%;
+    color: black;
+  }
+}
+#css{
+  background: url('../assets/img/css.png') no-repeat center center;
+  background-size: contain;
+  background-color: #29a8dd;
+  &:hover{
+    background-position: 90% 50%;
+    color: black;
+  }
+}
+#javascript{
+  background: url('../assets/img/javascript.png') no-repeat center center;
+  background-size: contain;
+  background-color: #F0DB4F;
+  &:hover{
+    background-position: 90% 50%;
+    color: black;
+  }
+}
+#php{
+  background: url('../assets/img/php.png') no-repeat center center;
+  background-size: contain;
+  background-color: #8993BE;
+  &:hover{
+    background-position: 90% 50%;
+    color: black;
+  }
+}
+#mysql{
+  background: url('../assets/img/mysql.png') no-repeat center center;
+  background-size: contain;
+  background-color: #E38D1A;
+  &:hover{
+    background-position: 90% 50%;
+    color: black;
+  }
+}
+#nodejs{
+  background: url('../assets/img/nodejs.png') no-repeat center center;
+  background-size: contain;
+  background-color: #7EB341;
+  &:hover{
+    background-position: 90% 50%;
+    color: black;
+  }
+}
+#linux{
+  background: url('../assets/img/linux.png') no-repeat center center;
+  background-size: contain;
+  background-color: #404040;
+  &:hover{
+    background-position: 90% 50%;
+    color: black;
+  }
+}
+#windows{
+  background: url('../assets/img/windows.png') no-repeat center center;
+  background-size: contain;
+  background-color: #0077DB;
+  &:hover{
+    background-position: 90% 50%;
+    color: black;
+  }
+}
 
 .skillSection{
   // flex-grow: 1;
   // flex-basis: 12.5%;
   width: 100%;
-  height: 100px;
+  max-height: 100px;
+  min-height: 100px;
+  transform: scaleY(1);
   text-align: center;
-  color: black;
-  transition:all 0.4s ease-in-out;
-  -moz-transition:all 0.4s ease-in-out;
-  -webkit-transition:all 0.4s ease-in-out;  
+  color: transparent;
+  transition: max-height 3s ease-in-out;
+  -moz-transition:  max-height 3s ease-in-out;
+  -webkit-transition: max-height 3s ease-in-out;  
+  transition:all 0.4s ease-in-out 0.4s;
+  -moz-transition:all 0.4s ease-in-out 0.4s;
+  -webkit-transition:all 0.4s ease-in-out 0.4s;    
   &:hover, &:active, &:focus{
     // flex-basis: 100%;
     // width: 50%;
-    height: 300px;
+    max-height: 1000px;
+    transform: scaleY(1);
   }
   p{
     margin: 0;
@@ -268,17 +355,21 @@ body{
     display: flex;
     flex-flow: row wrap;
     // border: 2px red solid;
-    padding: 20px;
+    // padding: 20px;
     // width: 760px;
     margin: auto;
     background-size: cover;
+    transition:all 0.4s ease-in-out;
+    -moz-transition:all 0.4s ease-in-out;
+    -webkit-transition:all 0.4s ease-in-out;  
     &:hover{
-      background-color: rgba(155, 155, 155, 0.9);
+      background-color: rgba(233, 233, 233, 0.6);
     }
     height: 100%;
     .skillInfo{
-      margin: 20px 0px 20px 80px;
-      // border: 2px yellow solid;
+      max-width: 760px;
+      margin: 20px auto;
+      border: 2px yellow solid;
       width: 100%;
     }
     .skillImg{
@@ -290,50 +381,6 @@ body{
       height: 200px;
     }
   }
-}
-
-#html{
-  background: url('../assets/img/html.png') no-repeat center center;
-  background-size: contain;
-  background-color: #f5672a;
-  // width: 30%;
-}
-#css{
-  background: url('../assets/img/css.png') no-repeat center center;
-  background-size: contain;
-  background-color: #29a8dd;
-  // width: 70%;
-
-}
-#javascript{
-  background: url('../assets/img/javascript.png') no-repeat center center;
-  background-size: contain;
-  background-color: #F0DB4F;
-}
-#php{
-  background: url('../assets/img/php.png') no-repeat center center;
-  background-size: contain;
-  background-color: #8993BE;
-}
-#mysql{
-  background: url('../assets/img/mysql.png') no-repeat center center;
-  background-size: contain;
-  background-color: #E38D1A;
-}
-#nodejs{
-  background: url('../assets/img/nodejs.png') no-repeat center center;
-  background-size: contain;
-  background-color: #7EB341;
-}
-#linux{
-  background: url('../assets/img/linux.png') no-repeat center center;
-  background-size: contain;
-  background-color: #404040;
-}
-#windows{
-  background: url('../assets/img/windows.png') no-repeat center center;
-  background-size: contain;
-  background-color: #0077DB;
 }
 
 h1, h2 {
@@ -380,8 +427,8 @@ a {
     padding-top: 1.3rem;
     width: 15rem;
     text-align: center;
-    color: #fff;
-    border: #fff solid 0.2rem;
+    color: rgba(255, 255, 255, 1);
+    border: rgba(255, 255, 255, 1) solid 0.2rem;
     font-size: 1rem;
     font-weight: bold;
     text-transform: uppercase;
@@ -391,14 +438,13 @@ a {
     -moz-transition:all 0.4s ease-in-out;
     -webkit-transition:all 0.4s ease-in-out;
     &:hover {
-      background-color: rgba(255, 255, 255, 0.9);
-      border-color: rgba(92, 92, 92, 0.9);
-      color: rgba(92, 92, 92, 0.9);  
+      background-color: rgba(255, 255, 255, 1);
+      color: rgba(55, 55, 55, 0.9);  
       }
   }
 
   &:hover{
-    height: calc(90vh);
+    height: calc(60vh);
   }
 }
 </style>

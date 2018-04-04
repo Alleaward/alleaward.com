@@ -562,7 +562,7 @@ a {
     width: 15rem;
     text-align: center;
     border: #999 solid 0.2rem;
-    background-color: rgba(155, 155, 155, 0.7);
+    background-color: rgba(255, 255, 255, 1);
     border-color: rgba(0, 0, 0, 1);
     color: rgba(0, 0, 0, 0.9);  
     font-size: 1rem;
@@ -575,9 +575,9 @@ a {
     -webkit-transition:all 0.4s ease-in-out;
     &:hover {
       background-color: rgba(0, 0, 0, 0.9);
-      border-color: rgba(255, 255, 255, 0.9);
-      color: rgba(255, 255, 255, 0.9);  
-      }
+      border-color: rgba(0, 0, 0, 0.9);
+      color: rgba(255, 255, 255, 0.9);
+    }
   }
 
   &:hover{
