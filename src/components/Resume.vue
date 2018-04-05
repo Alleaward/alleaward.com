@@ -1,44 +1,33 @@
 <template>
 <div id="resume">
+    <div id="social-banner">
+      <ul id="social-link">
+        <li class="twitter"><a href=""><i class="ion-social-twitter"></i></a></li>
+        <li class="facebook"><a href=""><i class="ion-social-facebook"></i></a></li>
+        <li class="pinterest"><a href=""><i class="ion-social-pinterest"></i></a></li>
+        <li class="gplus"><a href=""><i class="ion-social-googleplus"></i></a></li>
+        <li class="dribbble"><a href=""><i class="ion-social-dribbble-outline"></i></a></li>
+      </ul>
+    </div>
   <section id="details">
-    <p><span>Name:</span> Allea Ward </p>
-    <p><span>Email:</span> Allea_ward@hotmail.com </p>
-    <p><span>Phone:</span> +61490324716 </p>
-    <p>
-      <span>Location:</span> Gold Coast, Queensland, Australia.
-      <!-- I am also willing to relocate to Europe, preferably the UK or Moscow. -->
-    </p>
+    <h1>Allea Ward – Web Developer</h1>
+
+    <p><span>Location:</span> Pimpama, Gold Coast</p>
+    <p><span>Phone:</span> +61490324716</p>
+    <p><span>Age:</span> 23</p>
+    <p><span>Email:</span> Allea_ward@hotmail.com</p>
+    <p><span>Website:</span> www.alleaward.com </p>
+    <p><span>GitHub:</span> www.github.com/alleaward 	</p>
+    <p><span>LinkedIn:</span> www.linkedin.com/alleaward</p>
     <p><span>Current Driver's license:</span> Yes. </p>
     <p><span>Remote Work:</span> I am happy to work remotely. </p>
     <!-- <p>Blog: <a href="blog.alleaward.com">My Blog</a> </p> -->
-    <p><span>About me:</span></p>
-    <p>I pride myself on my ability to learn new skills and technologies, I have a solid understanding of the fundamentals behind
-        programming and so I am able to separate programming from syntax and easily transfer my skills to new languages. I have reinforced
-        the fundamental principles of programming by using several languages from low level languages like C, through to high level
-        languages like Python and JavaScript.
-        Most mornings i wake up with the intent to try something new.
+
+    <h2>Objective</h2>
+    <p>My objective is to learn how to make software that is pixel perfect and as computationally efficient as possible. 
+      I have been extremely passionate about IT, the web, programming and digital media my entire life, ever since I got my first Gameboy I had no doubt I would one day be creating digital media professionally. This lifelong passion for all things digital has translated into a broad range of knowledge on subjects ranging from 3D modeling, graphic design, animation and game design to computer science, programming, and web development. 
+      My primary strength is that I am a fast learner, I have learnt a wide range of skills, and each skill allows me to more quickly contextualize and learn future skills faster. I am actively pursuing technical, personal and professional development.
     </p>
-    <p>For a more details and examples of my skills and knowledge click here to go to my portfolio below.</p>      
-    <p><span>Social Media:</span></p>
-
-    <ul>
-      <li>LinkedIn</li>
-      <li>GitHub</li>
-      <li>Stack Overflow</li>
-    </ul>
-    <div class="dev skills">
-      <p><span>Dev Tools:</span></p>
-      <p>
-        <span>SSH:</span> Command Line / Bash / Putty <br>
-        <span>FTP:</span> FileZilla <br>
-        <span>Version Control:</span> GitHub <a href="https://github.com/Allea11">(My GitHub Profile)</a> <br>
-        <span> Primary Text Editor / IDE: </span>Visual Studio / VS Code. <br>
-        <span>Image Processing:</span> Photoshop / Illustrator. <br>
-        <span>Browser:</span> Develop on Chrome, test on all modern browsers. <br>
-        <span>Preferred Testing Method:</span> Red-Green Refactor.<br>
-      </p>
-    </div>
-
     <div id="education">
       <h2>Education</h2> 
       <span>Goldcoast Tafe, Foxwell Rd.</span> <br>
@@ -51,143 +40,423 @@
       2016 - Ongoing (Part-time) | Bachelor of Arts, Majoring in Philosophy and Politics.<br>
       <br>
     </div>  
-
-    <h1>A TIMELINE? (2011 Learned JS ---> 2012 LEarned C#)</h1>
-    <h2>    
-      Type: SPA<br>
-      JS Frameworks: Vue<br>
-      CSS Frameworks: MaterialiseCSS<br>
-    </h2>
-  </section>  
-
-  <p class="heading1">Front-End make it into an accordian?</p>
-  <section class="skillAccordian" id="frontend">
-    <section id="html" class="skillSection">
-      <div class="skillInner">
-        <div class="skillInfo">
-        <!-- <p class="heading1">HTML</p> -->
-        <p class="heading1">HTML</p>
-        <p class="heading2">I have an advanced grasp of HTML with most of its functionality committed to memory. I know how to make a properly formed and validated HTML page.</p>
-        </div>
-        <!-- <img class="skillImg" src="../assets/img/html.png" alt=""> -->
-
-      </div>
-    </section>
-      
-    <section id="css" class="skillSection">
-      <div class="skillInner">
-        <div class="skillInfo">
-        <p class="heading1">CSS</p>
-        <p>I am very familiar with CSS selectors and properties. I can make just about anything from a mockup using CSS and HTML, 
-          including most interactivity with new features brought by CSS3. I have used frameworks such as Bootstrap, Bulma and MaterialiseCSS, 
-          but I now usually just make my websites responsive/interactive with vanilla CSS using a combination of Flexbox, Grid, Transitions, 
-          Transforms and Psuedo-Selectors. I mainly use the SASS preprocessor. </p>
-        <P class="heading2">TL:DR --- Skill Level: High --- Frameworks: Bootstrap, MaterialiseCSS, Bulma --- Preprocessor: SASS</P>
-
-          <!-- <p class="heading2">CSS3</p>
-            <p class="heading3">Animations</p>
-            <p class="heading3">Transitions</p>
-          <p class="heading2">SASS</p>
-          <p class="heading2">CSS Frameworks:</p>
-            <p class="heading3">Bootstrap</p>
-            <p class="heading3">MaterialiseCSS</p> -->
-
-        </div>
-        <!-- <img class="skillImg" src="../assets/img/css.png" alt=""> -->
-      </div>
-    </section>
-
-    <section id="javascript" class="skillSection">
-      <div class="skillInner">
-        <div class="skillInfo">
-          <p class="heading1">JavaScript</p>
-            <p class="heading2">Vanilla JS:</p>
-              <p class="heading3">TypeScript</p>
-              <p class="heading3">ES6</p>
-            <p class="heading2">Frameworks and Libraries:</p>
-              <p class="heading3">Vue</p>
-              <p class="heading3">React</p>
-              <p class="heading3">Angular</p>
-              <p class="heading3">jQuery</p>
-            <p class="heading2">Module Loader / Bundler:</p>
-              <p class="heading3">Webpack</p>
-            <p class="heading2">Package Manager:</p>
-              <p class="heading3">NPM</p>
-            <p class="heading2">Task Runners:</p>
-              <p class="heading3">Gulp</p>
-              <p class="heading3">NPM Scripts</p>
-            <p class="heading2">Regex</p>
-            <p class="heading2">Testing:</p>
-              <p class="heading3">Gulp</p>
-            <p class="heading2">Design Patterns:</p>
-              <p class="heading3">Pattern One</p>
-            <p class="heading2">AJAX</p>
-            <p class="heading2">JSON</p>
-
-        </div>
-        <!-- <img class="skillImg" src="../assets/img/javascript.png" alt=""> -->
-      </div>
-    </section>
   </section>
 
-  <p class="heading1">Back-End</p>
 
-  <section class="skillAccordian" id="backend"> 
-    <section id="php" class="skillSection">
-      <div class="skillInner">
-        <div class="skillInfo">
-          <!-- <p class="heading1">PHP</p> -->
-            <!-- <p class="heading2">I have used PHP to build several projects ranging from simple calculators to shopping carts and user accounts.</p> -->
+    <!-- <h1>A TIMELINE? (2011 Learned JS -> 2012 LEarned C#)</h1> -->
 
-        </div>
-        <!-- <img class="skillImg" src="../assets/img/php.png" alt=""> -->
-      </div>
-    </section>
-
-    <section id="mysql" class="skillSection">
-      <div class="skillInner">
-        <div class="skillInfo">
-          <!-- <p class="heading1">MySQL</p> -->
-            <!-- <p class="heading2">I have used MySQL to store user accounts,</p> -->
-        </div>
-        <!-- <img class="skillImg" src="../assets/img/mysql.png" alt=""> -->
-      </div>
-    </section>
-
-    <section id="nodejs" class="skillSection">
-      <div class="skillInner">
-        <div class="skillInfo">
-          <!-- <p class="heading1">NodeJS</p> -->
-            <!-- <p class="heading2">Express</p> -->
-            <!-- <p class="heading2">Vue SPA</p> -->
-              <!-- <p class="heading3">Using Vue router</p> -->
-        </div>
-        <!-- <img class="skillImg" src="../assets/img/nodejs.png" alt=""> -->
-      </div>
-    </section>
-
-    <section id="linux" class="skillSection">
-      <div class="skillInner">
-        <div class="skillInfo">
-          <!-- <p class="heading1">Linux</p> -->
+  <section id="skills">
+    <h2>Front-End</h2>
+    <section class="skillAccordian" id="frontend">
+      <section id="html" class="skillSection">
+        <div class="skillInner">
+          <div class="skillInfo">
+          <p class="skillHeading">HTML
+            <i class="ion-android-star"></i>
+            <i class="ion-android-star"></i>
+            <i class="ion-android-star"></i>
+            <i class="ion-android-star"></i>
+            <i class="ion-android-star"></i>
+          </p>
+          <p class="skillDesc">I have an advanced grasp of HTML with most of its functionality committed to memory. I know how to make a properly formed and validated HTML page.</p>
+          </div>
 
         </div>
-        <!-- <img class="skillImg" src="../assets/img/linux.png" alt=""> -->
-      </div>
-    </section>
-    
-    <section id="windows" class="skillSection">
-      <div class="skillInner">
-        <div class="skillInfo">
-          <p class="heading1">Windows</p>
+      </section>
+        
+      <section id="css" class="skillSection">
+        <div class="skillInner">
+          <div class="skillInfo">
+            <p class="skillHeading">CSS
+              <i class="ion-android-star"></i>
+              <i class="ion-android-star"></i>
+              <i class="ion-android-star"></i>
+              <i class="ion-android-star"></i>
+              <i class="ion-android-star"></i>
+            </p>
+            <ul class="skillDesc">
+              I am very familiar with CSS selectors and properties. I can make just about anything from a mockup using CSS and HTML, 
+              including most interactivity with new features brought by CSS3. I have used frameworks such as Bootstrap, Bulma and MaterialiseCSS, 
+              but I now usually just make my websites responsive/interactive with vanilla CSS using a combination of Flexbox, Grid, Transitions, 
+              Transforms and Psuedo-Selectors. I mainly use the SASS preprocessor. <br>
+
+              TL:DR --- Skill Level: High --- Frameworks: Bootstrap, MaterialiseCSS, Bulma --- Preprocessor: SASS<br><br>
+
+              <li>
+                <p>Animations</p>
+                <span class="starRating">
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star-outline"></i>
+                  <i class="ion-android-star-outline"></i>
+                </span>
+              </li>
+              <li>
+                <p>Transitions</p>
+                <span class="starRating">
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star-outline"></i>
+                  <i class="ion-android-star-outline"></i>
+                </span>
+              </li>
+              <li>
+                <p>SASS</p>
+                <span class="starRating">
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star-outline"></i>
+                  <i class="ion-android-star-outline"></i>
+                </span>
+              </li>
+              <li>
+                <p>Bootstrap</p>
+                <span class="starRating">
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star-outline"></i>
+                  <i class="ion-android-star-outline"></i>
+                </span>
+              </li>
+              <li>
+                <p>MaterializeCSS</p>
+                <span class="starRating">
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star-outline"></i>
+                  <i class="ion-android-star-outline"></i>
+                </span>
+              </li>
+              <li>
+                <p>Bulma</p>
+                <span class="starRating">
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star-outline"></i>
+                  <i class="ion-android-star-outline"></i>
+                </span>
+              </li>
+            </ul>
+          </div>
         </div>
-        <!-- <img class="skillImg" src="../assets/img/windows.png" alt=""> -->
-      </div>
+      </section>
+
+      <section id="javascript" class="skillSection">
+        <div class="skillInner">
+          <div class="skillInfo">
+            <p class="skillHeading">JavaScript
+              <span class="starRating">
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star-outline"></i>
+              </span>
+            </p>
+            <ul class="skillDesc">
+              I am very familiar with CSS selectors and properties. I can make just about anything from a mockup using CSS and HTML, 
+              including most interactivity with new features brought by CSS3. I have used frameworks such as Bootstrap, Bulma and MaterialiseCSS, 
+              but I now usually just make my websites responsive/interactive with vanilla CSS using a combination of Flexbox, Grid, Transitions, 
+              Transforms and Psuedo-Selectors. I mainly use the SASS preprocessor. <br>
+
+              TL:DR --- Skill Level: High --- Frameworks: Bootstrap, MaterialiseCSS, Bulma --- Preprocessor: SASS<br><br>
+              <li>
+                <p>Vanilla JS</p>
+                <span class="starRating">
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star-outline"></i>
+                </span>
+              </li>
+              <li>
+                <p>TypeScript</p>
+                <span class="starRating">
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star-outline"></i>
+                </span>
+              </li>
+              <li>
+                <p>ES6</p>
+                <span class="starRating">
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star-outline"></i>
+                </span>
+              </li>
+              <li>
+                <p>Vue</p>
+                <span class="starRating">
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star-outline"></i>
+                </span>
+              </li>
+              <li>
+                <p>React</p>
+                <span class="starRating">
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star-outline"></i>
+                </span>
+              </li>
+              <!-- <li>
+                <p>Angular</p>
+                <span class="starRating">
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star-outline"></i>
+                </span>
+              </li> -->
+              <li>
+                <p>jQuery</p>
+                <span class="starRating">
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star-outline"></i>
+                </span>
+              </li>
+              <li>
+                <p>Webpack</p>
+                <span class="starRating">
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star-outline"></i>
+                </span>
+              </li>
+              <li>
+                <p>NPM</p>
+                <span class="starRating">
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star-outline"></i>
+                </span>
+              </li>
+              <li>
+                <p>Gulp</p>
+                <span class="starRating">
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star-outline"></i>
+                </span>
+              </li>
+              <li>
+                <p>AJAX</p>
+                <span class="starRating">
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star-outline"></i>
+                </span>
+              </li>
+              <li>
+                <p>JSON</p>
+                <span class="starRating">
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star-outline"></i>
+                </span>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </section>
     </section>
+
+    <h2>Back-End</h2>
+
+    <section class="skillAccordian" id="backend"> 
+      <section id="php" class="skillSection">
+        <div class="skillInner">
+          <div class="skillInfo">
+            <p class="skillHeading">PHP
+              <i class="ion-android-star"></i>
+              <i class="ion-android-star"></i>
+              <i class="ion-android-star"></i>
+              <i class="ion-android-star"></i>
+              <i class="ion-android-star-outline"></i>
+            </p>
+            <ul class="skillDesc">I have used PHP to build several projects ranging from simple calculators to shopping carts and user accounts. <br><br>
+              <li>
+                <p>AJAX</p>
+                <span class="starRating">
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star-outline"></i>
+                </span>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </section>
+
+      <section id="mysql" class="skillSection">
+        <div class="skillInner">
+          <div class="skillInfo">
+            <p class="skillHeading">MySQL
+              <i class="ion-android-star"></i>
+              <i class="ion-android-star"></i>
+              <i class="ion-android-star"></i>
+              <i class="ion-android-star-outline"></i>
+              <i class="ion-android-star-outline"></i>
+            </p>
+            <ul class="skillDesc">I have used MySQL to store user accounts,....sadasdasdasdasdasdasdsadasdasd sadsad sadas das das <br><br>
+              <li>
+                <p>AJAX</p>
+                <span class="starRating">
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star-outline"></i>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="nodejs" class="skillSection">
+        <div class="skillInner">
+          <div class="skillInfo">
+            <p class="skillHeading">NodeJS
+                <i class="ion-android-star"></i>
+                <i class="ion-android-star"></i>
+                <i class="ion-android-star"></i>
+                <i class="ion-android-star-outline"></i>
+                <i class="ion-android-star-outline"></i>
+            </p>
+            <ul class="skillDesc">
+              <br>
+              <li>
+                <p>ExpressJS</p>
+                <span class="starRating">
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star-outline"></i>
+                </span>
+              </li>
+              <li>
+                <p>Vue SPA</p>
+                <span class="starRating">
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star-outline"></i>
+                </span>
+              </li>
+              <li>
+                <p>Vue Router</p>
+                <span class="starRating">
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star-outline"></i>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="windows" class="skillSection">
+        <div class="skillInner">
+          <div class="skillInfo">
+            <p class="skillHeading">Windows
+              <i class="ion-android-star"></i>
+              <i class="ion-android-star"></i>
+              <i class="ion-android-star"></i>
+              <i class="ion-android-star"></i>
+              <i class="ion-android-star"></i>
+            </p>
+            <ul class="skillDesc">
+              <br>
+              <li>
+                <p>ExpressJS</p>
+                <span class="starRating">
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star-outline"></i>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="linux" class="skillSection">
+        <div class="skillInner">
+          <div class="skillInfo">
+            <p class="skillHeading">Linux
+              <i class="ion-android-star"></i>
+              <i class="ion-android-star"></i>
+              <i class="ion-android-star-half"></i>
+              <i class="ion-android-star-outline"></i>
+              <i class="ion-android-star-outline"></i>
+            </p>
+            <ul class="skillDesc">
+              <br>
+              <li>
+                <p>ExpressJS</p>
+                <span class="starRating">
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star-outline"></i>
+                </span>
+              </li>
+            </ul>          </div>
+        </div>
+      </section>
+
+    </section>
+
   </section>
+
   <div class="buttonWrap">
     <button id="portfolioButton"><span class="button" @click="$router.push({path: '/portfolio'})">Portfolio</span></button>
   </div>
+
 </div>
 
 </template>
@@ -213,8 +482,8 @@ body{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: left;
-  color: #2c3e50;
-  margin-top: 60px;
+  background-color: #F3EFE0;
+  // margin-top: 60px;
   padding-bottom: 200px;
   // text-align: left;
   justify-items: center;
@@ -223,228 +492,304 @@ body{
   span{
     font-weight: bold;
   }
+  h2{
+    text-align: center;
+  }
+  ul{
+    padding: 0;
+    margin: 0;
+  }
+  li{
+    padding: none;
+    list-style: none;
+  }
 }
 
+//SOCIAL BANNER-----SOCIAL BANNER-----SOCIAL BANNER-----SOCIAL BANNER-----SOCIAL BANNER-----SOCIAL BANNER
+#social-banner {
+  background-color: #4484CE;
+  width: 100%;
+
+  #social-link {
+    padding: 30px 0;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding-left: 0;
+    max-width: 760px;
+    margin-top: 20;
+    margin: auto;
+  }
+  #social-link li {
+    text-align: center;
+    font-size: 30px;
+    line-height: 60px;
+    height: 60px;
+    width: 60px;
+    background-color: black;
+    border-radius: 50%;
+  }
+  #social-link li a {
+    color: #fff;
+  }
+  #social-link .twitter:hover {
+    background-color: #56ACEE;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+  }
+  #social-link .facebook:hover {
+    background-color: #39548C;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+  }
+  #social-link .pinterest:hover {
+    background-color: #CB2127;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+  }
+  #social-link .gplus:hover {
+    background-color: #D74B39;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+  }
+  #social-link .dribbble:hover {
+    background-color: #EA4D89;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+  }
+}
+
+//DETAILS-----DETAILS-----DETAILS-----DETAILS-----DETAILS-----DETAILS-----DETAILS-----DETAILS-----DETAILS
 #details{
   width: 760px;
   margin: auto;
 }
-.heading1{
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 1.5rem;
-  width: 100%;
-}
-.heading2{
-  padding-left: 20px;
-  text-align: justify;
-  font-size: 1.2rem;
-}
-.heading3{
-  padding-left: 40px;
-  text-align: justify;
-  font-size: 1rem;
-}
-.skillAccordian{
-  display: flex;
-  flex-flow: row wrap;
-  width: 100%;
-}
-#html{
-  background: url('../assets/img/html.png') no-repeat center center;
-  background-size: contain;
-  background-color: #f5672a;
-  // width: 30%;
-  &:hover{
-    background-position: 90% 50%;
-    color: black;
-  }
-}
-#css{
-  background: url('../assets/img/css.png') no-repeat center center;
-  background-size: contain;
-  background-color: #29a8dd;
-  &:hover{
-    background-position: 90% 50%;
-    color: black;
-  }
-}
-#javascript{
-  background: url('../assets/img/javascript.png') no-repeat center center;
-  background-size: contain;
-  background-color: #F0DB4F;
-  &:hover{
-    background-position: 90% 50%;
-    color: black;
-  }
-}
-#php{
-  background: url('../assets/img/php.png') no-repeat center center;
-  background-size: contain;
-  background-color: #8993BE;
-  &:hover{
-    background-position: 90% 50%;
-    color: black;
-  }
-}
-#mysql{
-  background: url('../assets/img/mysql.png') no-repeat center center;
-  background-size: contain;
-  background-color: #E38D1A;
-  &:hover{
-    background-position: 90% 50%;
-    color: black;
-  }
-}
-#nodejs{
-  background: url('../assets/img/nodejs.png') no-repeat center center;
-  background-size: contain;
-  background-color: #7EB341;
-  &:hover{
-    background-position: 90% 50%;
-    color: black;
-  }
-}
-#linux{
-  background: url('../assets/img/linux.png') no-repeat center center;
-  background-size: contain;
-  background-color: #404040;
-  &:hover{
-    background-position: 90% 50%;
-    color: black;
-  }
-}
-#windows{
-  background: url('../assets/img/windows.png') no-repeat center center;
-  background-size: contain;
-  background-color: #0077DB;
-  &:hover{
-    background-position: 90% 50%;
-    color: black;
-  }
-}
 
-.skillSection{
-  // flex-grow: 1;
-  // flex-basis: 12.5%;
+//SKILLS-----SKILLS-----SKILLS-----SKILLS-----SKILLS-----SKILLS-----SKILLS-----SKILLS-----SKILLS
+#skills{
   width: 100%;
-  max-height: 100px;
-  min-height: 100px;
-  transform: scaleY(1);
-  text-align: center;
-  color: transparent;
-  transition: max-height 3s ease-in-out;
-  -moz-transition:  max-height 3s ease-in-out;
-  -webkit-transition: max-height 3s ease-in-out;  
-  transition:all 0.4s ease-in-out 0.4s;
-  -moz-transition:all 0.4s ease-in-out 0.4s;
-  -webkit-transition:all 0.4s ease-in-out 0.4s;    
-  &:hover, &:active, &:focus{
-    // flex-basis: 100%;
-    // width: 50%;
-    max-height: 1000px;
+  margin: auto;
+  .skillSection{
+    // flex-grow: 1;
+    // flex-basis: 12.5%;
+    width: 100%;
+    max-height: 100px;
+    min-height: 100px;
     transform: scaleY(1);
+    text-align: center;
+    color: transparent;
+    transition: max-height 3s ease-in-out;
+    -moz-transition:  max-height 3s ease-in-out;
+    -webkit-transition: max-height 3s ease-in-out;  
+    transition:all 0.4s ease-in-out 0.4s;
+    -moz-transition:all 0.4s ease-in-out 0.4s;
+    -webkit-transition:all 0.4s ease-in-out 0.4s;   
+    overflow: hidden;
+    &:hover, &:active, &:focus{
+      // flex-basis: 100%;
+      // width: 50%;
+      max-height: 1000px;
+      transform: scaleY(1);
+    }
+    .skillHeading{
+      text-align: center;
+      font-size: 1.5rem;
+      width: 100%;
+      color: black;
+      background: linear-gradient(to right, rgba(255,0,0,0) 10%, rgba(255,255,255,1) 50%, rgba(255,0,0,0) 90%);
+    }
+    .skillHeading2{
+      width: 100%;
+      font-size: 150%;
+      margin-bottom: 20px;
+    }
+    .skillDesc{
+      margin: 20px;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: flex-start;
+      li{
+        width: 47.5%;
+        margin: 10px 2.5% 0 0;
+        border-bottom: 2px solid black;
+        p{
+          float: left;
+        }
+        .starRating{
+          float: right;
+        }
+      }
+    }
+    p{
+      margin: 0;
+    }
+    img{
+      width: 50px;
+    }
+    .skillInner{
+      display: flex;
+      flex-flow: row wrap;
+      // border: 2px red solid;
+      // padding: 20px;
+      // width: 760px;
+      margin: auto;
+      background-size: cover;
+      transition:all 0.4s ease-in-out;
+      -moz-transition:all 0.4s ease-in-out;
+      -webkit-transition:all 0.4s ease-in-out;  
+      &:hover{
+        background-color: rgba(233, 233, 233, 0.6);
+      }
+      height: 100%;
+      .skillInfo{
+        max-width: 760px;
+        margin: 20px auto;
+        // border: 2px yellow solid;
+        width: 100%;
+      }
+      .skillImg{
+        text-align: center;
+        margin: auto;
+        // width: 20%;
+        width: auto;
+        // height: auto;
+        height: 200px;
+      }
+    }
   }
-  p{
-    margin: 0;
-  }
-  img{
-    width: 50px;
-  }
-  .skillInner{
+
+  .skillAccordian{
     display: flex;
     flex-flow: row wrap;
-    // border: 2px red solid;
-    // padding: 20px;
-    // width: 760px;
-    margin: auto;
-    background-size: cover;
-    transition:all 0.4s ease-in-out;
-    -moz-transition:all 0.4s ease-in-out;
-    -webkit-transition:all 0.4s ease-in-out;  
+    width: 100%;
+  }
+  #html{
+    background: url('../assets/img/html.png') no-repeat center center;
+    background-size: contain;
+    background-color: #f5672a;
+    // width: 30%;
     &:hover{
-      background-color: rgba(233, 233, 233, 0.6);
+      background-position: 90% 50%;
+      color: black;
     }
-    height: 100%;
-    .skillInfo{
-      max-width: 760px;
-      margin: 20px auto;
-      border: 2px yellow solid;
-      width: 100%;
+  }
+  #css{
+    background: url('../assets/img/css.png') no-repeat center center;
+    background-size: contain;
+    background-color: #29a8dd;
+    &:hover{
+      background-position: 90% 50%;
+      color: black;
     }
-    .skillImg{
-      text-align: center;
-      margin: auto;
-      // width: 20%;
-      width: auto;
-      // height: auto;
-      height: 200px;
+  }
+  #javascript{
+    background: url('../assets/img/javascript.png') no-repeat center center;
+    background-size: contain;
+    background-color: #F0DB4F;
+    &:hover{
+      background-position: 90% 50%;
+      color: black;
+    }
+  }
+  #php{
+    background: url('../assets/img/php.png') no-repeat center center;
+    background-size: contain;
+    background-color: #8993BE;
+    &:hover{
+      background-position: 90% 50%;
+      color: black;
+    }
+  }
+  #mysql{
+    background: url('../assets/img/mysql.png') no-repeat center center;
+    background-size: contain;
+    background-color: #E38D1A;
+    &:hover{
+      background-position: 90% 50%;
+      color: black;
+    }
+  }
+  #nodejs{
+    background: url('../assets/img/nodejs.png') no-repeat center center;
+    background-size: contain;
+    background-color: #7EB341;
+    &:hover{
+      background-position: 90% 50%;
+      color: black;
+    }
+  }
+  #linux{
+    background: url('../assets/img/linux.png') no-repeat center center;
+    background-size: contain;
+    background-color: #404040;
+    &:hover{
+      background-position: 90% 50%;
+      color: black;
+    }
+  }
+  #windows{
+    background: url('../assets/img/windows.png') no-repeat center center;
+    background-size: contain;
+    background-color: #0077DB;
+    &:hover{
+      background-position: 90% 50%;
+      color: black;
     }
   }
 }
 
-h1, h2 {
-  font-weight: normal;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
-}
+//PORTFOLIO BUTTON-----PORTFOLIO BUTTON-----PORTFOLIO BUTTON-----PORTFOLIO BUTTON-----PORTFOLIO BUTTON-----PORTFOLIO BUTTON
 .buttonWrap{
   background: rgba(43, 43, 43, 0.8);
-}
-#portfolioButton{
-  position: fixed;
-  width: 100vw;
-  // margin-left: -50vw;
-  height: 200px;
-  bottom: 0;
-  left: 0;
-  border: 0;
-  box-sizing: border;
-  background: url('../assets/img/portfolio.png') center center no-repeat;
-  background-size: cover;
-  transition:all 0.8s ease-in-out;
-  -moz-transition:all 0.8s ease-in-out;
-  -webkit-transition:all 0.8s ease-in-out;
+  #portfolioButton{
+    position: fixed;
+    width: 100vw;
+    // margin-left: -50vw;
+    height: 200px;
+    bottom: 0;
+    left: 0;
+    border: 0;
+    box-sizing: border;
+    background: url('../assets/img/portfolio.png') center center no-repeat;
+    background-size: cover;
+    transition:all 0.8s ease-in-out;
+    -moz-transition:all 0.8s ease-in-out;
+    -webkit-transition:all 0.8s ease-in-out;
 
-  .button {
-    display: block;
-    position: absolute;
-    left: 50%;
-    top: 40%;
-    height: 2.5rem;
-    padding-top: 1.3rem;
-    width: 15rem;
-    text-align: center;
-    color: rgba(255, 255, 255, 1);
-    border: rgba(255, 255, 255, 1) solid 0.2rem;
-    font-size: 1rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-decoration: none;
-    transform: translateX(-50%);
-    transition:all 0.4s ease-in-out;
-    -moz-transition:all 0.4s ease-in-out;
-    -webkit-transition:all 0.4s ease-in-out;
-    &:hover {
-      background-color: rgba(255, 255, 255, 1);
-      color: rgba(55, 55, 55, 0.9);  
-      }
-  }
+    .button {
+      display: block;
+      position: absolute;
+      left: 50%;
+      top: 40%;
+      height: 2.5rem;
+      padding-top: 1.3rem;
+      width: 15rem;
+      text-align: center;
+      color: rgba(255, 255, 255, 1);
+      border: rgba(255, 255, 255, 1) solid 0.2rem;
+      font-size: 1rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-decoration: none;
+      transform: translateX(-50%);
+      transition:all 0.4s ease-in-out;
+      -moz-transition:all 0.4s ease-in-out;
+      -webkit-transition:all 0.4s ease-in-out;
+      &:hover {
+        background-color: rgba(255, 255, 255, 1);
+        color: rgba(55, 55, 55, 0.9);  
+        }
+    }
 
-  &:hover{
-    height: calc(60vh);
+    &:hover{
+      height: calc(60vh);
+    }
   }
 }
 </style>
