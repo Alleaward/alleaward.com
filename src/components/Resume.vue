@@ -1,14 +1,6 @@
 <template>
 <div id="resume">
-    <div id="social-banner">
-      <ul id="social-link">
-        <li class="twitter"><a href=""><i class="ion-social-twitter"></i></a></li>
-        <li class="facebook"><a href=""><i class="ion-social-facebook"></i></a></li>
-        <li class="pinterest"><a href=""><i class="ion-social-pinterest"></i></a></li>
-        <li class="gplus"><a href=""><i class="ion-social-googleplus"></i></a></li>
-        <li class="dribbble"><a href=""><i class="ion-social-dribbble-outline"></i></a></li>
-      </ul>
-    </div>
+
   <section id="details">
     <h1>Allea Ward – Web Developer</h1>
 
@@ -42,10 +34,18 @@
     </div>  
   </section>
 
+  <div id="social-banner">
+    <ul id="social-link">
+      <li class="github"><a href=""><i class="ion-social-github"></i></a></li>
+      <li class="linkedin"><a href=""><i class="ion-social-linkedin"></i></a></li>
+      <li class="youtube"><a href=""><i class="ion-social-youtube"></i></a></li>
+    </ul>
+  </div>
 
-    <!-- <h1>A TIMELINE? (2011 Learned JS -> 2012 LEarned C#)</h1> -->
+  <!-- <h1>A TIMELINE? (2011 Learned JS -> 2012 LEarned C#)</h1> -->
 
   <section id="skills">
+    <h1>Technical Skills</h1>
     <h2>Front-End</h2>
     <section class="skillAccordian" id="frontend">
       <section id="html" class="skillSection">
@@ -159,13 +159,12 @@
                   <i class="ion-android-star-outline"></i>
               </span>
             </p>
-            <ul class="skillDesc">
-              I am very familiar with CSS selectors and properties. I can make just about anything from a mockup using CSS and HTML, 
-              including most interactivity with new features brought by CSS3. I have used frameworks such as Bootstrap, Bulma and MaterialiseCSS, 
-              but I now usually just make my websites responsive/interactive with vanilla CSS using a combination of Flexbox, Grid, Transitions, 
-              Transforms and Psuedo-Selectors. I mainly use the SASS preprocessor. <br>
+            <ul class="skillDesc">I have been using JavaScript for several years now and have grown quite competent in it, 
+              I can use vanilla JavaScript for many tasks, I used to use jQuery for convenience but I have transitioned into VueJS instead. 
+              I understand most of the concepts you would expect of a JavaScript developer including the DOM, JSON, AJAX, 
+              API’s as well as a thorough understanding of the new features brought with ES6 and a basic understanding of NodeJS.<br>
 
-              TL:DR --- Skill Level: High --- Frameworks: Bootstrap, MaterialiseCSS, Bulma --- Preprocessor: SASS<br><br>
+              TL:DR --- Skill Level: High --- Frameworks: Vue, React, Angular --- Preprocessor: Babbel<br><br>
               <li>
                 <p>Vanilla JS</p>
                 <span class="starRating">
@@ -306,7 +305,11 @@
               <i class="ion-android-star"></i>
               <i class="ion-android-star-outline"></i>
             </p>
-            <ul class="skillDesc">I have used PHP to build several projects ranging from simple calculators to shopping carts and user accounts. <br><br>
+            <ul class="skillDesc">I have used PHP to build several projects ranging from simple calculators to shopping carts and user accounts. 
+              PHP is one of the first languages I learnt years ago, I have used PHP to build many projects ranging from simple calculators to 
+              websites with persistent shopping carts and accounts. (ex1, ex2, ex3)<br>
+
+              TL:DR --- Skill Level: High --- Frameworks: Laravel, Yi, Symfony, CodeIgniter, Phalcon, CakePHP --- Preprocessor: Babbel<br><br>
               <li>
                 <p>AJAX</p>
                 <span class="starRating">
@@ -333,9 +336,10 @@
               <i class="ion-android-star-outline"></i>
               <i class="ion-android-star-outline"></i>
             </p>
-            <ul class="skillDesc">I have used MySQL to store user accounts,....sadasdasdasdasdasdasdsadasdasd sadsad sadas das das <br><br>
+            <ul class="skillDesc">I have used MySQL to store user accounts and data, for example a Dietary Calculator 
+              that stores user data server side. (LINK)<br><br>
               <li>
-                <p>AJAX</p>
+                <p>PostgreSQL</p>
                 <span class="starRating">
                   <i class="ion-android-star"></i>
                   <i class="ion-android-star"></i>
@@ -445,7 +449,8 @@
                   <i class="ion-android-star-outline"></i>
                 </span>
               </li>
-            </ul>          </div>
+            </ul>          
+          </div>
         </div>
       </section>
 
@@ -482,8 +487,8 @@ body{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: left;
-  background-color: #F3EFE0;
-  // margin-top: 60px;
+  background-image: url("../assets/img/creampaper.png");
+  padding-top: 50px;
   padding-bottom: 200px;
   // text-align: left;
   justify-items: center;
@@ -492,7 +497,7 @@ body{
   span{
     font-weight: bold;
   }
-  h2{
+  h1, h2{
     text-align: center;
   }
   ul{
@@ -507,58 +512,55 @@ body{
 
 //SOCIAL BANNER-----SOCIAL BANNER-----SOCIAL BANNER-----SOCIAL BANNER-----SOCIAL BANNER-----SOCIAL BANNER
 #social-banner {
-  background-color: #4484CE;
-  width: 100%;
-
+  // background-color: #4484CE;
+  background-color: rgb(145, 137, 110);
+  width: 90px;
+  height: auto;
+  position: fixed;
+  left: 0;
+  top: 20%;
+  z-index: 999;
+  border-radius: 0px 30px 30px 0px;
   #social-link {
-    padding: 30px 0;
     list-style: none;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     justify-content: space-around;
     padding-left: 0;
     max-width: 760px;
-    margin-top: 20;
-    margin: auto;
+    padding: 10px 0;
   }
   #social-link li {
+    margin: 10px auto;
     text-align: center;
     font-size: 30px;
     line-height: 60px;
     height: 60px;
     width: 60px;
-    background-color: black;
+    background-color: white;
     border-radius: 50%;
   }
   #social-link li a {
-    color: #fff;
+    display: block;
+    color: black;
+    &:hover{
+      color: #fff;
+    }
   }
-  #social-link .twitter:hover {
-    background-color: #56ACEE;
+  #social-link .github:hover {
+    background-color: #24292E;
     transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
   }
-  #social-link .facebook:hover {
-    background-color: #39548C;
+  #social-link .linkedin:hover {
+    background-color: #0077B5;
     transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
   }
-  #social-link .pinterest:hover {
-    background-color: #CB2127;
-    transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-  }
-  #social-link .gplus:hover {
-    background-color: #D74B39;
-    transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-  }
-  #social-link .dribbble:hover {
-    background-color: #EA4D89;
+  #social-link .youtube:hover {
+    background-color: #FF0000;
     transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
@@ -596,13 +598,37 @@ body{
       // width: 50%;
       max-height: 1000px;
       transform: scaleY(1);
+      
+      .skillInner{
+                background-color: rgba(233, 233, 233, 0.6);
+
+      }
+      .skillDesc{
+        li{
+          // border-bottom: 2px solid black;
+
+          background: linear-gradient(to right, rgba(255,0,0,0) 0%, 
+                                      rgba(255,255,255,.6) 5%,
+                                      rgba(255,255,255,.6) 50%, 
+                                      rgba(255,255,255,.6) 95%, 
+                                      rgba(255,0,0,0) 100%);
+        }
+      }
     }
     .skillHeading{
       text-align: center;
       font-size: 1.5rem;
       width: 100%;
       color: black;
-      background: linear-gradient(to right, rgba(255,0,0,0) 10%, rgba(255,255,255,1) 50%, rgba(255,0,0,0) 90%);
+      background: linear-gradient(to right, 
+                                        rgba(255,0,0,0) 30%, 
+                                        rgba(255,255,255,.75) 40%, 
+                                        rgba(255,255,255,.75) 60%, 
+                                        rgba(255,0,0,0) 70%);
+    i{
+      color: gold;
+      -webkit-text-stroke: 2px black;
+    }
     }
     .skillHeading2{
       width: 100%;
@@ -615,9 +641,12 @@ body{
       flex-flow: row wrap;
       justify-content: flex-start;
       li{
+        box-sizing: border-box;
         width: 47.5%;
-        margin: 10px 2.5% 0 0;
-        border-bottom: 2px solid black;
+        padding: 5px 5% 5px 5%;
+        margin: 10px 0 0 0;
+        background-blend-mode: darken;
+        
         p{
           float: left;
         }
@@ -635,6 +664,7 @@ body{
     .skillInner{
       display: flex;
       flex-flow: row wrap;
+      height: 100%;
       // border: 2px red solid;
       // padding: 20px;
       // width: 760px;
@@ -643,10 +673,6 @@ body{
       transition:all 0.4s ease-in-out;
       -moz-transition:all 0.4s ease-in-out;
       -webkit-transition:all 0.4s ease-in-out;  
-      &:hover{
-        background-color: rgba(233, 233, 233, 0.6);
-      }
-      height: 100%;
       .skillInfo{
         max-width: 760px;
         margin: 20px auto;
@@ -746,22 +772,28 @@ body{
 
 //PORTFOLIO BUTTON-----PORTFOLIO BUTTON-----PORTFOLIO BUTTON-----PORTFOLIO BUTTON-----PORTFOLIO BUTTON-----PORTFOLIO BUTTON
 .buttonWrap{
-  background: rgba(43, 43, 43, 0.8);
+
   #portfolioButton{
+    box-shadow: inset 0 0 0 1000px rgba(43, 43, 43, 0.8);
+    background: url('../assets/img/portfolio.png') center center no-repeat;
+    height: 200px;
     position: fixed;
     width: 100vw;
     // margin-left: -50vw;
-    height: 200px;
     bottom: 0;
     left: 0;
     border: 0;
     box-sizing: border;
-    background: url('../assets/img/portfolio.png') center center no-repeat;
     background-size: cover;
     transition:all 0.8s ease-in-out;
     -moz-transition:all 0.8s ease-in-out;
     -webkit-transition:all 0.8s ease-in-out;
-
+    &:hover{
+      .button{
+        color: #fff;
+        border: #fff solid 0.2rem;
+      }
+    }
     .button {
       display: block;
       position: absolute;
@@ -771,8 +803,8 @@ body{
       padding-top: 1.3rem;
       width: 15rem;
       text-align: center;
-      color: rgba(255, 255, 255, 1);
-      border: rgba(255, 255, 255, 1) solid 0.2rem;
+      color: rgba(155, 155, 155, 0.8);
+      border: rgba(155, 155, 155, 0.8) solid 0.2rem;
       font-size: 1rem;
       font-weight: bold;
       text-transform: uppercase;
@@ -784,11 +816,11 @@ body{
       &:hover {
         background-color: rgba(255, 255, 255, 1);
         color: rgba(55, 55, 55, 0.9);  
-        }
+      }
     }
 
     &:hover{
-      height: calc(60vh);
+      height: 60vh;
     }
   }
 }

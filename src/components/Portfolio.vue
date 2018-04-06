@@ -290,15 +290,16 @@ export default {
 
 <style lang="scss">
 #portfolio {
-    max-width: 1280px;
+    max-width: 100%;
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
-    margin: auto;
+    margin: 0;
     padding-bottom: 200px;
-
+    padding-top: 50px;
+    background-image: url("../assets/img/creampaper.png");
     // text-align: left;
     justify-items: center;
     span{
@@ -308,6 +309,7 @@ export default {
 
 h1, h2 {
   font-weight: normal;
+  margin: 0;
 }
 
 ul {
@@ -535,9 +537,9 @@ a {
     }
 }
 .buttonWrap{
-  background: rgba(43, 43, 43, 0.8);
 }
 #resumeButton{
+    box-shadow: inset 0 0 0 1000px rgba(43, 43, 43, 0.8);
   position: fixed;
   width: 100vw;
   // margin-left: -50vw;
@@ -551,7 +553,12 @@ a {
   transition:all 0.8s ease-in-out;
   -moz-transition:all 0.8s ease-in-out;
   -webkit-transition:all 0.8s ease-in-out;
-
+    &:hover{
+        .button{
+            color: #fff;
+            border: #fff solid 0.2rem;
+        }
+    }
   .button {
     display: block;
     position: absolute;
@@ -561,10 +568,8 @@ a {
     padding-top: 1.3rem;
     width: 15rem;
     text-align: center;
-    border: #999 solid 0.2rem;
-    background-color: rgba(255, 255, 255, 1);
-    border-color: rgba(0, 0, 0, 1);
-    color: rgba(0, 0, 0, 0.9);  
+    color: rgba(155, 155, 155, 0.8);
+    border: rgba(155, 155, 155, 0.8) solid 0.2rem;
     font-size: 1rem;
     font-weight: bold;
     text-transform: uppercase;
@@ -574,14 +579,13 @@ a {
     -moz-transition:all 0.4s ease-in-out;
     -webkit-transition:all 0.4s ease-in-out;
     &:hover {
-      background-color: rgba(0, 0, 0, 0.9);
-      border-color: rgba(0, 0, 0, 0.9);
-      color: rgba(255, 255, 255, 0.9);
+        background-color: rgba(255, 255, 255, 1);
+        color: rgba(55, 55, 55, 0.9);  
     }
   }
 
   &:hover{
-    height: calc(90vh);
+    height: 60vh;
   }
 }
 </style>

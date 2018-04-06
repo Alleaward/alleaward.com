@@ -5,6 +5,7 @@
         <!-- <a href="/resume" class="button">Skills and Experience</a> -->
         <a href="/resume" class="button">Resume</a>
       </div>
+
       <div class="split right">
         <!-- <h1>Portfolio</h1> -->
         <!-- <a href="/portfolio" class="button">Demonstrations</a> -->

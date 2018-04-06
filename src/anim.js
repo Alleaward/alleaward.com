@@ -19,3 +19,9 @@ right.addEventListener("mouseleave", () => {
     container.classList.remove("hover-right");
 });
 
+const expandAll = document.querySelector("#expandAll");
+expandAll.addEventListener("click", () => {
+    // container.classList.remove("hover-right");
+    console.log("Working");
+    alert("working");
+});
