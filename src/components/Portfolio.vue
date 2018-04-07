@@ -536,8 +536,6 @@ a {
         }
     }
 }
-.buttonWrap{
-}
 #resumeButton{
     box-shadow: inset 0 0 0 1000px rgba(43, 43, 43, 0.8);
   position: fixed;

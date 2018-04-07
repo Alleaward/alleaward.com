@@ -1,6 +1,5 @@
 <template>
 <div id="resume">
-
   <section id="details">
     <h1>Allea Ward – Web Developer</h1>
 
@@ -8,7 +7,6 @@
     <p><span>Phone:</span> +61490324716</p>
     <p><span>Age:</span> 23</p>
     <p><span>Email:</span> Allea_ward@hotmail.com</p>
-    <p><span>Website:</span> www.alleaward.com </p>
     <p><span>GitHub:</span> www.github.com/alleaward 	</p>
     <p><span>LinkedIn:</span> www.linkedin.com/alleaward</p>
     <p><span>Current Driver's license:</span> Yes. </p>
@@ -17,21 +15,14 @@
 
     <h2>Objective</h2>
     <p>My objective is to learn how to make software that is pixel perfect and as computationally efficient as possible. 
-      I have been extremely passionate about IT, the web, programming and digital media my entire life, ever since I got my first Gameboy I had no doubt I would one day be creating digital media professionally. This lifelong passion for all things digital has translated into a broad range of knowledge on subjects ranging from 3D modeling, graphic design, animation and game design to computer science, programming, and web development. 
-      My primary strength is that I am a fast learner, I have learnt a wide range of skills, and each skill allows me to more quickly contextualize and learn future skills faster. I am actively pursuing technical, personal and professional development.
+      <br>
+      <br>I have been extremely passionate about IT, the web, programming and digital media my entire life, ever since I got my first Gameboy 
+      I had no doubt I would one day be creating digital media professionally. This lifelong passion for all things digital has translated 
+      into a broad range of knowledge on subjects ranging from 3D modeling, graphic design, animation and game design to computer science, programming, and web development. 
+      <br>
+      <br>My primary strength is that I am a fast learner, I have learnt a wide range of skills, and each skill allows me to more quickly contextualize and learn future skills faster. I am actively pursuing technical, personal and professional development.
     </p>
-    <div id="education">
-      <h2>Education</h2> 
-      <span>Goldcoast Tafe, Foxwell Rd.</span> <br>
-      2014 | Diploma of Interactive Digital Media <br>
-      <br>
-      <span>RMIT - Bachelor of Information Technology (In Progress) </span> <br>
-      2014 - Ongoing (Part-time) | Bachelor of Information of Technology. <br>
-      <br>
-      <span>Macquarie - Bachelor of Arts (Philosophy and Politics) (In Progress) </span> <br>
-      2016 - Ongoing (Part-time) | Bachelor of Arts, Majoring in Philosophy and Politics.<br>
-      <br>
-    </div>  
+    
   </section>
 
   <div id="social-banner">
@@ -45,7 +36,7 @@
   <!-- <h1>A TIMELINE? (2011 Learned JS -> 2012 LEarned C#)</h1> -->
 
   <section id="skills">
-    <h1>Technical Skills</h1>
+    <!-- <h1>Technical Skills</h1> -->
     <h2>Front-End</h2>
     <section class="skillAccordian" id="frontend">
       <section id="html" class="skillSection">
@@ -196,7 +187,7 @@
                 </span>
               </li>
               <li>
-                <p>Vue</p>
+                <p>VueJS</p>
                 <span class="starRating">
                   <i class="ion-android-star"></i>
                   <i class="ion-android-star"></i>
@@ -311,7 +302,7 @@
 
               TL:DR --- Skill Level: High --- Frameworks: Laravel, Yi, Symfony, CodeIgniter, Phalcon, CakePHP --- Preprocessor: Babbel<br><br>
               <li>
-                <p>AJAX</p>
+                <p>Laravel</p>
                 <span class="starRating">
                   <i class="ion-android-star"></i>
                   <i class="ion-android-star"></i>
@@ -366,6 +357,16 @@
             <ul class="skillDesc">
               <br>
               <li>
+                <p>NPM</p>
+                <span class="starRating">
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star-outline"></i>
+                </span>
+              </li>
+              <li>
                 <p>ExpressJS</p>
                 <span class="starRating">
                   <i class="ion-android-star"></i>
@@ -413,7 +414,37 @@
             <ul class="skillDesc">
               <br>
               <li>
-                <p>ExpressJS</p>
+                <p>IIS</p>
+                <span class="starRating">
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star-outline"></i>
+                </span>
+              </li>
+              <li>
+                <p>Apache</p>
+                <span class="starRating">
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star-outline"></i>
+                </span>
+              </li>
+              <li>
+                <p>Nginx</p>
+                <span class="starRating">
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star-outline"></i>
+                </span>
+              </li>
+              <li>
+                <p>NodeJS</p>
                 <span class="starRating">
                   <i class="ion-android-star"></i>
                   <i class="ion-android-star"></i>
@@ -440,7 +471,17 @@
             <ul class="skillDesc">
               <br>
               <li>
-                <p>ExpressJS</p>
+                <p>Apache</p>
+                <span class="starRating">
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star-outline"></i>
+                </span>
+              </li>
+              <li>
+                <p>Nginx</p>
                 <span class="starRating">
                   <i class="ion-android-star"></i>
                   <i class="ion-android-star"></i>
@@ -454,9 +495,126 @@
         </div>
       </section>
 
+      <section id="tools" class="skillSection">
+        <div class="skillInner">
+          <div class="skillInfo">
+            <p class="skillHeading">Tools / Misc
+              <!-- <i class="ion-android-star"></i>
+              <i class="ion-android-star"></i>
+              <i class="ion-android-star-half"></i>
+              <i class="ion-android-star-outline"></i>
+              <i class="ion-android-star-outline"></i> -->
+            </p>
+            <ul class="skillDesc">
+              <br>
+              <li>
+                <p>cPanel</p>
+              </li>
+              <li>
+                <p>AWS</p>
+              </li>
+              <li>
+                <p>SSH</p>
+              </li>
+              <li>
+                <p>FTP</p>
+              </li>
+              <li>
+                <p>Bash / Command Line / Terminal</p>
+              </li>
+              <li>
+                <p>GitHub CLI &amp; App</p>
+              </li>
+              <li>
+                <p>VS Code / Visual Studio</p>
+              </li>
+              <li>
+                <p>Adobe Creative Suite</p>
+              </li>
+              <li>
+                <p>Responsive Design</p>
+              </li>
+              <li>
+                <p>Chrome / Firefox</p>
+              </li>
+              <li>
+                <p>SSL</p>
+              </li>
+            </ul>          
+          </div>
+        </div>
+      </section>
     </section>
 
   </section>
+
+  <section id="education">
+      <h2>Education</h2> 
+      <span>Macquarie - Bachelor of Arts (Philosophy and Politics)</span> <br>
+      2016 - Ongoing | Bachelor of Arts, Majoring in Philosophy and Politics.<br>
+      <br>
+      <span class="heading3">Relevant Results</span>
+      <ul>
+        <li class="heading3">How philosophy helps with programming.</li>
+        <ul>
+          <li> - Formal Logic</li>
+          <li> - Critical Thinking</li>
+          <li> - Ability to think in an abstract manner</li>
+          <li> - Defining problems and solutions</li>
+          <li> - Detecting fallacious reasoning</li>
+          <li> - Philosophy and computer science have many overlapping concepts</li>
+        </ul>
+      </ul>
+      <hr>
+      <br>
+      <span>RMIT - Bachelor of Information Technology</span> <br>
+      2014 - Ongoing | Bachelor of Information of Technology. <br>
+      <br>
+      <span class="heading3">Relevant Results</span>
+      <ul>
+        <li class="heading3">Programming Fundamentals</li>
+        <ul>
+          <li> - Primitives</li>
+          <li> - Data Structures</li>
+          <li> - Operators, Expressions, Statements, Blocks and Control Flow</li>
+          <li> - Algorithms</li>
+          <li> - Memory Management</li>
+          <li> - Design Patterns (OOP mainly)</li>
+          <li> - Good programming style based within established standards, practices and guidelines</li>
+          <li> - Debugging</li>
+        </ul>
+        <li class="heading3">Experience with several langauges</li>
+        <ul>
+          <li> - C</li>
+          <li> - Java</li>
+          <li> - Python</li>
+          <li> - SQL</li>
+          <li> - JavaScript</li>
+          <li> - PHP</li>
+          <li> - HTML/CSS</li>
+        </ul>
+        <li class="heading3">Usability, Accessibility and Internationalization</li>
+      </ul>
+      <hr>
+      <br>
+      <span>Goldcoast Tafe, Foxwell Rd.</span> <br>
+      2014 | Diploma of Interactive Digital Media <br>
+      <br>
+      <span class="heading3">Relevant Results</span>
+      <ul>
+        <li> - A broad understanding of how the web works, everything between the client and the server. </li>
+        <li> - Building websites using the LAMP stack</li>
+        <li> - UI/UX	</li>
+        <li> - Project Management</li>
+        <li> - Flash Animation</li>
+        <li> - Game Design</li>
+        <li> - Managing digital assets</li>
+        <li> - Creating storyboards</li>
+        <li> - OH&amp;S</li>
+      </ul>
+      <hr>
+      <br>
+  </section>  
 
   <div class="buttonWrap">
     <button id="portfolioButton"><span class="button" @click="$router.push({path: '/portfolio'})">Portfolio</span></button>
@@ -500,14 +658,10 @@ body{
   h1, h2{
     text-align: center;
   }
-  ul{
-    padding: 0;
-    margin: 0;
+  h2{
+    margin: 20px 0;
   }
-  li{
-    padding: none;
-    list-style: none;
-  }
+
 }
 
 //SOCIAL BANNER-----SOCIAL BANNER-----SOCIAL BANNER-----SOCIAL BANNER-----SOCIAL BANNER-----SOCIAL BANNER
@@ -517,10 +671,10 @@ body{
   width: 90px;
   height: auto;
   position: fixed;
-  left: 0;
-  top: 20%;
+  right: 0;
+  top: 30px;
   z-index: 999;
-  border-radius: 0px 30px 30px 0px;
+  border-radius: 30px 0px 0px 30px;
   #social-link {
     list-style: none;
     display: flex;
@@ -528,7 +682,7 @@ body{
     justify-content: space-around;
     padding-left: 0;
     max-width: 760px;
-    padding: 10px 0;
+    // padding: 10px 0;
   }
   #social-link li {
     margin: 10px auto;
@@ -571,12 +725,28 @@ body{
 #details{
   width: 760px;
   margin: auto;
+  padding: 0 30px;
+  ul{
+    padding: 0;
+    margin: 0;
+  }
+  li{
+    padding: none;
+    list-style: none;
+  }
 }
-
 //SKILLS-----SKILLS-----SKILLS-----SKILLS-----SKILLS-----SKILLS-----SKILLS-----SKILLS-----SKILLS
 #skills{
   width: 100%;
   margin: auto;
+  ul{
+    padding: 0;
+    margin: 0;
+  }
+  li{
+    padding: none;
+    list-style: none;
+  }
   .skillSection{
     // flex-grow: 1;
     // flex-basis: 12.5%;
@@ -592,21 +762,20 @@ body{
     transition:all 0.4s ease-in-out 0.4s;
     -moz-transition:all 0.4s ease-in-out 0.4s;
     -webkit-transition:all 0.4s ease-in-out 0.4s;   
+
     overflow: hidden;
+
     &:hover, &:active, &:focus{
       // flex-basis: 100%;
       // width: 50%;
       max-height: 1000px;
       transform: scaleY(1);
-      
       .skillInner{
-                background-color: rgba(233, 233, 233, 0.6);
-
+        background-color: rgba(233, 233, 233, 0.6);
       }
       .skillDesc{
         li{
           // border-bottom: 2px solid black;
-
           background: linear-gradient(to right, rgba(255,0,0,0) 0%, 
                                       rgba(255,255,255,.6) 5%,
                                       rgba(255,255,255,.6) 50%, 
@@ -616,14 +785,15 @@ body{
       }
     }
     .skillHeading{
+      margin-top: 20px;
       text-align: center;
       font-size: 1.5rem;
       width: 100%;
       color: black;
       background: linear-gradient(to right, 
                                         rgba(255,0,0,0) 30%, 
-                                        rgba(255,255,255,.75) 40%, 
-                                        rgba(255,255,255,.75) 60%, 
+                                        rgba(255,255,255,.9) 40%, 
+                                        rgba(255,255,255,.9) 60%, 
                                         rgba(255,0,0,0) 70%);
     i{
       color: gold;
@@ -640,13 +810,12 @@ body{
       display: flex;
       flex-flow: row wrap;
       justify-content: flex-start;
+      padding: 0 20px;
       li{
         box-sizing: border-box;
         width: 47.5%;
         padding: 5px 5% 5px 5%;
         margin: 10px 0 0 0;
-        background-blend-mode: darken;
-        
         p{
           float: left;
         }
@@ -759,6 +928,15 @@ body{
       color: black;
     }
   }
+  #tools{
+    background: url('../assets/img/tools.png') no-repeat center center;
+    background-size: contain;
+    background-color: #FCBF49;
+    &:hover{
+      background-position: 90% 50%;
+      color: black;
+    }
+  }
   #windows{
     background: url('../assets/img/windows.png') no-repeat center center;
     background-size: contain;
@@ -769,6 +947,28 @@ body{
     }
   }
 }
+
+//education-----education-----education-----education-----education-----education-----education-----education
+#education{
+  // padding-top: 50px;
+  width: 760px;
+  padding: 0px 50px;
+  margin: auto;
+  .heading3{
+    margin: 10px 0;
+    font-weight: bold;
+  }
+  ul{
+    float: none;
+    display: block;
+    padding: 0 0 0 10px;
+  }
+  li{
+    display: block;
+    list-style-type: disc;
+    margin: 5px 0;
+  }
+} 
 
 //PORTFOLIO BUTTON-----PORTFOLIO BUTTON-----PORTFOLIO BUTTON-----PORTFOLIO BUTTON-----PORTFOLIO BUTTON-----PORTFOLIO BUTTON
 .buttonWrap{
