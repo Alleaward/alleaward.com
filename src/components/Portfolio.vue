@@ -2,9 +2,7 @@
 
 <div id="portfolio">
     <div id="portfolio-header">
-        <h2>Here are some examples of my work.</h2>
-        <button @click="$router.push({path: '/resume'})">Too see my resume, click here.</button>
-
+        <h1>Portfolio</h1>
         <ul class="portfolio-nav">
             <li class="outer-button" v-bind:key="skill.name" v-for="skill in FrontEnd">
                 {{ skill.name }}
@@ -87,33 +85,33 @@ export default {
                 link: 'https://www.alleaward.com/',
                 tech: ['HTML5', 'CSS3', 'JavaScript', 'Node.js', 'Vue.js'],
                 image: 'src/assets/img/AlleaWard.jpg',
-                desc: "You are on it right now!"
+                desc: "This is the website i built to hold examples of my work, You are on it right now!"
             },
             { 
                 name: 'GearheadsGarage', 
                 link: 'https://www.gearheadsgarageau.com/', 
-                tech: ['HTML5', 'CSS3', 'Bootstrap', 'JavaScript', 'jQuery', 'jQueryValidate', 'PHP', 'Linux', 'Apache'], 
+                tech: ['HTML5', 'CSS3', 'Bootstrap', 'JavaScript', 'jQuery', 'PHP', 'Linux', 'Apache'], 
                 image: 'src/assets/img/GearheadsGarage.jpg', 
                 desc: "A business website for a small Gold Coast based mechanic. It was built and hosted with the LAMP stack." 
             },
             { 
                 name: "Cut N' Edge", 
                 link: 'https://cutnedgesunshinecoast.wardwebdevelopment.com/', 
-                tech: ['HTML5', 'CSS3', 'Bootstrap', 'JavaScript', 'jQuery', 'jQueryValidate', 'PHP', 'Linux', 'Apache'], 
+                tech: ['HTML5', 'CSS3', 'Bootstrap', 'JavaScript', 'jQuery', 'PHP', 'Linux', 'Apache'], 
                 image: 'src/assets/img/CutNEdge.jpg', 
                 desc: 'A business website for a Sunshine Coast based Garden Maintenance business.' 
             },
             { 
                 name: 'WardWebDevelopment', 
                 link: 'https://wardwebdevelopment.com/', 
-                tech: ['HTML5', 'CSS3', 'Bootstrap', 'JavaScript', 'jQuery', 'jQueryValidate', 'PHP', 'Linux VM', 'Apache'], 
+                tech: ['HTML5', 'CSS3', 'Bootstrap', 'JavaScript', 'jQuery', 'PHP', 'Linux VM', 'Apache'], 
                 image: 'src/assets/img/WardWebDevelopment.jpg', 
                 desc: 'An alternative website for my freelance web development business.' 
             },
             { 
                 name: 'Calorie Calculator', 
                 link: 'https://fitnessapp.wardwebdevelopment.com/', 
-                tech: ['HTML5', 'CSS3', 'JavaScript', 'jQuery', 'jQueryValidate', 'AJAX', 'PHP', 'MYSQL', 'AWS EC2', 'Amazon Linux Server', 'Apache'], 
+                tech: ['HTML5', 'CSS3', 'JavaScript', 'jQuery', 'AJAX', 'PHP', 'MYSQL', 'AWS EC2', 'Amazon Linux Server', 'Apache'], 
                 image: 'src/assets/img/FitnessApp.jpg', 
                 desc: 'A fitness calculator that demonstrates: Databases, Simple User Accounts, Form Inputs and calculations using Javascript and PHP.' 
             },
@@ -148,6 +146,7 @@ export default {
                     },
                     {
                         skill: 'JavaScript', subSkill: [
+                            { skill: 'Vanilla' },
                             { skill: 'jQuery' },
                             { skill: 'Vue.js' },
                             // { skill: 'React' },
@@ -173,12 +172,13 @@ export default {
                     //         //     ]
                     //         // },
                             { skill: 'Node.js', subSkill: [
+                                { skill: 'Vue' },
                                 { skill: 'NPM' },
                                 { skill: 'Express' }
                                 ]
                             },
                             { skill: 'PHP', subSkill: [
-                                { skill: 'Laravel' }
+                                // { skill: 'Laravel' }
                                 ]
                             },
                             // { skill: 'C#', subSkill: [
@@ -200,7 +200,7 @@ export default {
                         //     {
                                 skill: 'Databases', subSkill: [
                                     { skill: 'MySQL' },
-                                    { skill: 'PostgreSQL' },
+                                    // { skill: 'PostgreSQL' },
                                     // { skill: 'MSSQL' },
                                     { skill: 'MongoDB' }
                                 ]
@@ -226,15 +226,15 @@ export default {
                     //     ]
                     // },
 
-                    { 
+                    // { 
                         // skill: 'Servers & Hosting', subSkill: [
                         //     {
-                                skill: 'Servers', subSkill: [
-                                    { skill: 'Apache' },
-                                    { skill: 'Nginx' },
-                                    { skill: 'IIS' },
-                                    { skill: 'Node.js' }
-                                ]
+                                // skill: 'Servers', subSkill: [
+                                //     { skill: 'Apache' },
+                                //     { skill: 'Nginx' },
+                                //     { skill: 'IIS' },
+                                //     { skill: 'Node.js' }
+                                // ]
                             // }
                         // ]
 
@@ -251,7 +251,7 @@ export default {
                             //         { skill: 'Elastic Beanstalk' }
                             //     ]
                             // }
-                    }
+                    // }
                 ]
             }          
         ],
@@ -289,9 +289,12 @@ export default {
 </script>
 
 <style lang="scss">
+body{
+    margin: 0;
+}
 #portfolio {
-    max-width: 100%;
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
@@ -328,7 +331,7 @@ a {
 
 #portfolio-header{
     margin: auto;
-
+    max-width: 760px;
     .portfolio-nav{
       display: flex;
       flex-flow: row wrap;
@@ -447,8 +450,9 @@ a {
 
 #portfolio-items{
     // width: 48%;
-    max-width: 400px;
+    max-width: 760px;
     // min-width: 400px;
+    margin: auto;
     padding-top: 30px;
     span{
         display: flex;
@@ -456,13 +460,13 @@ a {
         margin: auto;
         .portfolio-item{
             text-align: center;
-            margin: 30px;
-            padding: 20px;
-            width: 100%;
+            width: 48%;
             display: flex;
             flex-flow: row wrap;
+            margin: auto;
+            margin-bottom: 30px;
             justify-content: space-around;
-            border-bottom: 3px solid white;
+            border-bottom: 3px solid black;
             .portfolio-img{
                 width: 100%;
                 display: flex;
@@ -503,6 +507,7 @@ a {
                 display: flex;
                 flex-flow: row wrap;
                 justify-content: space-around;
+                margin-bottom: 10px;
                 h3{
                     // font-family: $font-two;
                     font-size: 14px;

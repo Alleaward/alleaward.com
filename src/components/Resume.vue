@@ -1,7 +1,7 @@
 <template>
 <div id="resume">
   <section id="details">
-    <h1>Allea Ward – Web Developer</h1>
+    <h1>Allea Ward – Full Stack Web Engineer</h1>
 
     <p><span>Location:</span> Pimpama, Gold Coast</p>
     <p><span>Phone:</span> +61490324716</p>
@@ -14,7 +14,8 @@
     <!-- <p>Blog: <a href="blog.alleaward.com">My Blog</a> </p> -->
 
     <h2>Objective</h2>
-    <p>My objective is to learn how to make software that is pixel perfect and as computationally efficient as possible. 
+    <p>My objective is to learn how to make software that is pixel perfect and as computationally efficient as possible, 
+      I am looking forward to furthering my career and becoming a master of my art. 
       <br>
       <br>I have been extremely passionate about IT, the web, programming and digital media my entire life, ever since I got my first Gameboy 
       I had no doubt I would one day be creating digital media professionally. This lifelong passion for all things digital has translated 
@@ -27,16 +28,114 @@
 
   <div id="social-banner">
     <ul id="social-link">
-      <li class="github"><a href=""><i class="ion-social-github"></i></a></li>
-      <li class="linkedin"><a href=""><i class="ion-social-linkedin"></i></a></li>
-      <li class="youtube"><a href=""><i class="ion-social-youtube"></i></a></li>
+      <li class="github"><a href="https://github.com/Alleaward"><i class="ion-social-github"></i></a></li>
+      <li class="linkedin"><a href="https://www.linkedin.com/in/alleaward/"><i class="ion-social-linkedin"></i></a></li>
+      <!-- <li class="youtube"><a href=""><i class="ion-social-youtube"></i></a></li> -->
     </ul>
   </div>
 
   <!-- <h1>A TIMELINE? (2011 Learned JS -> 2012 LEarned C#)</h1> -->
 
   <section id="skills">
-    <!-- <h1>Technical Skills</h1> -->
+    <section class="skillAccordian" id="frontend">    
+      <section id="languages" class="skillSection">
+        <div class="skillInner">
+          <div class="skillInfo">
+            <p class="skillHeading">Languages
+              <i class="ion-android-star"></i>
+              <i class="ion-android-star"></i>
+              <i class="ion-android-star"></i>
+              <i class="ion-android-star"></i>
+              <i class="ion-android-star"></i>
+            </p>
+            <ul class="skillDesc">
+              Over the past decade i have become familiar with several languages, and i have had exposure to many more.<br>
+              <li>
+                <p>HTML5</p>
+                <span class="starRating">
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                </span>
+              </li>
+              <li>
+                <p>CSS3</p>
+                <span class="starRating">
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                </span>
+              </li>
+              <li>
+                <p>JavaScript</p>
+                <span class="starRating">
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star-outline"></i>
+                </span>
+              </li>
+              <li>
+                <p>PHP</p>
+                <span class="starRating">
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star-outline"></i>
+                </span>
+              </li>
+              <li>
+                <p>Python</p>
+                <span class="starRating">
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star-outline"></i>
+                </span>
+              </li>
+              <li>
+                <p>Java</p>
+                <span class="starRating">
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star-outline"></i>
+                  <i class="ion-android-star-outline"></i>
+                </span>
+              </li>
+              <li>
+                <p>C</p>
+                <span class="starRating">
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star-outline"></i>
+                  <i class="ion-android-star-outline"></i>
+                </span>
+              </li>
+              <li>
+                <p>C#</p>
+                <span class="starRating">
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star-outline"></i>
+                  <i class="ion-android-star-outline"></i>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </section>
+
     <h2>Front-End</h2>
     <section class="skillAccordian" id="frontend">
       <section id="html" class="skillSection">
@@ -99,7 +198,7 @@
                   <i class="ion-android-star"></i>
                   <i class="ion-android-star"></i>
                   <i class="ion-android-star"></i>
-                  <i class="ion-android-star-outline"></i>
+                  <i class="ion-android-star"></i>
                   <i class="ion-android-star-outline"></i>
                 </span>
               </li>
@@ -109,7 +208,7 @@
                   <i class="ion-android-star"></i>
                   <i class="ion-android-star"></i>
                   <i class="ion-android-star"></i>
-                  <i class="ion-android-star-outline"></i>
+                  <i class="ion-android-star"></i>
                   <i class="ion-android-star-outline"></i>
                 </span>
               </li>
@@ -119,7 +218,7 @@
                   <i class="ion-android-star"></i>
                   <i class="ion-android-star"></i>
                   <i class="ion-android-star"></i>
-                  <i class="ion-android-star-outline"></i>
+                  <i class="ion-android-star"></i>
                   <i class="ion-android-star-outline"></i>
                 </span>
               </li>
@@ -201,8 +300,8 @@
                 <span class="starRating">
                   <i class="ion-android-star"></i>
                   <i class="ion-android-star"></i>
-                  <i class="ion-android-star"></i>
-                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star-outline"></i>
+                  <i class="ion-android-star-outline"></i>
                   <i class="ion-android-star-outline"></i>
                 </span>
               </li>
@@ -232,7 +331,7 @@
                   <i class="ion-android-star"></i>
                   <i class="ion-android-star"></i>
                   <i class="ion-android-star"></i>
-                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star-outline"></i>
                   <i class="ion-android-star-outline"></i>
                 </span>
               </li>
@@ -242,11 +341,11 @@
                   <i class="ion-android-star"></i>
                   <i class="ion-android-star"></i>
                   <i class="ion-android-star"></i>
-                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star-outline"></i>
                   <i class="ion-android-star-outline"></i>
                 </span>
               </li>
-              <li>
+              <!-- <li>
                 <p>Gulp</p>
                 <span class="starRating">
                   <i class="ion-android-star"></i>
@@ -255,7 +354,7 @@
                   <i class="ion-android-star"></i>
                   <i class="ion-android-star-outline"></i>
                 </span>
-              </li>
+              </li> -->
               <li>
                 <p>AJAX</p>
                 <span class="starRating">
@@ -301,7 +400,7 @@
               websites with persistent shopping carts and accounts. (ex1, ex2, ex3)<br>
 
               TL:DR --- Skill Level: High --- Frameworks: Laravel, Yi, Symfony, CodeIgniter, Phalcon, CakePHP --- Preprocessor: Babbel<br><br>
-              <li>
+              <!-- <li>
                 <p>Laravel</p>
                 <span class="starRating">
                   <i class="ion-android-star"></i>
@@ -310,7 +409,7 @@
                   <i class="ion-android-star"></i>
                   <i class="ion-android-star-outline"></i>
                 </span>
-              </li>
+              </li> -->
             </ul>
 
           </div>
@@ -320,7 +419,7 @@
       <section id="mysql" class="skillSection">
         <div class="skillInner">
           <div class="skillInfo">
-            <p class="skillHeading">MySQL
+            <p class="skillHeading">Databases
               <i class="ion-android-star"></i>
               <i class="ion-android-star"></i>
               <i class="ion-android-star"></i>
@@ -330,12 +429,22 @@
             <ul class="skillDesc">I have used MySQL to store user accounts and data, for example a Dietary Calculator 
               that stores user data server side. (LINK)<br><br>
               <li>
-                <p>PostgreSQL</p>
+                <p>MySQL</p>
                 <span class="starRating">
                   <i class="ion-android-star"></i>
                   <i class="ion-android-star"></i>
                   <i class="ion-android-star"></i>
                   <i class="ion-android-star"></i>
+                  <i class="ion-android-star-outline"></i>
+                </span>
+              </li>
+              <li>
+                <p>MongoDB</p>
+                <span class="starRating">
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star-outline"></i>
+                  <i class="ion-android-star-outline"></i>
                   <i class="ion-android-star-outline"></i>
                 </span>
               </li>
@@ -357,26 +466,6 @@
             <ul class="skillDesc">
               <br>
               <li>
-                <p>NPM</p>
-                <span class="starRating">
-                  <i class="ion-android-star"></i>
-                  <i class="ion-android-star"></i>
-                  <i class="ion-android-star"></i>
-                  <i class="ion-android-star"></i>
-                  <i class="ion-android-star-outline"></i>
-                </span>
-              </li>
-              <li>
-                <p>ExpressJS</p>
-                <span class="starRating">
-                  <i class="ion-android-star"></i>
-                  <i class="ion-android-star"></i>
-                  <i class="ion-android-star"></i>
-                  <i class="ion-android-star"></i>
-                  <i class="ion-android-star-outline"></i>
-                </span>
-              </li>
-              <li>
                 <p>Vue SPA</p>
                 <span class="starRating">
                   <i class="ion-android-star"></i>
@@ -393,6 +482,26 @@
                   <i class="ion-android-star"></i>
                   <i class="ion-android-star"></i>
                   <i class="ion-android-star"></i>
+                  <i class="ion-android-star-outline"></i>
+                </span>
+              </li>
+              <li>
+                <p>NPM</p>
+                <span class="starRating">
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star-outline"></i>
+                  <i class="ion-android-star-outline"></i>
+                </span>
+              </li>
+              <li>
+                <p>ExpressJS</p>
+                <span class="starRating">
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star-outline"></i>
+                  <i class="ion-android-star-outline"></i>
                   <i class="ion-android-star-outline"></i>
                 </span>
               </li>
@@ -414,16 +523,6 @@
             <ul class="skillDesc">
               <br>
               <li>
-                <p>IIS</p>
-                <span class="starRating">
-                  <i class="ion-android-star"></i>
-                  <i class="ion-android-star"></i>
-                  <i class="ion-android-star"></i>
-                  <i class="ion-android-star"></i>
-                  <i class="ion-android-star-outline"></i>
-                </span>
-              </li>
-              <li>
                 <p>Apache</p>
                 <span class="starRating">
                   <i class="ion-android-star"></i>
@@ -444,12 +543,22 @@
                 </span>
               </li>
               <li>
+                <p>IIS</p>
+                <span class="starRating">
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star-outline"></i>
+                  <i class="ion-android-star-outline"></i>
+                </span>
+              </li>
+              <li>
                 <p>NodeJS</p>
                 <span class="starRating">
                   <i class="ion-android-star"></i>
                   <i class="ion-android-star"></i>
                   <i class="ion-android-star"></i>
-                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star-outline"></i>
                   <i class="ion-android-star-outline"></i>
                 </span>
               </li>
@@ -638,10 +747,11 @@ export default {
 <style lang="scss">
 body{
   margin: 0;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 #resume {
   // max-width: 760px;
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: left;
@@ -702,7 +812,7 @@ body{
     }
   }
   #social-link .github:hover {
-    background-color: #24292E;
+    background-color: #5245AC;
     transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
@@ -863,6 +973,16 @@ body{
     display: flex;
     flex-flow: row wrap;
     width: 100%;
+  }
+  #languages{
+    background: url('../assets/img/languages.png') no-repeat center center;
+    background-size: contain;
+    background-color: #D62828;
+    // width: 30%;
+    &:hover{
+      background-position: 90% 50%;
+      color: black;
+    }
   }
   #html{
     background: url('../assets/img/html.png') no-repeat center center;
