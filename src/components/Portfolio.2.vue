@@ -284,11 +284,8 @@ export default {
 </script>
 
 <style lang="scss">
-html{
-    background-image: url("../assets/img/creampaper.png"); // text-align: left;
-}
 body {
-    margin: 0;
+  margin: 0;
 }
 
 #portfolio {
@@ -301,6 +298,7 @@ body {
   margin: 0;
   padding-bottom: 200px;
   padding-top: 50px;
+  background-image: url("../assets/img/creampaper.png"); // text-align: left;
   justify-items: center;
   span {
     font-weight: bold;
@@ -454,11 +452,11 @@ a {
 
 #portfolio-items {
   position: absolute;
-  left:50px; // width: 48%;
+  left:50px;
+  // width: 48%;
   max-width: 760px; // min-width: 400px;
   margin: auto;
   padding-top: 30px;
-  padding-bottom: 200px;
   span {
     display: flex;
     flex-flow: row wrap;
@@ -467,7 +465,6 @@ a {
       text-align: center;
       width: 48%;
       display: flex;
-
       flex-flow: row wrap;
       margin: auto;
       margin-bottom: 30px;

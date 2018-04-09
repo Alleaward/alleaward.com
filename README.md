@@ -1,18 +1,22 @@
 # alleaward.com
+My portfolio/resume website.
 
-> My portfolio/resume website.
+## Skills
 
-## Build Setup
+### HTML
+>I used HTML as the markup.
 
-``` bash
-# install dependencies
-npm install
+### CSS
+>CSS was used for styling, i used the SASS preprocessor and the Ionicons library.
 
-# serve with hot reload at localhost:8080
-npm run dev
+### JavaScript
+>I used JavaScript for interactivity and animations.
 
-# build for production with minification
-npm run build
-```
+### Vue JS
+>I used Vue to create an interactive portfolio section with a sortable list. 
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+### PHP
+>PHP was used to process the form data and send it to my email.
+
+## Copyright
+>Anyone is free to use/improve/critique this code.
