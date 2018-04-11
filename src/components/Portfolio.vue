@@ -4,42 +4,9 @@
     <div id="portfolio-header">
         <h1>Portfolio</h1>
         <ul class="portfolio-nav">
-            <li class="outer-button" v-bind:key="skill.name" v-for="skill in FrontEnd">
-                {{ skill.name }}
-                <ul>
-                    <li class="middle-button" v-bind:key="middleSkill.skill" v-for="middleSkill in skill.skill" v-bind:id="middleSkill.skill" @click="keyword=middleSkill.skill" onclick="event.stopPropagation();">
-                        {{ middleSkill.skill }}
-                        <ul>
-                            <li class="inner-button" v-bind:key="innerSkill.skill" v-for="innerSkill in middleSkill.subSkill" v-bind:id="innerSkill.skill"
-                            @click="keyword=innerSkill.skill" onclick="event.stopPropagation();">
-                            {{ innerSkill.skill }}
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-        <ul class="portfolio-nav">
-        <li class="outer-button" v-bind:key="skill.name" v-for="skill in BackEnd" v-bind:id="skill.skill" >
-            {{ skill.name }}
-            <ul>
-                <li class="middle-button" v-bind:key="middleSkill.skill" v-for="middleSkill in skill.skill" v-bind:id="middleSkill.skill"
-                @click="keyword=middleSkill.skill" onclick="event.stopPropagation();">
-                {{ middleSkill.skill }}
-                    <ul>
-                    <li class="inner-button" v-bind:key="innerSkill.skill" v-for="innerSkill in middleSkill.subSkill" v-bind:id="innerSkill.skill"
-                    @click="keyword=innerSkill.skill" onclick="event.stopPropagation();">
-                    {{ innerSkill.skill }}
-                        <ul>
-                            <li class="innermost-button" v-bind:key="innermostSkill.skill" v-for="innermostSkill in innerSkill.subSkill" v-bind:id="innermostSkill.skill"
-                            @click="keyword=innermostSkill.skill" onclick="event.stopPropagation();">
-                            {{ innermostSkill.skill }}
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-          </ul>
+        <li class="outer-button">
+            <p>Catagory 1</p>
+            <p>Catagory 2</p>
         </li>
     </ul>
     <button class="sorting-button" @click="keyword=''">Clear Filter</button>
@@ -48,20 +15,16 @@
   <div id="portfolio-items">
       <transition-group name="fade">
           <div class="portfolio-item" v-bind:key="portfolio.name" v-for="portfolio in siteFilter">
-              <a class="portfolio-img" href="">
-                  <div class="browserBar">
-                      <div class="browserRed">X</div>
-                      <div class="browserYellow">&#x2750;</div>
-                      <div class="browserGreen">-</div>
-                  </div>
-                  <img v-bind:src="portfolio.image" alt="">
-              </a>
+            <img class="portfolio-img" v-bind:src="portfolio.image" alt="">
               <div class="portfolio-information">
-                  <a :href="portfolio.link"><h3>{{ portfolio.name }}</h3></a>                           
-                  <ul>
-                      <li class="portfolioTech" v-bind:key="tech.name" v-for="tech in portfolio.tech">{{ tech }}</li>
-                  </ul>
+                <div class="portfolio-information-header">
+                  <a class="portfolio-item-title" :href="portfolio.link"><h3>{{ portfolio.name }}</h3></a>
+                  <a class="portfolio-item-github" :href="portfolio.github"><i class="ion-social-github"></i></a>
+                </div>
                   <p>{{ portfolio.desc }}</p>
+                  <ul>
+                      <li class="" v-bind:key="tech.name" v-for="tech in portfolio.tech">{{ tech }}</li>
+                  </ul>
               </div>
           </div>
       </transition-group>
@@ -82,6 +45,7 @@ export default {
             {
                 name: 'Allea Ward',
                 link: 'https://www.alleaward.com/',
+                github: 'https://www.alleaward.com/',
                 tech: ['HTML5', 'CSS3', 'JavaScript', 'Node.js', 'Vue.js'],
                 image: 'src/assets/img/AlleaWard.jpg',
                 desc: "This is the website i built to hold examples of my work, You are on it right now!"
@@ -89,13 +53,15 @@ export default {
             { 
                 name: 'GearheadsGarage', 
                 link: 'https://www.gearheadsgarageau.com/', 
+                github: 'https://github.com/Alleaward/Gearheads-Garage',
                 tech: ['HTML5', 'CSS3', 'Bootstrap', 'JavaScript', 'jQuery', 'PHP', 'Linux', 'Apache'], 
                 image: 'src/assets/img/GearheadsGarage.jpg', 
-                desc: "A business website for a small Gold Coast based mechanic. It was built and hosted with the LAMP stack." 
+                desc: "Gearheadsgarageau.com is a simple business website for a Gold Coast mechanic, it was built on the LAMP stack with the Bootstrap library for some styling and a php form." 
             },
             { 
                 name: "Cut N' Edge", 
                 link: 'https://cutnedgesunshinecoast.wardwebdevelopment.com/', 
+                github: 'https://github.com/Alleaward/Cut-N-Edge',
                 tech: ['HTML5', 'CSS3', 'Bootstrap', 'JavaScript', 'jQuery', 'PHP', 'Linux', 'Apache'], 
                 image: 'src/assets/img/CutNEdge.jpg', 
                 desc: 'A business website for a Sunshine Coast based Garden Maintenance business.' 
@@ -103,172 +69,25 @@ export default {
             { 
                 name: 'WardWebDevelopment', 
                 link: 'https://wardwebdevelopment.com/', 
+                github: 'https://github.com/Alleaward/Ward-Web-Development',
                 tech: ['HTML5', 'CSS3', 'Bootstrap', 'JavaScript', 'jQuery', 'PHP', 'Linux VM', 'Apache'], 
                 image: 'src/assets/img/WardWebDevelopment.jpg', 
                 desc: 'An alternative website for my freelance web development business.' 
             },
             { 
-                name: 'Calorie Calculator', 
+                name: 'TDEE Calculator', 
                 link: 'https://fitnessapp.wardwebdevelopment.com/', 
+                github: 'https://github.com/Alleaward/TDEE-Calculator',
                 tech: ['HTML5', 'CSS3', 'JavaScript', 'jQuery', 'AJAX', 'PHP', 'MYSQL', 'AWS EC2', 'Amazon Linux Server', 'Apache'], 
                 image: 'src/assets/img/FitnessApp.jpg', 
                 desc: 'A fitness calculator that demonstrates: Databases, Simple User Accounts, Form Inputs and calculations using Javascript and PHP.' 
-            },
-            {
-                name: 'VueToDo', 
-                link: 'https://fitnessapp.wardwebdevelopment.com/', 
-                tech: ['HTML5', 'CSS3', 'JavaScript', 'Vue.js', 'Node.js', 'Webpack'],
-                image: 'src/assets/img/VueToDo.jpg',
-                desc: 'A basic to-do list built using Vue.JS / Node.js / Webpack.' 
             }
-        ],
-        FrontEnd: [
-            {
-                name: 'Front End' , skill: [
-                    {
-                        skill: 'HTML5', subSkill: [
-
-                        ]
-                    },
-                    {
-                        skill: 'CSS3', subSkill: [
-                            { skill: 'SASS' },
-                            { skill: 'Bootstrap' },
-                            { skill: 'Materialize CSS' },
-                            // { skill: 'Bulma' },
-                            // { skill: 'SVG' },
-                            // { skill: 'Flexbox' },
-                            // { skill: 'Grid' },
-                            // { skill: 'Animations' }
-
-                        ]
-                    },
-                    {
-                        skill: 'JavaScript', subSkill: [
-                            { skill: 'Vanilla' },
-                            { skill: 'jQuery' },
-                            { skill: 'Vue.js' },
-                            // { skill: 'React' },
-                            // { skill: 'Angular' },
-                            { skill: 'AJAX' }
-                            // { skill: 'NPM' },
-                            // { skill: 'Webpack' },
-                            // { skill: 'Regex' }
-
-                        ]
-                    }
-                ]
-            }
-        ],
-        BackEnd: [
-            {
-                name: 'Back End', skill: [
-                    // { 
-                    //     skill: 'Languages' , subSkill: [
-                    //         // { skill: 'Web Assembly', subSkill: [
-                    //         //     { skill: '' },
-                    //         //     { skill: '' }
-                    //         //     ]
-                    //         // },
-                            { skill: 'Node.js', subSkill: [
-                                { skill: 'Vue' },
-                                { skill: 'NPM' },
-                                { skill: 'Express' }
-                                ]
-                            },
-                            { skill: 'PHP', subSkill: [
-                                // { skill: 'Laravel' }
-                                ]
-                            },
-                            // { skill: 'C#', subSkill: [
-                            //     // { skill: '.NET ASP MVC'}
-                            //     ]
-                            // },
-                            // { skill: 'Python', subSkill: [
-                            //     { skill: 'Django' }
-                            //     ]
-                            // },
-                            // { skill: 'Ruby', subSkill: [
-                            //         { skill: 'Ruby on Rails' }
-                            //     ]
-                        //     }
-                        // ]
-                    
-                    {
-                        // skill: 'Databases & Operating Systems(OS)', subSkill: [
-                        //     {
-                                skill: 'Databases', subSkill: [
-                                    { skill: 'MySQL' },
-                                    // { skill: 'PostgreSQL' },
-                                    // { skill: 'MSSQL' },
-                                    { skill: 'MongoDB' }
-                                ]
-                            },
-                    //         { skill: 'Operating Systems (OS)', subSkill: [
-                    //             { skill: 'Windows' },
-                    //             { skill: 'Linux' }
-                    //             ]
-                    //     //     }
-                    //     // ]
-                    // },
-
-                    // { skill: 'What do i call this?', subSkill: [
-
-                    //         { skill: 'Architectural Patterns', subSkill: [
-                    //                 { skill: 'Object Oriented' }
-                    //             ]
-                    //         },
-                    //         { skill: 'Testing Methodogies', subSkill: [
-                    //                 { skill: 'Red-Green Refactor (TDD)' }
-                    //             ]
-                    //         }
-                    //     ]
-                    // },
-
-                    // { 
-                        // skill: 'Servers & Hosting', subSkill: [
-                        //     {
-                                // skill: 'Servers', subSkill: [
-                                //     { skill: 'Apache' },
-                                //     { skill: 'Nginx' },
-                                //     { skill: 'IIS' },
-                                //     { skill: 'Node.js' }
-                                // ]
-                            // }
-                        // ]
-
-                            // {
-                            //     skill: 'cPanel', subSkill: [
-                            //         { skill: 'MailServer' }
-                            //     ]
-                            // },
-                            // { skill: 'Amazon Web Services (AWS)', subSkill: [
-                            //         { skill: 'EC2' },
-                            //         { skill: 'S3' },
-                            //         { skill: 'Route53' },
-                            //         { skill: 'Load Balancing' },
-                            //         { skill: 'Elastic Beanstalk' }
-                            //     ]
-                            // }
-                    // }
-                ]
-            }          
-        ],
-        // { skill: 'Gradle', catagory: 'FrontEnd', 'BackEnd' },
-        // { skill: 'Jenkins', catagory: 'FrontEnd', 'BackEnd' },
-        // { skill: 'Ansible', catagory: 'FrontEnd', 'BackEnd' },
-        // { skill: 'Data Algorithms', catagory: 'CS' },
-        // { skill: 'SVG', catagory: 'Design' }
-        Misc: [
-            { skill: 'Wix'},
-            { skill: 'JSON'},
-            { skill: 'Shopify'}
         ]
     }
   },
   computed:{
     updateKeyword(skill) {
-      console.log('Keyword changing to '+skill)
+      console.log('Keyword changing to '+ skill)
       this.keyword = skill
       console.log('Keyword is now '+this.keyword)
       event.stopPropagation()
@@ -285,260 +104,156 @@ export default {
 
 <style lang="scss">
 html{
-    background-image: url("../assets/img/creampaper.png"); // text-align: left;
+  background-image: url("../assets/img/creampaper.png");
 }
 body {
-    margin: 0;
+  margin: 0;
 }
-
 #portfolio {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   font-family: 'Ubuntu', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin: 0;
-  padding-bottom: 200px;
-  padding-top: 50px;
-  justify-items: center;
-  span {
-    font-weight: bold;
-  }
 }
-
 h1,
 h2 {
   font-weight: normal;
   margin: 0;
 }
-
 ul {
   list-style-type: none;
   padding: 0;
 }
-
 li {
   display: inline-block;
   margin: 0 10px;
 }
-
-a {
-  color: #42b983;
-}
-
 #portfolio-header {
-  margin: auto;
-  max-width: 760px;
   position: fixed;
+  top: 50px;
   right: 50px;
   background-color: white;
   border-radius: 30px;
   border: 5px solid black;
-  .portfolio-nav {
-    max-width: 300px;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around; //   margin: auto;
-    margin-top: 35px;
-    border-radius: 12px;
-    border: 0; // box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
-    .outer-button {
-      font-size: 1.2rem;
-      width: 100%;
-      &:hover {
-        box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.5); // background-color: #4484CE;
-        // color: white;
-        transition: all 0.3s ease-in-out;
-        -moz-transition: all 0.3s ease-in-out;
-        -webkit-transition: all 0.3s ease-in-out;
-      }
-      ul {
-        display: flex;
-        flex-flow: row wrap;
-      }
-      .middle-button {
-        font-size: 1rem;
-        flex-grow: 1;
-        color: black;
-        list-style: none;
-        background-color: #f1f1f1;
-        box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
-        &:hover {
-          box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.5); // background-color: rgb(100, 206, 68);
-          // color: white;
-          transition: all 0.3s ease-in-out;
-          -moz-transition: all 0.3s ease-in-out;
-          -webkit-transition: all 0.3s ease-in-out;
-        }
-      }
-      .inner-button {
-        font-size: .8rem;
-        flex-grow: 1;
-        list-style: none;
-        background-color: #ebe9e9;
-        box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
-        &:hover {
-          box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.5); // background-color: rgb(100, 206, 68);
-          // color: white;
-          transition: all 0.3s ease-in-out;
-          -moz-transition: all 0.3s ease-in-out;
-          -webkit-transition: all 0.3s ease-in-out;
-        }
-        .innermost-button {
-          font-size: .8rem;
-          flex-grow: 1;
-          list-style: none;
-          background-color: #ebe9e9;
-          box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
-          &:hover {
-            box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.5); // background-color: rgb(100, 206, 68);
-            // color: white;
-            transition: all 0.3s ease-in-out;
-            -moz-transition: all 0.3s ease-in-out;
-            -webkit-transition: all 0.3s ease-in-out;
-          }
-        }
-      }
-    }
-  }
-  .portfolio-active {
-    background-color: #FFAB0D;
-  }
-  li {
-    // flex-grow: 1;
-    // line-height: 3em;
-    text-align: center;
-    padding: 5px 10px 5px 10px;
-    margin: 5px 5px 5px 5px;
-    background-color: white;
-    border-radius: 5px;
-    font-size: 12px;
-    width: auto;
-    white-space: nowrap;
-    color: black;
-    text-decoration: none;
-  }
 }
 
 .fade-enter-active {
   transition: all 1s ease-out;
 }
-
 .fade-enter-to {
   opacity: 1;
 }
-
 .fade-leave {
   opacity: 1;
 }
-
 .fade-leave-active {
   transition: all 1s ease-out;
   position: absolute;
   /*IMPORTANT*/
 }
-
 .fade-enter,
 .fade-leave-to {
   opacity: 0;
 }
-
 .fade-move {
   transition: all 1s ease-out;
 }
-
 .fade-item {
   transition: all 1s ease-out;
 }
 
 #portfolio-items {
-  position: absolute;
-  left:50px; // width: 48%;
-  max-width: 760px; // min-width: 400px;
-  margin: auto;
-  padding-top: 30px;
+  border: 3px solid green;
+  width: 80%;
+  padding-top: 50px;
+  padding-left: 50px;
   padding-bottom: 200px;
+
   span {
+    background-color: pink;
+    border: 3px solid red;
+
     display: flex;
     flex-flow: row wrap;
-    margin: auto;
-    .portfolio-item {
-      text-align: center;
-      width: 48%;
-      display: flex;
 
-      flex-flow: row wrap;
-      margin: auto;
+    .portfolio-item {
+      border: 3px solid yellow;
+
+      display: flex;
+      flex-flow: row nowrap;
       margin-bottom: 30px;
       justify-content: space-around;
-      border-bottom: 3px solid black;
       .portfolio-img {
-        width: 100%;
-        display: flex;
-        flex-flow: row wrap;
-        img {
-          width: 100%;
+          border: 3px solid orange;
+
           height: auto;
-        }
-        .browserBar {
-          width: 100%;
-          background-color: #a8a8a8;
-          height: 15px;
-          font-family: Arial, Helvetica, sans-serif;
-          font-weight: bold;
-          font-size: 50%;
-          .browserRed,
-          .browserYellow,
-          .browserGreen {
-            height: 10px;
-            width: 15px;
-            float: right;
-            border: 1px solid black;
-            margin: 0px 0px 3px 0px;
-          }
-          .browserRed {
-            background-color: #FF0000;
-          }
-          .browserYellow {
-            background-color: #FFFF00;
-          }
-          .browserGreen {
-            background-color: #00ff00;
-            border-radius: 0px 0px 0px 3px;
-          }
-        }
       }
       .portfolio-information {
-        max-width: 100%;
-        text-align: center;
+        border: 3px solid blue;
+
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-around;
-        margin-bottom: 10px;
-        h3 {
-          // font-family: $font-two;
-          font-size: 14px;
-          text-transform: uppercase;
-          font-weight: 400;
-          margin-bottom: 0px;
+        align-content: space-around;
+        .ion-social-github{
+
+          &:hover{
+            color: blue;
+          }
+        }
+        .portfolio-information-header{
+          border: 3px solid red;
+
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          .portfolio-item-title{
+            border: 3px solid gold;
+            
+            color: black;
+            font-size: 20px;
+            text-transform: uppercase;
+            font-weight: 400;
+            &:hover{
+              color: lightgreen;
+            }
+          }
+          .portfolio-item-github{
+            border: 3px solid greenyellow;
+
+            color: black;
+            font-size: 50px;
+            i{
+              &:hover {
+                color: #5245AC;
+                transition: all 0.3s ease-in-out;
+                -moz-transition: all 0.3s ease-in-out;
+                -webkit-transition: all 0.3s ease-in-out;
+              }
+            }
+          }
         }
         p {
-          font-size: 12px; // font-family: $font-one;
-          font-weight: normal;
-          color: grey;
-          margin: 0;
+          border: 3px solid green;
+
+          width: 80%;
+          margin: auto;
         }
         ul {
+          border: 3px solid darkblue;
+
+          width: 90%;
           display: flex;
           flex-flow: row wrap;
+          margin: auto;
           padding: 0;
-          width: 100%;
-          .portfolioTech {
+          li {
+            border: 3px solid red;
+
             flex-grow: 1;
             background-color: white;
             color: black;
             list-style: none;
+            text-align: center;
             border-radius: 10px;
             padding: 6px 10px;
             margin: 5px;
