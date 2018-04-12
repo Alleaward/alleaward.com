@@ -1,16 +1,17 @@
 <template>
 
 <div id="portfolio">
-    <div id="portfolio-header">
-        <h1>Portfolio</h1>
-        <ul class="portfolio-nav">
-        <li class="outer-button">
-            <p>Catagory 1</p>
-            <p>Catagory 2</p>
-        </li>
+
+  <div id="portfolio-header">
+    <ul class="portfolio-nav">
+      <li @click="keyword='HTML'">HTML</li>
+      <li @click="keyword='JavaScript'">JavaScript</li>
+      <h1>Portfolio</h1>
+      <li @click="keyword='PHP'">PHP</li>
+      <li @click="keyword='Node.js'">Node.js</li>
     </ul>
     <button class="sorting-button" @click="keyword=''">Clear Filter</button>
-</div>
+  </div>
 
   <div id="portfolio-items">
       <transition-group name="fade">
@@ -28,11 +29,13 @@
               </div>
           </div>
       </transition-group>
-  </div>  
+  </div>
+
   <div class="buttonWrap">
     <button id="resumeButton"><span class="button" @click="$router.push({path: '/resume'})">Resume</span></button>
   </div>
-</div> 
+
+</div>
 </template>
 
 <script>
@@ -51,7 +54,7 @@ export default {
                 desc: "This is the website i built to hold examples of my work, You are on it right now!"
             },
             { 
-                name: 'GearheadsGarage', 
+                name: 'Gearheads Garage', 
                 link: 'https://www.gearheadsgarageau.com/', 
                 github: 'https://github.com/Alleaward/Gearheads-Garage',
                 tech: ['HTML5', 'CSS3', 'Bootstrap', 'JavaScript', 'jQuery', 'PHP', 'Linux', 'Apache'], 
@@ -67,7 +70,7 @@ export default {
                 desc: 'A business website for a Sunshine Coast based Garden Maintenance business.' 
             },
             { 
-                name: 'WardWebDevelopment', 
+                name: 'Ward Web Development', 
                 link: 'https://wardwebdevelopment.com/', 
                 github: 'https://github.com/Alleaward/Ward-Web-Development',
                 tech: ['HTML5', 'CSS3', 'Bootstrap', 'JavaScript', 'jQuery', 'PHP', 'Linux VM', 'Apache'], 
@@ -114,6 +117,8 @@ body {
   font-family: 'Ubuntu', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-flow: row nowrap;
 }
 h1,
 h2 {
@@ -130,11 +135,17 @@ li {
 }
 #portfolio-header {
   position: fixed;
-  top: 50px;
-  right: 50px;
-  background-color: white;
-  border-radius: 30px;
-  border: 5px solid black;
+  top: 0px;
+  width: 100%;
+  height: auto;
+  max-height: 100px;
+  display: flex;
+  justify-content: left;
+  background-color: #f1f1f1;
+  border: 3px dotted black;
+  ul{
+    display: flex;
+  }
 }
 
 .fade-enter-active {
@@ -163,33 +174,32 @@ li {
 }
 
 #portfolio-items {
-  border: 3px solid green;
-  width: 80%;
-  padding-top: 50px;
-  padding-left: 50px;
+  // border: 3px solid green;
+  width: 90%;
+  margin: auto;
+  padding-top: 100px;
   padding-bottom: 200px;
 
   span {
-    background-color: pink;
-    border: 3px solid red;
+    // border: 3px solid red;
 
     display: flex;
     flex-flow: row wrap;
-
     .portfolio-item {
-      border: 3px solid yellow;
+      border: 3px dotted black;
 
+      background-color: #f1f1f1;
       display: flex;
       flex-flow: row nowrap;
       margin-bottom: 30px;
       justify-content: space-around;
       .portfolio-img {
-          border: 3px solid orange;
+          // border: 3px solid orange;
 
           height: auto;
       }
       .portfolio-information {
-        border: 3px solid blue;
+        // border: 3px solid blue;
 
         display: flex;
         flex-flow: row wrap;
@@ -201,24 +211,33 @@ li {
           }
         }
         .portfolio-information-header{
-          border: 3px solid red;
+          // border: 3px solid red;
 
           width: 100%;
           display: flex;
           justify-content: center;
           .portfolio-item-title{
-            border: 3px solid gold;
+            // border: 3px solid gold;
             
             color: black;
+            text-decoration: none;
             font-size: 20px;
             text-transform: uppercase;
             font-weight: 400;
-            &:hover{
-              color: lightgreen;
+            line-height: 60px;
+            padding-right: 20px;
+            h3{
+              margin: 0;
+              &:hover{
+                color: lightgreen;
+                  transition: all 0.3s ease-in-out;
+                  -moz-transition: all 0.3s ease-in-out;
+                  -webkit-transition: all 0.3s ease-in-out;
+              }
             }
           }
           .portfolio-item-github{
-            border: 3px solid greenyellow;
+            // border: 3px solid greenyellow;
 
             color: black;
             font-size: 50px;
@@ -233,13 +252,14 @@ li {
           }
         }
         p {
-          border: 3px solid green;
+          // border: 3px solid green;
 
           width: 80%;
           margin: auto;
+          text-align: center;
         }
         ul {
-          border: 3px solid darkblue;
+          // border: 3px solid darkblue;
 
           width: 90%;
           display: flex;
