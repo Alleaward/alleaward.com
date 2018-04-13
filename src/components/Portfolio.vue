@@ -4,13 +4,16 @@
 
   <div id="portfolio-header">
     <ul class="portfolio-nav">
-      <li @click="keyword='HTML'">HTML</li>
-      <li @click="keyword='JavaScript'">JavaScript</li>
-      <h1>Portfolio</h1>
-      <li @click="keyword='PHP'">PHP</li>
-      <li @click="keyword='Node.js'">Node.js</li>
+      <li class="nav-skill" id="html" @click="keyword='HTML'"><p>HTML</p></li>
+      <li class="nav-skill" id="css" @click="keyword='CSS'"><p>CSS</p></li>
+      <li class="nav-skill" id="javascript" @click="keyword='JavaScript'"><p>JavaScript</p></li>
+      <li class="nav-skill" id="jquery" @click="keyword='jQuery'"><p>jQuery</p></li>
+      <li class="nav-skill" id="nodejs" @click="keyword='Node'"><p>Node.js</p></li>
+      <li class="nav-skill" id="vue" @click="keyword='Vue'"><p>Vue</p></li>
+      <li class="nav-skill" id="php" @click="keyword='PHP'"><p>PHP</p></li>
+      <li class="nav-skill" id="show-all" @click="keyword=''"><p>Show All</p></li>
     </ul>
-    <button class="sorting-button" @click="keyword=''">Clear Filter</button>
+    <!-- <button class="sorting-button" @click="keyword=''">Clear Filter</button> -->
   </div>
 
   <div id="portfolio-items">
@@ -145,9 +148,144 @@ li {
   border: 3px dotted black;
   ul{
     display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+    margin: auto;
+    .nav-skill{
+      // background-color: red;
+
+      // transform: skewX(-45deg);
+      min-width: 60px;
+      height: 40px;
+      line-height: 35px;
+      font-size: 20px;
+      margin: 2px;
+      flex-grow: 1;
+      display: block;
+      transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -webkit-transition: all 0.3s ease-in-out;
+      border-radius: 0px;
+      &:hover, &:active, &:focus{
+        // flex-grow: 2;
+        height: 80px;
+        border-radius: 10px;
+      }
+      p{
+        text-transform: uppercase;
+        font-weight: bold;
+        padding-left: 5px;
+        margin-top: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.3);
+        &:hover, &:active, &:focus{
+          background-color: rgba(255, 255, 255, 0.7);
+        }
+      }
+    }
   }
 }
-
+#html{
+  background-color: #f5672a;
+  &:hover{
+  background: url('../assets/img/html.png') no-repeat center center;
+  background-size: contain;
+  background-position: 90% 50%;
+  background-color: #f5672a;
+    color: black;
+  }
+}
+#css{
+  background-color: #29a8dd;
+  &:hover{
+  background: url('../assets/img/css.png') no-repeat center center;
+  background-size: contain;
+  background-position: 90% 50%;
+  background-color: #29a8dd;
+    color: black;
+  }
+}
+#javascript{
+  background-color: #F0DB4F;
+  &:hover{
+  background: url('../assets/img/javascript.png') no-repeat center center;
+  background-size: contain;
+  background-position: 90% 50%;
+  background-color: #F0DB4F;
+    color: black;
+  }
+}
+#jquery{
+  background-color: #1069AE;
+  &:hover{
+  background: url('../assets/img/jquery.png') no-repeat center center;
+  background-size: contain;
+  background-position: 90% 50%;
+  background-color: #1069AE;
+    color: black;
+  }
+}
+#vue{
+  background-color: #41B883;
+  &:hover{
+  background: url('../assets/img/vue.png') no-repeat center center;
+  background-size: contain;
+  background-position: 90% 50%;
+  background-color: #41B883;
+    color: black;
+  }
+}
+#php{
+  background-color: #8993BE;
+  &:hover{
+  background: url('../assets/img/php.png') no-repeat center center;
+  background-size: contain;
+  background-position: 90% 50%;
+  background-color: #8993BE;
+    color: black;
+  }
+}
+#mysql{
+  background-color: #E38D1A;
+  &:hover{
+  background: url('../assets/img/mysql.png') no-repeat center center;
+  background-size: contain;
+  background-position: 90% 50%;
+  background-color: #E38D1A;
+    color: black;
+  }
+}
+#nodejs{
+  background-color: #7EB341;
+  &:hover{
+  background: url('../assets/img/nodejs.png') no-repeat center center;
+  background-size: contain;
+  background-position: 90% 50%;
+  background-color: #7EB341;
+    color: black;
+  }
+}
+#linux{
+  background-color: #404040;
+  &:hover{
+  background: url('../assets/img/linux.png') no-repeat center center;
+  background-size: contain;
+  background-position: 90% 50%;
+  background-color: #404040;
+    color: black;
+  }
+}
+#show-all{
+  background-color: #D62829;
+  &:hover{
+  background: url('../assets/img/show-all.png') no-repeat center center;
+  background-size: contain;
+  background-position: 90% 50%;
+  background-color: #D62829;
+    color: black;
+  }
+}
 .fade-enter-active {
   transition: all 1s ease-out;
 }
@@ -204,12 +342,6 @@ li {
         display: flex;
         flex-flow: row wrap;
         align-content: space-around;
-        .ion-social-github{
-
-          &:hover{
-            color: blue;
-          }
-        }
         .portfolio-information-header{
           // border: 3px solid red;
 
@@ -229,7 +361,7 @@ li {
             h3{
               margin: 0;
               &:hover{
-                color: lightgreen;
+                color: rgb(0, 153, 255);
                   transition: all 0.3s ease-in-out;
                   -moz-transition: all 0.3s ease-in-out;
                   -webkit-transition: all 0.3s ease-in-out;
