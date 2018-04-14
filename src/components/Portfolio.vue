@@ -144,17 +144,26 @@ li {
   max-height: 100px;
   display: flex;
   justify-content: left;
-  // background-color: #f1f1f1;
-  // border: 3px dotted black;
   ul{
+    border: #484848 solid 1px;
+    background-color: #f1f1f1;
     display: flex;
     flex-flow: row wrap;
-    width: 90%;
+    width: 88%;
+    padding: 5px 0.5%;
+    border-radius: 15px;
     margin: auto;
+    li:first-child{
+      p{
+        padding-left: 15px;
+      }
+      border-radius: 15px 0px 0px 15px;
+    }
+    li:last-child{
+      border-radius: 0px 15px 15px 0px;
+    }
     .nav-skill{
-      // background-color: red;
-
-      // transform: skewX(-45deg);
+      border: #484848 solid 1px;
       min-width: 60px;
       height: 40px;
       line-height: 35px;
@@ -319,7 +328,7 @@ li {
   // border: 3px solid green;
   min-width: 90%;
   margin: auto;
-  padding-top: 115px;
+  padding-top: 120px;
   padding-bottom: 200px;
 
   span {
@@ -331,10 +340,9 @@ li {
       // border: 3px dashed black;
       border-radius: 15px;
       border: #484848 solid 1px;
-
+      background-color: #f1f1f1;
       margin: auto;
       width: 90%;
-      background-color: #f1f1f1;
       display: flex;
       flex-flow: row nowrap;
       margin-bottom: 30px;
