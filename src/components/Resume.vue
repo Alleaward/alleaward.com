@@ -23,7 +23,7 @@
       <br>
       <br>My primary strength is that I am a fast learner, I have learnt a wide range of skills, and each skill allows me to more quickly contextualize and learn future skills faster. I am actively pursuing technical, personal and professional development.
     </p>
-    
+    <p>(still learning)1 star -------2(basics)------3 star (means i have working knowledge)------4 (i have made many projects using it)--------5 star (know how to use a majority of it by memory)</p>
   </section>
 
   <div id="social-banner">
@@ -101,16 +101,6 @@
                 </span>
               </li>
               <li>
-                <p>Java</p>
-                <span class="starRating">
-                  <i class="ion-android-star"></i>
-                  <i class="ion-android-star"></i>
-                  <i class="ion-android-star"></i>
-                  <i class="ion-android-star-outline"></i>
-                  <i class="ion-android-star-outline"></i>
-                </span>
-              </li>
-              <li>
                 <p>C</p>
                 <span class="starRating">
                   <i class="ion-android-star"></i>
@@ -126,6 +116,16 @@
                   <i class="ion-android-star"></i>
                   <i class="ion-android-star"></i>
                   <i class="ion-android-star"></i>
+                  <i class="ion-android-star-outline"></i>
+                  <i class="ion-android-star-outline"></i>
+                </span>
+              </li>
+              <li>
+                <p>Java</p>
+                <span class="starRating">
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star-outline"></i>
                   <i class="ion-android-star-outline"></i>
                   <i class="ion-android-star-outline"></i>
                 </span>
@@ -148,7 +148,12 @@
             <i class="ion-android-star"></i>
             <i class="ion-android-star"></i>
           </p>
-          <p class="skillDesc">I have an advanced grasp of HTML with most of its functionality committed to memory. I know how to make a properly formed and validated HTML page.</p>
+          <ul class="skillDesc">
+            <p>
+              I have an advanced grasp of HTML up to and including <strong>HTML5</strong> with most of its functionality committed to memory. 
+              I know how to make a properly formed and validated HTML page.
+            </p>
+          </ul>
           </div>
 
         </div>
@@ -165,13 +170,14 @@
               <i class="ion-android-star"></i>
             </p>
             <ul class="skillDesc">
-              I am very familiar with CSS selectors and properties. I can make just about anything from a mockup using CSS and HTML, 
-              including most interactivity with new features brought by CSS3. I have used frameworks such as Bootstrap, Bulma and MaterialiseCSS, 
-              but I now usually just make my websites responsive/interactive with vanilla CSS using a combination of Flexbox, Grid, Transitions, 
-              Transforms and Psuedo-Selectors. I mainly use the SASS preprocessor. <br>
-
-              TL:DR --- Skill Level: High --- Frameworks: Bootstrap, MaterialiseCSS, Bulma --- Preprocessor: SASS<br><br>
-
+              <p>
+                I am <strong>very</strong> familiar with CSS selectors and properties. I can make just about anything from a mockup using CSS and HTML, 
+                including most interactivity with new features brought by CSS3. I have used <strong>frameworks</strong> such as <strong>Bootstrap, Bulma and MaterialiseCSS,</strong>
+                but I now usually just make my websites responsive/interactive with vanilla CSS using a combination of Flexbox, Grid, Transitions, 
+                Transforms and Psuedo-Selectors. I mainly use the <strong>SASS preprocessor</strong>.
+              </p>
+              <br>
+              <br>
               <li>
                 <p>Animations</p>
                 <span class="starRating">
@@ -249,24 +255,15 @@
                   <i class="ion-android-star-outline"></i>
               </span>
             </p>
-            <ul class="skillDesc">I have been using JavaScript for several years now and have grown quite competent in it, 
-              I can use vanilla JavaScript for many tasks, I used to use jQuery for convenience but I have transitioned into VueJS instead. 
-              I understand most of the concepts you would expect of a JavaScript developer including the DOM, JSON, AJAX, 
-              API’s as well as a thorough understanding of the new features brought with ES6 and a basic understanding of NodeJS.<br>
-
-              TL:DR --- Skill Level: High --- Frameworks: Vue, React, Angular --- Preprocessor: Babbel<br><br>
+            <ul class="skillDesc">
+              <p>
+                I have been using JavaScript for several years now and have grown quite competent in it, 
+                While i have <b>strong</b> skills with <b>vanilla JavaScript</b>, I used to use <b>jQuery</b> for convenience but I have transitioned into <b>VueJS</b> instead. 
+                I understand most of the concepts you would expect of a JavaScript developer including <b>the DOM, JSON, AJAX, 
+                API’s</b> as well as a thorough understanding of the new features brought with <b>ES6</b> and a working understanding of <b>NodeJS</b>.<br>
+              </p>
               <li>
                 <p>Vanilla JS</p>
-                <span class="starRating">
-                  <i class="ion-android-star"></i>
-                  <i class="ion-android-star"></i>
-                  <i class="ion-android-star"></i>
-                  <i class="ion-android-star"></i>
-                  <i class="ion-android-star-outline"></i>
-                </span>
-              </li>
-              <li>
-                <p>TypeScript</p>
                 <span class="starRating">
                   <i class="ion-android-star"></i>
                   <i class="ion-android-star"></i>
@@ -296,32 +293,42 @@
                 </span>
               </li>
               <li>
-                <p>React</p>
-                <span class="starRating">
-                  <i class="ion-android-star"></i>
-                  <i class="ion-android-star"></i>
-                  <i class="ion-android-star-outline"></i>
-                  <i class="ion-android-star-outline"></i>
-                  <i class="ion-android-star-outline"></i>
-                </span>
-              </li>
-              <!-- <li>
-                <p>Angular</p>
-                <span class="starRating">
-                  <i class="ion-android-star"></i>
-                  <i class="ion-android-star"></i>
-                  <i class="ion-android-star"></i>
-                  <i class="ion-android-star"></i>
-                  <i class="ion-android-star-outline"></i>
-                </span>
-              </li> -->
-              <li>
                 <p>jQuery</p>
                 <span class="starRating">
                   <i class="ion-android-star"></i>
                   <i class="ion-android-star"></i>
                   <i class="ion-android-star"></i>
                   <i class="ion-android-star"></i>
+                  <i class="ion-android-star-outline"></i>
+                </span>
+              </li>
+              <li>
+                <p>AJAX</p>
+                <span class="starRating">
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star-outline"></i>
+                </span>
+              </li>
+              <li>
+                <p>JSON</p>
+                <span class="starRating">
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star-outline"></i>
+                </span>
+              </li>
+              <li>
+                <p>NodeJS</p>
+                <span class="starRating">
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star-outline"></i>
                   <i class="ion-android-star-outline"></i>
                 </span>
               </li>
@@ -345,8 +352,18 @@
                   <i class="ion-android-star-outline"></i>
                 </span>
               </li>
+              <li>
+                <p>React</p>
+                <span class="starRating">
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star-outline"></i>
+                  <i class="ion-android-star-outline"></i>
+                  <i class="ion-android-star-outline"></i>
+                </span>
+              </li>
               <!-- <li>
-                <p>Gulp</p>
+                <p>Angular</p>
                 <span class="starRating">
                   <i class="ion-android-star"></i>
                   <i class="ion-android-star"></i>
@@ -355,26 +372,6 @@
                   <i class="ion-android-star-outline"></i>
                 </span>
               </li> -->
-              <li>
-                <p>AJAX</p>
-                <span class="starRating">
-                  <i class="ion-android-star"></i>
-                  <i class="ion-android-star"></i>
-                  <i class="ion-android-star"></i>
-                  <i class="ion-android-star"></i>
-                  <i class="ion-android-star-outline"></i>
-                </span>
-              </li>
-              <li>
-                <p>JSON</p>
-                <span class="starRating">
-                  <i class="ion-android-star"></i>
-                  <i class="ion-android-star"></i>
-                  <i class="ion-android-star"></i>
-                  <i class="ion-android-star"></i>
-                  <i class="ion-android-star-outline"></i>
-                </span>
-              </li>
 
             </ul>
           </div>
@@ -395,11 +392,11 @@
               <i class="ion-android-star"></i>
               <i class="ion-android-star-outline"></i>
             </p>
-            <ul class="skillDesc">I have used PHP to build several projects ranging from simple calculators to shopping carts and user accounts. 
-              PHP is one of the first languages I learnt years ago, I have used PHP to build many projects ranging from simple calculators to 
-              websites with persistent shopping carts and accounts. (ex1, ex2, ex3)<br>
-
-              TL:DR --- Skill Level: High --- Frameworks: Laravel, Yi, Symfony, CodeIgniter, Phalcon, CakePHP --- Preprocessor: Babbel<br><br>
+            <ul class="skillDesc">
+              <p>
+                PHP is one of the first languages I learnt years ago, I have used PHP to build many projects ranging from simple calculators to 
+                websites with <a href="http://phpstore.wardwebdevelopment.com/">persistent shopping carts</a> and <a href="https://fitnessapp.wardwebdevelopment.com/">accounts</a>.<br>
+              </p>
               <!-- <li>
                 <p>Laravel</p>
                 <span class="starRating">
@@ -411,7 +408,6 @@
                 </span>
               </li> -->
             </ul>
-
           </div>
         </div>
       </section>
@@ -426,8 +422,10 @@
               <i class="ion-android-star-outline"></i>
               <i class="ion-android-star-outline"></i>
             </p>
-            <ul class="skillDesc">I have used MySQL to store user accounts and data, for example a Dietary Calculator 
-              that stores user data server side. (LINK)<br><br>
+            <ul class="skillDesc">
+              <p>
+                I have used MySQL to store user accounts and data, for example a <a href="https://fitnessapp.wardwebdevelopment.com/">Dietary Calculator</a> that stores user data server side.
+              </p>
               <li>
                 <p>MySQL</p>
                 <span class="starRating">
@@ -443,7 +441,7 @@
                 <span class="starRating">
                   <i class="ion-android-star"></i>
                   <i class="ion-android-star"></i>
-                  <i class="ion-android-star-outline"></i>
+                  <i class="ion-android-star"></i>
                   <i class="ion-android-star-outline"></i>
                   <i class="ion-android-star-outline"></i>
                 </span>
@@ -464,9 +462,11 @@
                 <i class="ion-android-star-outline"></i>
             </p>
             <ul class="skillDesc">
-              <br>
+              <p>
+                I have relatively recently begun learning <b>Node.js</b>. I have built several projects using it and look foward to learning more.
+              </p>
               <li>
-                <p>Vue SPA</p>
+                <p>Vue</p>
                 <span class="starRating">
                   <i class="ion-android-star"></i>
                   <i class="ion-android-star"></i>
@@ -521,7 +521,10 @@
               <i class="ion-android-star"></i>
             </p>
             <ul class="skillDesc">
-              <br>
+              <p>
+                Windows has been my daily driver since i was a child. 
+                I have very strong skills using Windows, and i can <b>intuitively</b> solve problems with it using very little help.
+              </p>
               <li>
                 <p>Apache</p>
                 <span class="starRating">
@@ -578,7 +581,10 @@
               <i class="ion-android-star-outline"></i>
             </p>
             <ul class="skillDesc">
-              <br>
+              <p>
+                Throughout my education in web development i have used Linux many times, 
+                i am growing <b>competent and confident</b> in its use and can use it for everything i need. I have begun the process of migrating to Linux, and would like to eventually move to it entirely.
+              </p>
               <li>
                 <p>Apache</p>
                 <span class="starRating">
@@ -615,7 +621,9 @@
               <i class="ion-android-star-outline"></i> -->
             </p>
             <ul class="skillDesc">
-              <br>
+              <li>
+                <p>Expert at Googling</p>
+              </li>
               <li>
                 <p>cPanel</p>
               </li>
@@ -872,9 +880,10 @@ body{
     transition:all 0.4s ease-in-out 0.4s;
     -moz-transition:all 0.4s ease-in-out 0.4s;
     -webkit-transition:all 0.4s ease-in-out 0.4s;   
-
     overflow: hidden;
-
+    a{
+      color: transparent;
+    }
     &:hover, &:active, &:focus{
       // flex-basis: 100%;
       // width: 50%;
@@ -884,6 +893,20 @@ body{
         background-color: rgba(233, 233, 233, 0.6);
       }
       .skillDesc{
+        p{
+          line-height: 1.5em;
+          a{
+            transition:all ease-in-out 0.4s;
+            -moz-transition:all ease-in-out 0.4s;
+            -webkit-transition:all ease-in-out 0.4s; 
+            font-weight: bold;
+            color: blue;
+            text-decoration: none;
+            &:hover{
+              color: green;
+            }
+          }
+        }
         li{
           // border-bottom: 2px solid black;
           background: linear-gradient(to right, rgba(255,0,0,0) 0%, 

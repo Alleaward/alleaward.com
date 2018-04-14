@@ -65,6 +65,14 @@ export default {
                 desc: "Gearheadsgarageau.com is a simple business website for a Gold Coast mechanic, it was built on the LAMP stack with the Bootstrap library for some styling and a php form." 
             },
             { 
+                name: 'PHP Store', 
+                link: 'http://phpstore.wardwebdevelopment.com/products.php', 
+                github: 'https://github.com/Alleaward/PHP-Online-Store',
+                tech: ['html', 'css', 'javascript', 'php', 'linux', 'apache'], 
+                image: 'src/assets/img/PhpStore.jpg', 
+                desc: "An online store written in PHP, by loading products from a CSV it creates an easily scaleable online store." 
+            },
+            { 
                 name: "Cut N' Edge", 
                 link: 'https://cutnedgesunshinecoast.wardwebdevelopment.com/', 
                 github: 'https://github.com/Alleaward/Cut-N-Edge',
@@ -146,6 +154,7 @@ li {
   justify-content: left;
   ul{
     border: #484848 solid 1px;
+    box-shadow: 0 3px 3px rgba(10, 10, 10, .4), 0 0 0 1px rgba(10, 10, 10, .2);
     background-color: #91896E;
     display: flex;
     flex-flow: row wrap;
@@ -347,11 +356,11 @@ li {
       flex-flow: row nowrap;
       margin-bottom: 30px;
       justify-content: space-around;
+      box-shadow: 0 3px 3px rgba(10, 10, 10, .4), 0 0 0 1px rgba(10, 10, 10, .2);
       .portfolio-img {
           // border: 3px solid orange;
           border-radius: 15px 0px 0px 15px;
           border-right: #484848 solid 1px;
-
           height: auto;
       }
       .portfolio-information {
@@ -418,7 +427,7 @@ li {
           margin: auto;
           padding: 0;
           li {
-            border: #ffffff solid 1px;
+            box-shadow: 0 3px 3px rgba(10, 10, 10, .4), 0 0 0 1px rgba(10, 10, 10, .2);
             flex-grow: 1;
             // background-color: white;
             text-transform: uppercase;
