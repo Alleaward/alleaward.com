@@ -384,7 +384,7 @@ li {
             font-size: 30px;
             text-transform: uppercase;
             font-weight: 400;
-            line-height: 60px;
+            line-height: 70px;
             padding-right: 20px;
             h3{
               margin: 0;
@@ -398,16 +398,21 @@ li {
           }
           .portfolio-item-github{
             // border: 3px solid greenyellow;
-
+            background-color: white;
+            width: 60px;
+            height: 60px;
+            border: 3px solid black;
+            border-radius: 100%;
+            text-align: center;
             color: black;
             font-size: 50px;
-            i{
-              &:hover {
-                color: #5245AC;
-                transition: all 0.3s ease-in-out;
-                -moz-transition: all 0.3s ease-in-out;
-                -webkit-transition: all 0.3s ease-in-out;
-              }
+            &:hover {
+              background-color: #5245AC;
+              color: white;
+              border-color: white;
+              transition: all 0.3s ease-in-out;
+              -moz-transition: all 0.3s ease-in-out;
+              -webkit-transition: all 0.3s ease-in-out;
             }
           }
         }
