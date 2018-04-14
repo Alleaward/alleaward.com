@@ -146,7 +146,7 @@ li {
   justify-content: left;
   ul{
     border: #484848 solid 1px;
-    background-color: #f1f1f1;
+    background-color: #91896E;
     display: flex;
     flex-flow: row wrap;
     width: 88%;
@@ -360,6 +360,7 @@ li {
         display: flex;
         flex-flow: row wrap;
         align-content: space-around;
+        padding-bottom: 10px;
         .portfolio-information-header{
           // border: 3px solid red;
 
@@ -371,7 +372,7 @@ li {
             
             color: black;
             text-decoration: none;
-            font-size: 20px;
+            font-size: 30px;
             text-transform: uppercase;
             font-weight: 400;
             line-height: 60px;
@@ -403,7 +404,7 @@ li {
         }
         p {
           // border: 3px solid green;
-
+          font-size: 18px;
           width: 80%;
           margin: auto;
           text-align: center;
