@@ -27,7 +27,7 @@
                 </div>
                   <p>{{ portfolio.desc }}</p>
                   <ul>
-                      <li class="" v-bind:key="tech.name" v-for="tech in portfolio.tech">{{ tech }}</li>
+                      <li :class="tech" v-bind:key="tech.name" v-for="tech in portfolio.tech">{{ tech }}</li>
                   </ul>
               </div>
           </div>
@@ -52,15 +52,15 @@ export default {
                 name: 'Allea Ward',
                 link: 'https://www.alleaward.com/',
                 github: 'https://www.alleaward.com/',
-                tech: ['HTML5', 'CSS3', 'JavaScript', 'Node.js', 'Vue.js'],
+                tech: ['html', 'css', 'javascript', 'node', 'vue'],
                 image: 'src/assets/img/AlleaWard.jpg',
-                desc: "This is the website i built to hold examples of my work, You are on it right now!"
+                desc: "This is the website i built to hold examples of my work, you are on it right now. This website was built using Node.js and Vue."
             },
             { 
                 name: 'Gearheads Garage', 
                 link: 'https://www.gearheadsgarageau.com/', 
                 github: 'https://github.com/Alleaward/Gearheads-Garage',
-                tech: ['HTML5', 'CSS3', 'Bootstrap', 'JavaScript', 'jQuery', 'PHP', 'Linux', 'Apache'], 
+                tech: ['html', 'css', 'bootstrap', 'javascript', 'jquery', 'php', 'linux', 'apache'], 
                 image: 'src/assets/img/GearheadsGarage.jpg', 
                 desc: "Gearheadsgarageau.com is a simple business website for a Gold Coast mechanic, it was built on the LAMP stack with the Bootstrap library for some styling and a php form." 
             },
@@ -68,7 +68,7 @@ export default {
                 name: "Cut N' Edge", 
                 link: 'https://cutnedgesunshinecoast.wardwebdevelopment.com/', 
                 github: 'https://github.com/Alleaward/Cut-N-Edge',
-                tech: ['HTML5', 'CSS3', 'Bootstrap', 'JavaScript', 'jQuery', 'PHP', 'Linux', 'Apache'], 
+                tech: ['html', 'css', 'bootstrap', 'javascript', 'jquery', 'php', 'linux', 'apache'], 
                 image: 'src/assets/img/CutNEdge.jpg', 
                 desc: 'A business website for a Sunshine Coast based Garden Maintenance business.' 
             },
@@ -76,7 +76,7 @@ export default {
                 name: 'Ward Web Development', 
                 link: 'https://wardwebdevelopment.com/', 
                 github: 'https://github.com/Alleaward/Ward-Web-Development',
-                tech: ['HTML5', 'CSS3', 'Bootstrap', 'JavaScript', 'jQuery', 'PHP', 'Linux VM', 'Apache'], 
+                tech: ['html', 'css', 'bootstrap', 'javascript', 'jquery', 'php', 'linux', 'apache'], 
                 image: 'src/assets/img/WardWebDevelopment.jpg', 
                 desc: 'An alternative website for my freelance web development business.' 
             },
@@ -84,7 +84,7 @@ export default {
                 name: 'TDEE Calculator', 
                 link: 'https://fitnessapp.wardwebdevelopment.com/', 
                 github: 'https://github.com/Alleaward/TDEE-Calculator',
-                tech: ['HTML5', 'CSS3', 'JavaScript', 'jQuery', 'AJAX', 'PHP', 'MYSQL', 'AWS EC2', 'Amazon Linux Server', 'Apache'], 
+                tech: ['html', 'css', 'materializecss', 'javascript', 'ajax', 'jquery', 'php', 'mysql', 'apache'], 
                 image: 'src/assets/img/FitnessApp.jpg', 
                 desc: 'A fitness calculator that demonstrates: Databases, Simple User Accounts, Form Inputs and calculations using Javascript and PHP.' 
             }
@@ -138,14 +138,14 @@ li {
 }
 #portfolio-header {
   position: fixed;
-  top: 0px;
+  top: 20px;
   width: 100%;
   height: auto;
   max-height: 100px;
   display: flex;
   justify-content: left;
-  background-color: #f1f1f1;
-  border: 3px dotted black;
+  // background-color: #f1f1f1;
+  // border: 3px dotted black;
   ul{
     display: flex;
     flex-flow: row wrap;
@@ -165,6 +165,7 @@ li {
       transition: all 0.3s ease-in-out;
       -moz-transition: all 0.3s ease-in-out;
       -webkit-transition: all 0.3s ease-in-out;
+      overflow: hidden;
       border-radius: 0px;
       &:hover, &:active, &:focus{
         // flex-grow: 2;
@@ -178,7 +179,10 @@ li {
         margin-top: 0;
         height: 100%;
         width: 100%;
-        background-color: rgba(255, 255, 255, 0.3);
+        // background-color: rgba(255, 255, 255, 0.3);
+        transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
         &:hover, &:active, &:focus{
           background-color: rgba(255, 255, 255, 0.7);
         }
@@ -313,9 +317,9 @@ li {
 
 #portfolio-items {
   // border: 3px solid green;
-  width: 90%;
+  min-width: 90%;
   margin: auto;
-  padding-top: 100px;
+  padding-top: 115px;
   padding-bottom: 200px;
 
   span {
@@ -324,8 +328,12 @@ li {
     display: flex;
     flex-flow: row wrap;
     .portfolio-item {
-      border: 3px dotted black;
+      // border: 3px dashed black;
+      border-radius: 15px;
+      border: #484848 solid 1px;
 
+      margin: auto;
+      width: 90%;
       background-color: #f1f1f1;
       display: flex;
       flex-flow: row nowrap;
@@ -333,6 +341,8 @@ li {
       justify-content: space-around;
       .portfolio-img {
           // border: 3px solid orange;
+          border-radius: 15px 0px 0px 15px;
+          border-right: #484848 solid 1px;
 
           height: auto;
       }
@@ -399,10 +409,11 @@ li {
           margin: auto;
           padding: 0;
           li {
-            border: 3px solid red;
-
+            border: #ffffff solid 1px;
             flex-grow: 1;
-            background-color: white;
+            // background-color: white;
+            text-transform: uppercase;
+            font-weight: bold;
             color: black;
             list-style: none;
             text-align: center;
@@ -415,7 +426,36 @@ li {
     }
   }
 }
-
+.html{
+  background-color:#f5672a;
+}
+.css, .bootstrap, .materializecss, .bulma{
+  background-color:#29a8dd;
+}
+.javascript, .ajax{
+  background-color:#F0DB4F;
+}
+.jquery{
+  background-color:#1069AE;
+}
+.node{
+  background-color:#7EB341;
+}
+.vue{
+  background-color:#41B883;
+}
+.php{
+  background-color:#8993BE;
+}
+.linux{
+  background-color:#686868;
+}
+.apache{
+  background-color:#D94A51;
+}
+.mysql{
+  background-color:#E38D1A;
+}
 #resumeButton {
   box-shadow: inset 0 0 0 1000px rgba(43, 43, 43, 0.8);
   position: fixed;
