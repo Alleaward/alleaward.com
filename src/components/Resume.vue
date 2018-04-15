@@ -25,25 +25,25 @@
     </p>
     <p>
       <i class="ion-android-star"></i> 
-       = I have some exposure or currently learning.<br>
+      &nbsp; = &nbsp; I have some exposure or currently learning.<br>
       <i class="ion-android-star"></i>
       <i class="ion-android-star"></i>
-       = I understand the fundamentals.<br>
-      <i class="ion-android-star"></i>
-      <i class="ion-android-star"></i>
-      <i class="ion-android-star"></i>
-       = I have a working knowledge.<br>
+      &nbsp; = &nbsp; I understand the fundamentals.<br>
       <i class="ion-android-star"></i>
       <i class="ion-android-star"></i>
       <i class="ion-android-star"></i>
-      <i class="ion-android-star"></i>
-       = I have used it in several projects.<br>
+      &nbsp; = &nbsp; I have a working knowledge.<br>
       <i class="ion-android-star"></i>
       <i class="ion-android-star"></i>
       <i class="ion-android-star"></i>
       <i class="ion-android-star"></i>
+      &nbsp; = &nbsp; I have used it in several projects.<br>
       <i class="ion-android-star"></i>
-       = I can use it proficiently from memory.
+      <i class="ion-android-star"></i>
+      <i class="ion-android-star"></i>
+      <i class="ion-android-star"></i>
+      <i class="ion-android-star"></i>
+      &nbsp; = &nbsp; I can use it proficiently from memory.
     </p>
   </section>
 
@@ -720,6 +720,7 @@
           <li> - Design Patterns (OOP mainly)</li>
           <li> - Good programming style based within established standards, practices and guidelines</li>
           <li> - Debugging</li>
+          <li> - Usability, Accessibility and Internationalization</li>
         </ul>
         <li class="heading3">Experience with several langauges</li>
         <ul>
@@ -731,7 +732,6 @@
           <li> - PHP</li>
           <li> - HTML/CSS</li>
         </ul>
-        <li class="heading3">Usability, Accessibility and Internationalization</li>
       </ul>
       <hr>
       <br>
@@ -791,6 +791,7 @@ body{
   justify-items: center;
   display: flex;
   flex-flow: row wrap;
+  font-size: 25px;
   span{
     font-weight: bold;
   }
@@ -862,9 +863,9 @@ body{
 
 //DETAILS-----DETAILS-----DETAILS-----DETAILS-----DETAILS-----DETAILS-----DETAILS-----DETAILS-----DETAILS
 #details{
-  width: 760px;
+  width: 800px;
   margin: auto;
-  padding: 0 30px;
+  // padding: 0 30px;
   ul{
     padding: 0;
     margin: 0;
@@ -941,7 +942,7 @@ body{
     .skillHeading{
       margin-top: 20px;
       text-align: center;
-      font-size: 1.5rem;
+      font-size: 2rem;
       width: 100%;
       color: black;
       background: linear-gradient(to right, 
@@ -1162,29 +1163,32 @@ body{
       display: block;
       position: absolute;
       left: 50%;
-      top: 40%;
-      height: 2.5rem;
+      top: 30%;
+      height: 5rem;
+      line-height: 4rem;
       padding-top: 1.3rem;
       width: 15rem;
       text-align: center;
       color: rgba(155, 155, 155, 0.8);
       border: rgba(155, 155, 155, 0.8) solid 0.2rem;
-      font-size: 1rem;
+      font-size: 2rem;
       font-weight: bold;
       text-transform: uppercase;
       text-decoration: none;
       transform: translateX(-50%);
-      transition:all 0.4s ease-in-out;
-      -moz-transition:all 0.4s ease-in-out;
-      -webkit-transition:all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
+      -moz-transition: all 0.4s ease-in-out;
+      -webkit-transition: all 0.4s ease-in-out;
       &:hover {
         background-color: rgba(255, 255, 255, 1);
         color: rgba(55, 55, 55, 0.9);  
       }
     }
-
     &:hover{
       height: 60vh;
+      .button{
+        top: 40%;
+      }
     }
   }
 }

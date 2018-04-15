@@ -21,9 +21,9 @@
           <div class="portfolio-item" v-bind:key="portfolio.name" v-for="portfolio in siteFilter">
             <img class="portfolio-img" v-bind:src="portfolio.image" alt="">
               <div class="portfolio-information">
+                  <a class="portfolio-item-github" :href="portfolio.github"><i class="ion-social-github"></i></a>
                 <div class="portfolio-information-header">
                   <a class="portfolio-item-title" :href="portfolio.link"><h3>{{ portfolio.name }}</h3></a>
-                  <a class="portfolio-item-github" :href="portfolio.github"><i class="ion-social-github"></i></a>
                 </div>
                   <p>{{ portfolio.desc }}</p>
                   <ul>
@@ -376,13 +376,16 @@ li {
 
         display: flex;
         flex-flow: row wrap;
+        justify-content: center;
         align-content: space-around;
-        padding-bottom: 10px;
+        padding: 10px 0;
+        text-align: left;
         .portfolio-information-header{
           // border: 3px solid red;
 
           width: 100%;
           display: flex;
+          flex-direction: row wrap;
           justify-content: center;
           .portfolio-item-title{
             // border: 3px solid gold;
@@ -393,7 +396,9 @@ li {
             text-transform: uppercase;
             font-weight: 400;
             line-height: 70px;
-            padding-right: 20px;
+            margin: auto;
+            max-width: 80%;
+            text-align: center;
             h3{
               margin: 0;
               &:hover{
@@ -404,24 +409,24 @@ li {
               }
             }
           }
-          .portfolio-item-github{
-            // border: 3px solid greenyellow;
-            background-color: white;
-            width: 60px;
-            height: 60px;
-            border: 3px solid black;
-            border-radius: 100%;
-            text-align: center;
-            color: black;
-            font-size: 50px;
-            &:hover {
-              background-color: #5245AC;
-              color: white;
-              border-color: white;
-              transition: all 0.3s ease-in-out;
-              -moz-transition: all 0.3s ease-in-out;
-              -webkit-transition: all 0.3s ease-in-out;
-            }
+        }
+        .portfolio-item-github{
+          // border: 3px solid greenyellow;
+          background-color: white;
+          width: 60px;
+          height: 60px;
+          border: 3px solid black;
+          border-radius: 100%;
+          text-align: center;
+          color: black;
+          font-size: 50px;
+          &:hover {
+            background-color: #5245AC;
+            color: white;
+            border-color: white;
+            transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
           }
         }
         p {
@@ -429,7 +434,7 @@ li {
           font-size: 18px;
           width: 80%;
           margin: auto;
-          text-align: center;
+          text-align: left;
         }
         ul {
           // border: 3px solid darkblue;
@@ -511,14 +516,15 @@ li {
     display: block;
     position: absolute;
     left: 50%;
-    top: 40%;
-    height: 2.5rem;
+    top: 30%;
+    height: 5rem;
+    line-height: 4rem;
     padding-top: 1.3rem;
     width: 15rem;
     text-align: center;
     color: rgba(155, 155, 155, 0.8);
     border: rgba(155, 155, 155, 0.8) solid 0.2rem;
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
@@ -532,6 +538,9 @@ li {
     }
   }
   &:hover {
+    .button{
+      top: 40%;
+    }
     height: 60vh;
   }
 }

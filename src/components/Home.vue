@@ -61,13 +61,14 @@ h1 {
   position: absolute;
   left: 50%;
   top: 40%;
-  height: 2.5rem;
+  height: 10rem;
+  line-height: 8rem;
   padding-top: 1.3rem;
-  width: 15rem;
+  width: 30rem;
   text-align: center;
   color: #fff;
   border: #fff solid 0.2rem;
-  font-size: 1rem;
+  font-size: 5rem;
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
