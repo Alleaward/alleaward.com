@@ -13,7 +13,7 @@ My portfolio/resume website.
 >I used JavaScript for interactivity and animations.
 
 ### Vue JS
->I used Vue to create an interactive portfolio section with a sortable list. 
+>I used Vue to create an interactive portfolio section with a sortable list. Vue Router was used for navigation.
 
 ### PHP
 >PHP was used to process the form data and send it to my email.

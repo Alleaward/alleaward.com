@@ -1,6 +1,6 @@
 import Vue from 'vue'
-import App from './App.vue'
 import VueRouter from 'vue-router'
+import App from './App.vue'
 import Home from './components/Home.vue'
 import Resume from './components/Resume.vue'
 import Portfolio from './components/Portfolio.vue'
@@ -8,12 +8,12 @@ import Portfolio from './components/Portfolio.vue'
 Vue.use(VueRouter);
 
 const routes = [
-  { path:'/', component: Home },
-  { path: '/Resume', component: Resume },
-  { path: '/Portfolio', component: Portfolio }
+  { path:'/', name: Home, component: Home },
+  { path: '/Resume', name: Resume, component: Resume },
+  { path: '/Portfolio', name: Portfolio, component: Portfolio }
 ];
 
-const router = new VueRouter({
+export default router = new VueRouter({
   routes,
   mode : 'history'
 });
