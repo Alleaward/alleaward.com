@@ -23,7 +23,28 @@
       <br>
       <br>My primary strength is that I am a fast learner, I have learnt a wide range of skills, and each skill allows me to more quickly contextualize and learn future skills faster. I am actively pursuing technical, personal and professional development.
     </p>
-    <p>(still learning)1 star -------2(basics)------3 star (means i have working knowledge)------4 (i have made many projects using it)--------5 star (know how to use a majority of it by memory)</p>
+    <p>
+      <i class="ion-android-star"></i> 
+       = I have some exposure or currently learning.<br>
+      <i class="ion-android-star"></i>
+      <i class="ion-android-star"></i>
+       = I understand the fundamentals.<br>
+      <i class="ion-android-star"></i>
+      <i class="ion-android-star"></i>
+      <i class="ion-android-star"></i>
+       = I have a working knowledge.<br>
+      <i class="ion-android-star"></i>
+      <i class="ion-android-star"></i>
+      <i class="ion-android-star"></i>
+      <i class="ion-android-star"></i>
+       = I have used it in several projects.<br>
+      <i class="ion-android-star"></i>
+      <i class="ion-android-star"></i>
+      <i class="ion-android-star"></i>
+      <i class="ion-android-star"></i>
+      <i class="ion-android-star"></i>
+       = I can use it proficiently from memory.
+    </p>
   </section>
 
   <div id="social-banner">
