@@ -14,14 +14,14 @@
     <!-- <p>Blog: <a href="blog.alleaward.com">My Blog</a> </p> -->
 
     <h2>Objective</h2>
-    <p>My objective is to learn how to make software that is pixel perfect and as computationally efficient as possible, 
+    <p>My objective is to create software that is pixel perfect and as computationally efficient as possible, 
       I am looking forward to furthering my career and becoming a master of my art. 
       <br>
-      <br>I have been extremely passionate about IT, the web, programming and digital media my entire life, ever since I got my first Gameboy 
-      I had no doubt I would one day be creating digital media professionally. This lifelong passion for all things digital has translated 
-      into a broad range of knowledge on subjects ranging from 3D modeling, graphic design, animation and game design to computer science, programming, and web development. 
+      <br>I have been extremely passionate about IT, the web, programming and digital media my entire life, ever since I received my first Gameboy,
+      I had no doubt I would one day be creating digital media professionally. This lifelong passion for all things digital has translated
+      into a broad range of knowledge on subjects ranging from 3D modelling, graphic design, animation and game design to computer science, programming, and web development. 
       <br>
-      <br>My primary strength is that I am a fast learner, I have learnt a wide range of skills, and each skill allows me to more quickly contextualize and learn future skills faster. I am actively pursuing technical, personal and professional development.
+      <br>My primary strength is that I am a quick learner, I have knowledge of a wide range of skills, and each skill allows me to more quickly contextualize and learn future skills faster. I am actively pursuing technical, personal and professional development.
     </p>
     <p>
       <i class="ion-android-star"></i> 
@@ -70,7 +70,7 @@
               <i class="ion-android-star"></i>
             </p>
             <ul class="skillDesc">
-              Over the past decade i have become familiar with several languages, and i have had exposure to many more.<br>
+              Over the past decade, I have become familiar with several languages, and I have had exposure to many more.<br>
               <li>
                 <p>HTML5</p>
                 <span class="starRating">
@@ -279,8 +279,8 @@
             <ul class="skillDesc">
               <p>
                 I have been using JavaScript for several years now and have grown quite competent in it, 
-                While i have <b>strong</b> skills with <b>vanilla JavaScript</b>, I used to use <b>jQuery</b> for convenience but I have transitioned into <b>VueJS</b> instead. 
-                I understand most of the concepts you would expect of a JavaScript developer including <b>the DOM, JSON, AJAX, 
+                While I have <b>strong</b> skills with <b>vanilla JavaScript</b>, I used to use <b>jQuery</b> for convenience but I have transitioned into <b>VueJS</b> instead. 
+                I understand most of the concepts you would expect of a JavaScript developer, including <b>the DOM, JSON, AJAX, 
                 API’s</b> as well as a thorough understanding of the new features brought with <b>ES6</b> and a working understanding of <b>NodeJS</b>.<br>
               </p>
               <li>
@@ -445,7 +445,7 @@
             </p>
             <ul class="skillDesc">
               <p>
-                I have used MySQL to store user accounts and data, for example a <a href="https://fitnessapp.wardwebdevelopment.com/">Dietary Calculator</a> that stores user data server side.
+                I have used MySQL to store user accounts and data, for example, a <a href="https://fitnessapp.wardwebdevelopment.com/">Dietary Calculator</a> that stores user data server side.
               </p>
               <li>
                 <p>MySQL</p>
@@ -484,7 +484,7 @@
             </p>
             <ul class="skillDesc">
               <p>
-                I have relatively recently begun learning <b>Node.js</b>. I have built several projects using it and look foward to learning more.
+                I relatively recently began learning <b>Node.js</b>. I have built several projects using it and look forward to learning more.
               </p>
               <li>
                 <p>Vue</p>
@@ -543,8 +543,8 @@
             </p>
             <ul class="skillDesc">
               <p>
-                Windows has been my daily driver since i was a child. 
-                I have very strong skills using Windows, and i can <b>intuitively</b> solve problems with it using very little help.
+                Windows has been my daily driver since I was a child. 
+                I have very strong skills using Windows, and I can <b>intuitively</b> solve problems with it using very little help.
               </p>
               <li>
                 <p>Apache</p>
@@ -603,8 +603,8 @@
             </p>
             <ul class="skillDesc">
               <p>
-                Throughout my education in web development i have used Linux many times, 
-                i am growing <b>competent and confident</b> in its use and can use it for everything i need. I have begun the process of migrating to Linux, and would like to eventually move to it entirely.
+                Throughout my education in web development, I have used Linux many times, 
+                I am growing <b>competent and confident</b> in its use and can use it for everything I need. I have begun the process of migrating to Linux and would like to eventually move to it entirely.
               </p>
               <li>
                 <p>Apache</p>
