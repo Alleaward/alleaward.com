@@ -54,7 +54,7 @@ export default {
                 github: 'https://www.alleaward.com/',
                 tech: ['html', 'css', 'javascript', 'node', 'vue'],
                 image: 'src/assets/img/AlleaWard.jpg',
-                desc: "This is the website i built to hold examples of my work, you are on it right now. This website was built using Node.js and Vue."
+                desc: "This is the website I built to hold examples of my work, you are on it right now. This website was built using Node.js and Vue."
             },
             { 
                 name: 'Gearheads Garage', 
@@ -62,7 +62,7 @@ export default {
                 github: 'https://github.com/Alleaward/Gearheads-Garage',
                 tech: ['html', 'css', 'bootstrap', 'javascript', 'jquery', 'php', 'linux', 'apache'], 
                 image: 'src/assets/img/GearheadsGarage.jpg', 
-                desc: "Gearheadsgarageau.com is a simple business website for a Gold Coast mechanic, it was built on the LAMP stack with the Bootstrap library for some styling and a php form." 
+                desc: "Gearheadsgarageau.com is a simple business website for a Gold Coast mechanic, it was built on the LAMP stack with the Bootstrap library for some styling and a PHP form." 
             },
             { 
                 name: 'PHP Store', 
@@ -70,7 +70,7 @@ export default {
                 github: 'https://github.com/Alleaward/PHP-Online-Store',
                 tech: ['html', 'css', 'javascript', 'php', 'linux', 'apache'], 
                 image: 'src/assets/img/PhpStore.jpg', 
-                desc: "An online store written in PHP, by loading products from a CSV it creates an easily scaleable online store." 
+                desc: "An online store created with PHP, by loading products from a CSV it creates an easily scalable online store." 
             },
             { 
                 name: "Cut N' Edge", 
@@ -86,6 +86,14 @@ export default {
                 github: 'https://github.com/Alleaward/Ward-Web-Development',
                 tech: ['html', 'css', 'bootstrap', 'javascript', 'jquery', 'php', 'linux', 'apache'], 
                 image: 'src/assets/img/WardWebDevelopment.jpg', 
+                desc: 'The website for my freelance business, a simple responsive site with a contact form.' 
+            },
+            { 
+                name: 'Ward Web Development Alternate', 
+                link: 'https://alternate.wardwebdevelopment.com/', 
+                github: 'https://github.com/Alleaward/Ward-Web-Development-Alternate',
+                tech: ['html', 'css', 'javascript', 'jquery', 'vue', 'php', 'linux', 'apache'], 
+                image: 'src/assets/img/WardWebDevelopmentAlternate.jpg', 
                 desc: 'An alternative website for my freelance web development business.' 
             },
             { 
