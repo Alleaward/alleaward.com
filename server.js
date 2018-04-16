@@ -1,6 +1,10 @@
 var express = require('express');
 var path = require('path');
+
 var app = express();
+
+var pug = require('pug');
+// app.set('view engine', 'pug')
 
 // var history = require('connect-history-api-fallback');
 // app.use(history({ 
@@ -11,8 +15,17 @@ var app = express();
 //     verbose: true
 // })); 
 
-var history = require('connect-history-api-fallback');
-app.use(history());
+// var history = require('connect-history-api-fallback');
+// app.use(history({
+//     verbose: true
+// }));
+
+app.get("/", (req, res) => {
+    console.log(path.resolve(__dirname, 'index.html'));
+    // app.use(express.static(path.resolve(__dirname, 'index.html')));
+    // res.sendFile(path.resolve(__dirname, 'index.html'));
+    res.sendFile(__dirname + '/index.html');
+});
 
 // app.get("/", (req,res) => {
     // res.sendFile(__dirname + "/dist/build.js"); //Just shows literal contents of file

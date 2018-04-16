@@ -46,15 +46,15 @@ html, body {
   overflow-x: hidden;
 }
 
-h1 {
-  font-size: 4rem;
-  color: #fff;
-  position: absolute;
-  left: 50%;
-  top: 20%;
-  transform: translateX(-50%);
-  white-space: nowrap;
-}
+// h1 {
+//   font-size: 4rem;
+//   color: #fff;
+//   position: absolute;
+//   left: 50%;
+//   top: 20%;
+//   transform: translateX(-50%);
+//   white-space: nowrap;
+// }
 
 .button {
   display: block;

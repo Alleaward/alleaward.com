@@ -35,7 +35,7 @@
   </div>
 
   <div class="buttonWrap">
-    <button id="resumeButton"><span class="button" @click="$router.push({path: '/resume'})">Resume</span></button>
+    <button id="resumeButton"><a class="button" @click="$router.push({path: '/resume'})" >Resume</a></button>
   </div>
 
 </div>

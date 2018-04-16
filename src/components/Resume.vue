@@ -2,7 +2,6 @@
 <div id="resume">
   <section id="details">
     <h1>Allea Ward – Full Stack Web Engineer</h1>
-
     <p><span>Location:</span> Pimpama, Gold Coast</p>
     <p><span>Phone:</span> +61490324716</p>
     <p><span>Age:</span> 23</p>
@@ -755,7 +754,7 @@
   </section>  
 
   <div class="buttonWrap">
-    <button id="portfolioButton"><span class="button" @click="$router.push({path: '/portfolio'})">Portfolio</span></button>
+    <button id="portfolioButton"  ><a class="button" @click="$router.push({path: '/portfolio'})">Portfolio</a></button>
   </div>
 
 </div>
@@ -866,6 +865,9 @@ body{
   width: 800px;
   margin: auto;
   // padding: 0 30px;
+  h1{
+    position: static;
+  }
   ul{
     padding: 0;
     margin: 0;
@@ -1153,6 +1155,7 @@ body{
     transition:all 0.8s ease-in-out;
     -moz-transition:all 0.8s ease-in-out;
     -webkit-transition:all 0.8s ease-in-out;
+    
     &:hover{
       .button{
         color: #fff;
