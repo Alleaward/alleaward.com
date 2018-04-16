@@ -5,6 +5,8 @@ import Home from './components/Home.vue'
 import Resume from './components/Resume.vue'
 import Portfolio from './components/Portfolio.vue'
 
+// Vue.component('testing-home', Home);
+
 Vue.use(VueRouter);
 
 const routes = [
@@ -13,9 +15,9 @@ const routes = [
   { path: '/Portfolio', name: Portfolio, component: Portfolio }
 ];
 
-export default router = new VueRouter({
-  routes,
-  mode : 'history'
+const router = new VueRouter({
+  // mode: 'history',
+  routes
 });
 
 new Vue({

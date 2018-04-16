@@ -4,16 +4,24 @@ var app = express();
 
 // var history = require('connect-history-api-fallback');
 // app.use(history({ 
-//     index: __dirname + "/dist/build.js",
+//     // index: __dirname + "/dist/build.js", //Cannot GET /
+//     index: __dirname + "/dist", //Cannot GET /
+//     // index: __dirname + "/index.html", //Cannot GET /
 //     htmlAcceptHeaders: ['text/html', 'application/xhtml+xml'],
 //     verbose: true
 // })); 
+
+var history = require('connect-history-api-fallback');
+app.use(history());
 
 // app.get("/", (req,res) => {
     // res.sendFile(__dirname + "/dist/build.js"); //Just shows literal contents of file
     // res.render(__dirname + "/dist/build.js"); //Error: Cannot find module 'html'
     // res.render(__dirname + "/dist/"); //Error: No default engine was specified and no extension was provided.
+
+    // // app.engine('html', require('ejs').renderFile);
     // res.render(__dirname + "/dist"); //Error: No default engine was specified and no extension was provided.
+
     // res.sendFile(__dirname + "/index.html"); //Error: Cannot find module 'html'
     // res.render(__dirname + "/index.html"); //Error: Cannot find module 'html'
     // res.sendFile(path.resolve(__dirname, "dist/")); //Cannot GET /

@@ -3,13 +3,13 @@
       <div class="split left">
         <!-- <h1>Resume</h1> -->
         <!-- <a href="/resume" class="button">Skills and Experience</a> -->
-        <a href="/resume" class="button">Resume</a>
+        <a @click="$router.push({path: '/resume'})" class="button">Resume</a>
       </div>
 
       <div class="split right">
         <!-- <h1>Portfolio</h1> -->
         <!-- <a href="/portfolio" class="button">Demonstrations</a> -->
-        <a href="/portfolio" class="button">Portfolio</a>
+        <a @click="$router.push({path: '/portfolio'})" class="button">Portfolio</a>
       </div>  
     </div>
 </template>
