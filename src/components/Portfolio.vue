@@ -52,8 +52,8 @@ export default {
                 name: 'Allea Ward',
                 link: 'https://www.alleaward.com/',
                 github: 'https://www.alleaward.com/',
-                tech: ['html', 'css', 'javascript', 'node', 'vue'],
-                image: 'src/assets/img/AlleaWard.jpg',
+                tech: ['html', 'css', 'javascript', 'node', 'express', 'vue'],
+                image: 'dist/AlleaWard.jpg',
                 desc: "This is the website I built to hold examples of my work, you are on it right now. This website was built using Node.js and Vue."
             },
             { 
@@ -61,7 +61,7 @@ export default {
                 link: 'https://www.gearheadsgarageau.com/', 
                 github: 'https://github.com/Alleaward/Gearheads-Garage',
                 tech: ['html', 'css', 'bootstrap', 'javascript', 'jquery', 'php', 'linux', 'apache'], 
-                image: 'src/assets/img/GearheadsGarage.jpg', 
+                image: 'dist/GearheadsGarage.jpg', 
                 desc: "Gearheadsgarageau.com is a simple business website for a Gold Coast mechanic, it was built on the LAMP stack with the Bootstrap library for some styling and a PHP form." 
             },
             { 
@@ -69,7 +69,7 @@ export default {
                 link: 'http://phpstore.wardwebdevelopment.com/products.php', 
                 github: 'https://github.com/Alleaward/PHP-Online-Store',
                 tech: ['html', 'css', 'javascript', 'php', 'linux', 'apache'], 
-                image: 'src/assets/img/PhpStore.jpg', 
+                image: 'dist/PhpStore.jpg', 
                 desc: "An online store created with PHP, by loading products from a CSV it creates an easily scalable online store." 
             },
             { 
@@ -77,7 +77,7 @@ export default {
                 link: 'https://cutnedgesunshinecoast.wardwebdevelopment.com/', 
                 github: 'https://github.com/Alleaward/Cut-N-Edge',
                 tech: ['html', 'css', 'bootstrap', 'javascript', 'jquery', 'php', 'linux', 'apache'], 
-                image: 'src/assets/img/CutNEdge.jpg', 
+                image: 'dist/CutNEdge.jpg', 
                 desc: 'A business website for a Sunshine Coast based Garden Maintenance business.' 
             },
             { 
@@ -85,7 +85,7 @@ export default {
                 link: 'https://wardwebdevelopment.com/', 
                 github: 'https://github.com/Alleaward/Ward-Web-Development',
                 tech: ['html', 'css', 'bootstrap', 'javascript', 'jquery', 'php', 'linux', 'apache'], 
-                image: 'src/assets/img/WardWebDevelopment.jpg', 
+                image: 'dist/WardWebDevelopment.jpg', 
                 desc: 'The website for my freelance business, a simple responsive site with a contact form.' 
             },
             { 
@@ -93,7 +93,7 @@ export default {
                 link: 'https://alternate.wardwebdevelopment.com/', 
                 github: 'https://github.com/Alleaward/Ward-Web-Development-Alternate',
                 tech: ['html', 'css', 'javascript', 'jquery', 'vue', 'php', 'linux', 'apache'], 
-                image: 'src/assets/img/WardWebDevelopmentAlternate.jpg', 
+                image: 'dist/WardWebDevelopmentAlternate.jpg', 
                 desc: 'An alternative website for my freelance web development business.' 
             },
             { 
@@ -101,7 +101,7 @@ export default {
                 link: 'https://fitnessapp.wardwebdevelopment.com/', 
                 github: 'https://github.com/Alleaward/TDEE-Calculator',
                 tech: ['html', 'css', 'materializecss', 'javascript', 'ajax', 'jquery', 'php', 'mysql', 'apache'], 
-                image: 'src/assets/img/FitnessApp.jpg', 
+                image: 'dist/FitnessApp.jpg', 
                 desc: 'A fitness calculator that demonstrates: Databases, Simple User Accounts, Form Inputs and calculations using Javascript and PHP.' 
             }
         ]
@@ -474,7 +474,7 @@ li {
 .jquery{
   background-color:#1069AE;
 }
-.node{
+.node, .express{
   background-color:#7EB341;
 }
 .vue{

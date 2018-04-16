@@ -68,7 +68,7 @@ module.exports = {
         }
       },
       {
-        test: /.*\.(gif|png|jpe?g)$/i,
+        test: /.*\.(gif|png|jpe?g|jpg)$/i,
         use: [
           {
             loader: 'image-webpack-loader',
@@ -76,7 +76,7 @@ module.exports = {
               name: '[name].[ext]?[hash]'
             }
           }
-        ]
+        ],
       }
     ]
   },
