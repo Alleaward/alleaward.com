@@ -11,14 +11,11 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "connect": "^3.6.6",
     "connect-history-api-fallback": "^1.5.0",
-    "ejs": "^2.6.1",
     "express": "^4.16.3",
     "image-webpack-loader": "^4.2.0",
-    "pug": "^2.0.3",
+    "prerender-spa-plugin": "^3.1.0",
     "vue": "^2.5.11",
-    "vue-history-api-fallback": "^1.0.3",
     "vue-router": "^3.0.1"
   },
   "browserslist": [
