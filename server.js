@@ -10,7 +10,9 @@ app.get("/", (req, res) => {
     res.sendFile(__dirname + '/index.html');
 });
 
-var port = process.env.PORT || 8000;
+var port = process.env.PORT || 80;
 app.listen(port);
+app.listen(443);
+
 
 console.log('Server started ' + port);

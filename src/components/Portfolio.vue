@@ -35,7 +35,7 @@
   </div>
 
   <div class="buttonWrap">
-    <button id="resumeButton"><a class="button" @click="$router.push({path: '/resume'})" >Resume</a></button>
+    <div id="resumeButton"><div class="button" href="#" @click="$router.push({path: '/resume'})" >Resume</div></div>
   </div>
 
 </div>
@@ -52,7 +52,7 @@ export default {
                 name: 'Allea Ward',
                 link: 'https://www.alleaward.com/',
                 github: 'https://www.alleaward.com/',
-                tech: ['html', 'css', 'javascript', 'node', 'express', 'vue'],
+                tech: ['html', 'css', 'javascript', 'node', 'express', 'vue', 'vue-router', 'linux'],
                 image: 'dist/AlleaWard.jpg',
                 desc: "This is the website I built to hold examples of my work, you are on it right now. This website was built using Node.js and Vue."
             },
@@ -100,7 +100,7 @@ export default {
                 name: 'TDEE Calculator', 
                 link: 'https://fitnessapp.wardwebdevelopment.com/', 
                 github: 'https://github.com/Alleaward/TDEE-Calculator',
-                tech: ['html', 'css', 'materializecss', 'javascript', 'ajax', 'jquery', 'php', 'mysql', 'apache'], 
+                tech: ['html', 'css', 'materializecss', 'javascript', 'ajax', 'jquery', 'php', 'mysql', 'apache', 'linux'], 
                 image: 'dist/FitnessApp.jpg', 
                 desc: 'A fitness calculator that demonstrates: Databases, Simple User Accounts, Form Inputs and calculations using Javascript and PHP.' 
             }
@@ -181,8 +181,8 @@ li {
     }
     .nav-skill{
       border: #484848 solid 1px;
-      min-width: 60px;
-      height: 40px;
+      min-width: 100px;
+      height: 60px;
       line-height: 35px;
       font-size: 20px;
       margin: 2px;
@@ -431,10 +431,11 @@ li {
         }
         p {
           // border: 3px solid green;
-          font-size: 18px;
-          width: 80%;
+          font-size: 25px;
+          width: 88%;
           margin: auto;
           text-align: left;
+          padding: 0 0 20px 0;
         }
         ul {
           // border: 3px solid darkblue;
@@ -477,7 +478,7 @@ li {
 .node, .express{
   background-color:#7EB341;
 }
-.vue{
+.vue, .vue-router{
   background-color:#41B883;
 }
 .php{
@@ -493,6 +494,7 @@ li {
   background-color:#E38D1A;
 }
 #resumeButton {
+  z-index: 1;
   box-shadow: inset 0 0 0 1000px rgba(43, 43, 43, 0.8);
   position: fixed;
   width: 100vw; // margin-left: -50vw;
@@ -512,9 +514,12 @@ li {
       border: #fff solid 0.2rem;
     }
   }
-  .button {
+  div{
+    z-index: 999;
     display: block;
     position: absolute;
+  }
+  .button {
     left: 50%;
     top: 30%;
     height: 5rem;
@@ -544,5 +549,14 @@ li {
     height: 60vh;
   }
 }
-
+@media(max-width: 1000px) {
+  #portfolio-items {
+    padding-top: 180px;
+  }
+}
+@media(max-width: 520px) {
+  #portfolio-items {
+    padding-top: 240px;
+  }
+}
 </style>

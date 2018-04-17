@@ -57,14 +57,16 @@ html, body {
 // }
 
 .button {
+  z-index: 999;
   display: block;
   position: absolute;
   left: 50%;
   top: 40%;
   height: 10rem;
   line-height: 8rem;
-  padding-top: 1.3rem;
-  width: 30rem;
+  padding: 1.3rem;
+  padding-bottom: 0;
+  width: auto;
   text-align: center;
   color: #fff;
   border: #fff solid 0.2rem;
@@ -170,7 +172,8 @@ html, body {
   }
 
   .button {
-    width: 12rem;
+    font-size: 3rem;
+    // width: 12rem;
   }
 }
 

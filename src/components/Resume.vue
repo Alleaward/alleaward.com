@@ -6,8 +6,8 @@
     <p><span>Phone:</span> +61490324716</p>
     <p><span>Age:</span> 23</p>
     <p><span>Email:</span> Allea_ward@hotmail.com</p>
-    <p><span>GitHub:</span> www.github.com/alleaward 	</p>
-    <p><span>LinkedIn:</span> www.linkedin.com/alleaward</p>
+    <p><span>GitHub:</span> <a href="https://github.com/Alleaward">www.github.com/alleaward</a> 	</p>
+    <p><span>LinkedIn:</span> <a href="https://www.linkedin.com/in/alleaward/">www.linkedin.com/alleaward</a></p>
     <p><span>Current Driver's license:</span> Yes. </p>
     <p><span>Remote Work:</span> I am happy to work remotely. </p>
     <!-- <p>Blog: <a href="blog.alleaward.com">My Blog</a> </p> -->
@@ -239,7 +239,7 @@
                 </span>
               </li>
               <li>
-                <p>MaterializeCSS</p>
+                <p>Materialize</p>
                 <span class="starRating">
                   <i class="ion-android-star"></i>
                   <i class="ion-android-star"></i>
@@ -303,7 +303,7 @@
                 </span>
               </li>
               <li>
-                <p>VueJS</p>
+                <p>Vue</p>
                 <span class="starRating">
                   <i class="ion-android-star"></i>
                   <i class="ion-android-star"></i>
@@ -343,7 +343,7 @@
                 </span>
               </li>
               <li>
-                <p>NodeJS</p>
+                <p>Node</p>
                 <span class="starRating">
                   <i class="ion-android-star"></i>
                   <i class="ion-android-star"></i>
@@ -516,7 +516,7 @@
                 </span>
               </li>
               <li>
-                <p>ExpressJS</p>
+                <p>Express</p>
                 <span class="starRating">
                   <i class="ion-android-star"></i>
                   <i class="ion-android-star"></i>
@@ -625,7 +625,17 @@
                   <i class="ion-android-star-outline"></i>
                 </span>
               </li>
-            </ul>          
+              <li>
+                <p>NodeJS</p>
+                <span class="starRating">
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star-outline"></i>
+                  <i class="ion-android-star-outline"></i>
+                </span>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -642,9 +652,6 @@
             </p>
             <ul class="skillDesc">
               <li>
-                <p>Expert at Googling</p>
-              </li>
-              <li>
                 <p>cPanel</p>
               </li>
               <li>
@@ -657,7 +664,7 @@
                 <p>FTP</p>
               </li>
               <li>
-                <p>Bash / Command Line / Terminal</p>
+                <p>Bash / CMD / Terminal</p>
               </li>
               <li>
                 <p>GitHub CLI &amp; App</p>
@@ -677,7 +684,10 @@
               <li>
                 <p>SSL</p>
               </li>
-            </ul>          
+              <li>
+                <p>Problem Solving</p>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -687,22 +697,6 @@
 
   <section id="education">
       <h2>Education</h2> 
-      <span>Macquarie - Bachelor of Arts (Philosophy and Politics)</span> <br>
-      2016 - Ongoing | Bachelor of Arts, Majoring in Philosophy and Politics.<br>
-      <br>
-      <span class="heading3">Relevant Results</span>
-      <ul>
-        <li class="heading3">How philosophy helps with programming.</li>
-        <ul>
-          <li> - Formal Logic</li>
-          <li> - Critical Thinking</li>
-          <li> - Ability to think in an abstract manner</li>
-          <li> - Defining problems and solutions</li>
-          <li> - Detecting fallacious reasoning</li>
-          <li> - Philosophy and computer science have many overlapping concepts</li>
-        </ul>
-      </ul>
-      <hr>
       <br>
       <span>RMIT - Bachelor of Information Technology</span> <br>
       2014 - Ongoing | Bachelor of Information of Technology. <br>
@@ -751,10 +745,26 @@
       </ul>
       <hr>
       <br>
+      <span>Macquarie - Bachelor of Arts (Philosophy and Politics)</span> <br>
+      2016 - Ongoing | Bachelor of Arts, Majoring in Philosophy and Politics.<br>
+      <br>
+      <span class="heading3">Relevant Results</span>
+      <ul>
+        <li class="heading3">How philosophy helps with programming.</li>
+        <ul>
+          <li> - Formal Logic</li>
+          <li> - Critical Thinking</li>
+          <li> - Ability to think in an abstract manner</li>
+          <li> - Defining problems and solutions</li>
+          <li> - Detecting fallacious reasoning</li>
+          <li> - Philosophy and computer science have many overlapping concepts</li>
+        </ul>
+      </ul>
+      <hr>
   </section>  
 
   <div class="buttonWrap">
-    <button id="portfolioButton"  ><a class="button" @click="$router.push({path: '/portfolio'})">Portfolio</a></button>
+    <div id="portfolioButton"  ><a class="button" @click="$router.push({path: '/portfolio'})">Portfolio</a></div>
   </div>
 
 </div>
@@ -1000,7 +1010,7 @@ body{
       -moz-transition:all 0.4s ease-in-out;
       -webkit-transition:all 0.4s ease-in-out;  
       .skillInfo{
-        max-width: 760px;
+        max-width: 860px;
         margin: 20px auto;
         // border: 2px yellow solid;
         width: 100%;
@@ -1163,6 +1173,7 @@ body{
       }
     }
     .button {
+      z-index: 999;
       display: block;
       position: absolute;
       left: 50%;
