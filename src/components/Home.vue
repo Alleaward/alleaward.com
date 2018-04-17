@@ -26,7 +26,7 @@ export default {
 </script>
 
 <style lang="scss">
-:root {
+html {
   --container-bg-color: #333;
   --left-bg-color: rgba(43, 43, 43, 0.8);
   --left-button-hover-color: rgba(255, 255, 255, 0.9);
