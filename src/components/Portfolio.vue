@@ -51,7 +51,7 @@ export default {
             {
                 name: 'Allea Ward',
                 link: 'https://www.alleaward.com/',
-                github: 'https://www.alleaward.com/',
+                github: 'https://github.com/Alleaward/alleaward.com',
                 tech: ['html', 'css', 'javascript', 'node', 'express', 'vue', 'vue-router', 'linux'],
                 image: 'dist/AlleaWard.jpg',
                 desc: "This is the website I built to hold examples of my work, you are on it right now. This website was built using Node.js and Vue."
