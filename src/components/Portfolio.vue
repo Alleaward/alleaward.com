@@ -62,7 +62,7 @@ export default {
                 github: 'https://github.com/Alleaward/Gearheads-Garage',
                 tech: ['html', 'css', 'bootstrap', 'javascript', 'jquery', 'php', 'linux', 'apache'], 
                 image: 'dist/GearheadsGarage.jpg', 
-                desc: "Gearheadsgarageau.com is a simple business website for a Gold Coast mechanic, it was built on the LAMP stack with the Bootstrap library for some styling and a PHP form." 
+                desc: "This is a simple business website for a Gold Coast mechanic, it was built on the LAMP stack with the Bootstrap library for some styling and a PHP form." 
             },
             { 
                 name: 'PHP Store', 
@@ -153,36 +153,41 @@ li {
   margin: 0 10px;
 }
 #portfolio-header {
-  position: fixed;
-  top: 20px;
-  width: 100%;
-  height: auto;
-  max-height: 100px;
-  display: flex;
-  justify-content: left;
+  // width: 100%;
+  // height: auto;
+  // max-height: 100px;
+  // display: flex;
+  // justify-content: left;
   ul{
+    z-index: 99999;
+    position: fixed;
+    top: 20px;
+    right: 20px;
     border: #484848 solid 1px;
     box-shadow: 0 3px 3px rgba(10, 10, 10, .4), 0 0 0 1px rgba(10, 10, 10, .2);
     background-color: #91896E;
     display: flex;
-    flex-flow: row wrap;
-    width: 88%;
+    flex-flow: column nowrap;
+    width: 170px;
+    // height: calc(100% - 300px);
+    height: auto;
+    max-height: calc(100vh - 270px);
     padding: 5px 0.5%;
     border-radius: 15px;
-    margin: auto;
-    li:first-child{
-      p{
-        padding-left: 15px;
-      }
-      border-radius: 15px 0px 0px 15px;
-    }
-    li:last-child{
-      border-radius: 0px 15px 15px 0px;
-    }
+    // margin: auto;
+    // li:first-child{
+    //   p{
+    //     padding-left: 15px;
+    //   }
+    //   border-radius: 15px 0px 0px 15px;
+    // }
+    // li:last-child{
+    //   border-radius: 0px 15px 15px 0px;
+    // }
     .nav-skill{
       border: #484848 solid 1px;
       min-width: 100px;
-      height: 60px;
+      height: 150px;
       line-height: 35px;
       font-size: 20px;
       margin: 2px;
@@ -193,9 +198,10 @@ li {
       -webkit-transition: all 0.3s ease-in-out;
       overflow: hidden;
       border-radius: 0px;
+      text-align: center;
       &:hover, &:active, &:focus{
         // flex-grow: 2;
-        height: 80px;
+        height: 300px;
         border-radius: 10px;
       }
       p{
@@ -343,9 +349,10 @@ li {
 
 #portfolio-items {
   // border: 3px solid green;
-  min-width: 90%;
-  margin: auto;
-  padding-top: 120px;
+  width: 80%;
+  // margin: auto;
+  // padding-top: 120px;
+  padding-top: 40px;
   padding-bottom: 200px;
 
   span {
@@ -549,14 +556,14 @@ li {
     height: 60vh;
   }
 }
-@media(max-width: 1000px) {
-  #portfolio-items {
-    padding-top: 180px;
-  }
-}
-@media(max-width: 520px) {
-  #portfolio-items {
-    padding-top: 240px;
-  }
-}
+// @media(max-width: 1000px) {
+//   #portfolio-items {
+//     padding-top: 180px;
+//   }
+// }
+// @media(max-width: 520px) {
+//   #portfolio-items {
+//     padding-top: 240px;
+//   }
+// }
 </style>
