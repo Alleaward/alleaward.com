@@ -159,7 +159,7 @@ li {
   // display: flex;
   // justify-content: left;
   ul{
-    z-index: 99999;
+    z-index: 998;
     position: fixed;
     top: 20px;
     right: 20px;
@@ -349,7 +349,7 @@ li {
 
 #portfolio-items {
   // border: 3px solid green;
-  width: 80%;
+  width: calc(100vw - 200px);
   // margin: auto;
   // padding-top: 120px;
   padding-top: 40px;
