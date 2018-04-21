@@ -159,7 +159,7 @@ li {
   // display: flex;
   // justify-content: left;
   ul{
-    z-index: 998;
+    z-index: 997;
     position: fixed;
     top: 20px;
     right: 20px;
@@ -501,7 +501,7 @@ li {
   background-color:#E38D1A;
 }
 #resumeButton {
-  z-index: 1;
+  z-index: 998;
   box-shadow: inset 0 0 0 1000px rgba(43, 43, 43, 0.8);
   position: fixed;
   width: 100vw; // margin-left: -50vw;
