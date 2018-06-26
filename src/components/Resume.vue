@@ -13,14 +13,16 @@
     <!-- <p>Blog: <a href="blog.alleaward.com">My Blog</a> </p> -->
 
     <h2>Objective</h2>
-    <p>My objective is to create software that is pixel perfect and as computationally efficient as possible, 
-      I am looking forward to furthering my career and becoming a master of my art. 
-      <br>
-      <br>I have been extremely passionate about IT, the web, programming and digital media my entire life, ever since I received my first Gameboy,
+    <p>
+      I have been extremely passionate about IT, the web, programming and digital media my entire life, ever since I received my first Gameboy,
       I had no doubt I would one day be creating digital media professionally. This lifelong passion for all things digital has translated
       into a broad range of knowledge on subjects ranging from 3D modelling, graphic design, animation and game design to computer science, programming, and web development. 
       <br>
-      <br>My primary strength is that I am a quick learner, I have knowledge of a wide range of skills, and each skill allows me to more quickly contextualize and learn future skills faster. I am actively pursuing technical, personal and professional development.
+      <br>
+      My objective is to create software that is pixel perfect and as computationally efficient as possible, 
+      I am looking forward to furthering my career and becoming a master of my art. 
+      <br>
+      <br>My primary strength is that I am a quick learner, I have knowledge of a wide range of skills, and each skill allows me to more quickly contextualize and adapt to future skills faster. 
     </p>
     <p>
       <i class="ion-android-star"></i> 
@@ -121,17 +123,17 @@
                 </span>
               </li>
               <li>
-                <p>C</p>
+                <p>C#</p>
                 <span class="starRating">
                   <i class="ion-android-star"></i>
                   <i class="ion-android-star"></i>
                   <i class="ion-android-star"></i>
-                  <i class="ion-android-star-outline"></i>
+                  <i class="ion-android-star"></i>
                   <i class="ion-android-star-outline"></i>
                 </span>
               </li>
               <li>
-                <p>C#</p>
+                <p>C</p>
                 <span class="starRating">
                   <i class="ion-android-star"></i>
                   <i class="ion-android-star"></i>
@@ -401,7 +403,68 @@
 
     <h2>Back-End</h2>
 
-    <section class="skillAccordian" id="backend"> 
+    <section class="skillAccordian" id="backend">
+
+      <section id="csharp" class="skillSection">
+        <div class="skillInner">
+          <div class="skillInfo">
+            <p class="skillHeading">C#
+              <i class="ion-android-star"></i>
+              <i class="ion-android-star"></i>
+              <i class="ion-android-star"></i>
+              <i class="ion-android-star"></i>
+              <i class="ion-android-star-outline"></i>
+            </p>
+            <ul class="skillDesc">
+              <p>
+                C# was one of the first languages I picked up. I originally used it to build games with the Unity Engine, but was happy to find it again when I started web development. 
+                Example 1. <a href="https://github.com/Alleaward/CustomerManagementSystem">A Customer Management System (Invoicing App)</a><br>
+              </p>
+              <li>
+                <p>MVC</p>
+                <span class="starRating">
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star-outline"></i>
+                </span>
+              </li>
+              <li>
+                <p>WebForms</p>
+                <span class="starRating">
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star-outline"></i>
+                  <i class="ion-android-star-outline"></i>
+                </span>
+              </li>
+              <li>
+                <p>Entity Framework</p>
+                <span class="starRating">
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star-outline"></i>
+                  <i class="ion-android-star-outline"></i>
+                </span>
+              </li>
+              <li>
+                <p>.NET</p>
+                <span class="starRating">
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star"></i>
+                  <i class="ion-android-star-outline"></i>
+                  <i class="ion-android-star-outline"></i>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       <section id="php" class="skillSection">
         <div class="skillInner">
           <div class="skillInfo">
@@ -942,6 +1005,7 @@ body{
           }
         }
         li{
+          font-size: 0.9em;
           // border-bottom: 2px solid black;
           background: linear-gradient(to right, rgba(255,0,0,0) 0%, 
                                       rgba(255,255,255,.6) 5%,
@@ -980,7 +1044,7 @@ body{
       padding: 0 20px;
       li{
         box-sizing: border-box;
-        width: 47.5%;
+        width: 49%;
         padding: 5px 5% 5px 5%;
         margin: 10px 0 0 0;
         p{
@@ -1064,6 +1128,15 @@ body{
     background: url('../assets/img/javascript.png') no-repeat center center;
     background-size: contain;
     background-color: #F0DB4F;
+    &:hover{
+      background-position: 90% 50%;
+      color: black;
+    }
+  }
+  #csharp{
+    background: url('../assets/img/csharp.png') no-repeat center center;
+    background-size: contain;
+    background-color: #67217A;
     &:hover{
       background-position: 90% 50%;
       color: black;
