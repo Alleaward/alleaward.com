@@ -176,10 +176,11 @@ html, body {
     // width: 12rem;
   }
 }
-
 @media(max-height: 700px) {
   .button {
-    top: 70%;
+    top: 40%;
+    height: 5rem;
+    line-height: 4rem;
   }
 }
 </style>
