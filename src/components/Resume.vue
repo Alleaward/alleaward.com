@@ -759,6 +759,14 @@
   </section>
 
   <section id="education">
+    
+      <section id="github">
+        <h2>GitHub</h2>
+        <a href="https://github.com/Alleaward">
+          <img src="http://ghchart.rshah.org/alleaward" alt="2016rshah's Github chart" />
+        </a>
+      </section>
+    
       <h2>Education</h2> 
       <br>
       <span>RMIT - Bachelor of Information Technology</span> <br>
@@ -1197,7 +1205,21 @@ body{
     }
   }
 }
-
+//github-----github-----github-----github-----github-----github-----github-----github
+#github{
+  padding-top: 20px;
+  width: 760px;
+  margin: auto;
+  a{
+    border: 2px solid #727272;
+    border-radius: 20px;
+    background-color: #1d1d1d;
+    padding: 20px;
+    display: block;
+    margin: auto;
+    text-align: center;
+  }
+}
 //education-----education-----education-----education-----education-----education-----education-----education
 #education{
   // padding-top: 50px;
